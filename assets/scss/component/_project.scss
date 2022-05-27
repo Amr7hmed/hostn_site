@@ -1,0 +1,677 @@
+/*
+  A- Style project Page .
+    A- 1- Style project Header Component .
+    A-2- Style project About Component .
+    A-3- Style project Facilities Component . 
+    A-4- Style project Properties Component .
+    A-5- Style project Loction Component .
+    A-6- Style project About Developer Component .
+    A-8- Style project Similar Item Component .
+  B- Style Property Page .
+    B-1- Style Property Similar Projects Component .
+    B-2- Style Property Similar Item Component .
+*/
+
+// A- Style project Page .
+.project {
+  &__contener {
+    width: 95%;
+    margin: 0 auto;
+  }
+  // A- 1- Style project Header Component .
+  &__header {
+    margin: 25px 0;
+    min-height: 650px;
+    max-height: auto;
+    .img {
+      .carousel-item {
+        height: 600px !important;
+        min-width: 90% !important;
+        max-width: 990px !important;
+        img {
+          height: 600px !important;
+          min-width: 100% !important;
+          max-width: 990px !important;
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        background: rgba(53, 0, 5, 0.3);
+        width: 60px;
+      }
+    }
+    .detiles {
+      height: 600px;
+      padding-left: 30px;
+      text-transform: uppercase;
+      width: 90%;
+      h3 {
+        font-family: $font_lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font_31;
+        margin: 20px 0;
+        color: #000000;
+      }
+      p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font_25;
+        color: #979797;
+        margin: 20px 0;
+        font-family: $font_lato;
+      }
+      ul {
+        li {
+          font-family: $font_lato;
+          margin: 25px 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          span {
+            &:first-of-type {
+              font-style: normal;
+              font-weight: normal;
+              font-size: $font_20;
+              text-transform: uppercase;
+              color: #514848;
+            }
+            &:last-of-type {
+              font-style: normal;
+              font-weight: 600;
+              font-size: $font_25;
+              color: #0d0d0d;
+            }
+          }
+        }
+      }
+      button {
+        width: 303px;
+        height: 64px;
+        border: 4px solid $red;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: bold;
+        font-size: $font_20;
+        color: $red;
+        transition: all 0.5s;
+        &:hover {
+          color: #ffffff;
+          background-color: $red;
+          border: 4px solid #d4d4d4;
+        }
+      }
+    }
+  }
+  // A-2- Style project About Component .
+  &__about {
+    margin: 40px 0;
+    padding: 10px 0;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $font_31;
+      color: #000000;
+      margin: 25px 0;
+      text-transform: uppercase;
+      h2 {
+        position: relative;
+        &::after {
+          content: "";
+          width: 281px;
+          height: 2px;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+    &__body {
+      margin: 25px 0;
+      display: flex;
+      flex-direction: row;
+      font-family: $font_lato;
+      .logo {
+        width: 110px;
+        img {
+          width: 95px;
+          height: 80px;
+          margin-right: 10px;
+        }
+      }
+      .detiles {
+        width: 957px;
+        h4 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: $font_25;
+          color: #000000;
+        }
+        p {
+          font-weight: normal;
+          font-size: $font_20;
+          color: #000000;
+        }
+      }
+    }
+  }
+  // A-3- Style project Facilities Component .
+  &__facilities {
+    margin: 40px 0;
+    padding: 10px 0;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $font_31;
+      color: #000000;
+      margin: 25px 0 35px 0;
+      text-transform: uppercase;
+      h2 {
+        position: relative;
+        &::after {
+          content: "";
+          width: 125px;
+          height: 2px;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+    .project__facilitie {
+      font-family: $font_lato;
+      margin-bottom: 30px;
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: $font_20;
+        text-transform: uppercase;
+        color: #112211;
+        &:last-of-type {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  // A-4- Style project Properties Component .
+  &__properties {
+    margin: 40px 0;
+    padding: 10px 0;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $font_31;
+      color: #000000;
+      margin: 25px 0 35px 0;
+      text-transform: uppercase;
+      h2 {
+        position: relative;
+        &::after {
+          content: "";
+          width: 125px;
+          height: 2px;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+    &__body {
+      .project__propertie {
+        margin-bottom: 30px;
+        h4 {
+          font-family: $font_lato;
+          font-style: normal;
+          font-weight: bold;
+          font-size: $font_20;
+          line-height: 120%;
+          text-transform: uppercase;
+          color: #00072d;
+          span {
+            width: 230px;
+            height: 1px;
+            border-bottom: 3px solid #00072d;
+            display: inline-block;
+            margin: 0px 0px 8px 25px;
+          }
+          margin-bottom: 20px;
+        }
+        ul {
+          li {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            span {
+              &:first-of-type {
+                font-family: $font_lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                color: #514848;
+              }
+              &:last-of-type {
+                font-family: $font_lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: $font_20;
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // A-5- Style project Loction Component .
+  &__loction {
+    margin: 40px 0;
+    padding: 10px 0;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      margin: 25px 0 35px 0;
+      h2 {
+        text-transform: uppercase;
+        font-family: $font_lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font_25;
+        color: #000000;
+        span {
+          width: 125px;
+          height: 1px;
+          border-bottom: 3px solid $red;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+    &__map {
+      height: 500px;
+      width: 600px;
+    }
+    &__imag {
+      img {
+        height: 500px;
+        width: 600px;
+      }
+    }
+  }
+  // A-6- Style project About Developer Component .
+  &__aboutdeveloper {
+    margin: 40px 0;
+    padding: 10px 0;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      margin: 25px 0 35px 0;
+      h2 {
+        text-transform: uppercase;
+        font-family: $font_lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font_25;
+        color: #000000;
+        span {
+          width: 200px;
+          height: 1px;
+          border-bottom: 3px solid $red;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+    &__body {
+      .imgcontrol {
+        display: inline-block;
+        .img {
+          width: 412px;
+          height: 259px;
+          background-position: center;
+          background-size: cover;
+          border: 1px solid #d4d4d4;
+          box-sizing: border-box;
+          margin-right: 30px;
+        }
+      }
+      .detiles {
+        display: inline-block;
+        width: 650px;
+        h3 {
+          font-family: $font_lato;
+          font-style: normal;
+          font-weight: 600;
+          font-size: $font_25;
+          line-height: 120%;
+          color: #000000;
+          margin-bottom: 20px;
+        }
+        p {
+          font-family: $font_lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: $font_20;
+          color: #000000;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  // A-7- Style project Similar Projects Component .
+  &__similarprojects {
+    margin: 40px 0;
+    padding: 10px 0;
+    position: relative;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      margin: 25px 0 35px 0;
+      h2 {
+        text-transform: uppercase;
+        font-family: $font_lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font_25;
+        color: #000000;
+        span {
+          width: 200px;
+          height: 1px;
+          border-bottom: 3px solid $red;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+    .btns {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100%;
+      > div {
+        width: 100%;
+        position: relative;
+        height: 50px;
+        button {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: 165px;
+          color: #ffffff;
+          background: #393939;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          text-align: center;
+          z-index: 3;
+          opacity: 0.8;
+          transition: opacity 0.5s;
+          border-radius: 5px;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .customPreviousBtn {
+          top: 0;
+          left: -1%;
+        }
+        .customNextBtn {
+          top: 0;
+          left: 98%;
+        }
+      }
+    }
+  }
+  // A-8- Style project Similar Item Component .
+  &__similarpr__item {
+    > div {
+      width: 95%;
+      min-height: 400px;
+      max-height: auto;
+      border-radius: 5px;
+      background: #ffffff;
+      -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
+      -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
+      box-shadow: 4px 7px 10px -4px #8f8f8f;
+      box-sizing: border-box;
+      overflow: hidden;
+      margin: 10px auto;
+      .img {
+        height: 450px;
+        width: 100%;
+        position: relative;
+        img {
+          border-radius: 5px 5px 0px 0px !important;
+          height: 450px;
+          width: 100%;
+        }
+      }
+      .body {
+        width: 100%;
+        min-height: 84px;
+        max-height: auto;
+        background: #393939;
+        color: #ffffff;
+        padding: 15px 10px 10px 10px;
+        text-transform: uppercase;
+        h3 {
+          font-family: $font_lato;
+          font-style: normal;
+          font-size: $font_20;
+          span {
+            &:first-of-type {
+              font-weight: bold;
+              margin-right: 5px;
+            }
+            &:last-of-type {
+              margin-left: 5px;
+            }
+          }
+        }
+        .detiles_project {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .locion {
+            font-weight: normal;
+            font-size: 16px;
+            cursor: pointer;
+            span {
+              margin-left: 5px !important;
+            }
+          }
+          .price {
+            span {
+              &:first-of-type {
+                font-weight: normal;
+                font-size: 16px;
+                margin-right: 10px;
+              }
+              &:last-of-type {
+                font-weight: 600;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+  
+
+    }
+  }
+}
+// B- Style Property Page .
+.property {
+  // B-1- Style Property Similar Projects Component .
+  &__similarprojects {
+    margin: 40px 0;
+    padding: 10px 0;
+    position: relative;
+    &__head {
+      font-family: $font_lato;
+      font-style: normal;
+      font-weight: normal;
+      margin: 25px 0 35px 0;
+      h2 {
+        text-transform: uppercase;
+        font-family: $font_lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font_25;
+        color: #000000;
+        span {
+          width: 200px;
+          height: 1px;
+          border-bottom: 3px solid $red;
+          background-color: $red;
+          display: inline-block;
+          margin: 0 0 10px 15px;
+        }
+      }
+    }
+    .btns {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100%;
+      div {
+        width: 100%;
+        position: relative;
+        height: 50px;
+        button {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          left: 25px;
+          top: 165px;
+          color: #ffffff;
+          background: #393939;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          text-align: center;
+          z-index: 3;
+          opacity: 0.8;
+          transition: opacity 0.5s;
+          border-radius: 5px;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .customPreviousBtn {
+          top: 0;
+          left: -2%;
+        }
+        .customNextBtn {
+          top: 0;
+          left: 99%;
+        }
+      }
+    }
+  }
+  // B-2- Style Property Similar Item Component .
+  &__similarpr__item {
+    > div {
+      width: 95%;
+      min-height: 600px;
+      max-height: auto;
+      border-radius: 5px;
+      background: #ffffff;
+      -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
+      -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
+      box-shadow: 4px 7px 10px -4px #8f8f8f;
+      box-sizing: border-box;
+      overflow: hidden;
+      margin: 10px auto;
+      .img {
+        height: 450px;
+        width: 100%;
+        position: relative;
+        img {
+          border-radius: 5px 5px 0px 0px !important;
+          height: 450px;
+          width: 100%;
+        }
+        .sale {
+          position: absolute;
+          background: #ffffff;
+          bottom: 10px;
+          right: 10px;
+          text-align: center;
+          line-height: 35px;
+          border-radius: 5px;
+          font-size: $font_16;
+          font-weight: 600;
+          margin-left: 8px;
+          color: $red;
+          width: 90px;
+          height: 35px;
+          z-index: 3;
+        }
+      }
+      .body {
+        width: 100%;
+        min-height: 150px;
+        max-height: auto;
+        padding: 10px 15px;
+        background: #ffffff;
+        border-radius: 0px 0px 5px 5px;
+        border: 1px solid #dbdbdb;
+        -webkit-box-shadow: 4px 7px 10px -4px #8f8f8f;
+        -moz-box-shadow: 4px 7px 10px -4px #8f8f8f;
+        box-shadow: 4px 7px 10px -4px #8f8f8f;
+        .head {
+          font-family: $font_lato;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          text-transform: uppercase;
+          h3 {
+            font-size: $font_25;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            letter-spacing: 0em;
+            color: #112211;
+          }
+        }
+        .loction {
+          margin: 15px 0 20px 0;
+          color: #828282;
+          font-family: $font_lato;
+          font-size: $font_16;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          span {
+            margin-left: 15px;
+          }
+        }
+        .details {
+          color: #6b6767;
+          font-family: $font_lato;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          font-style: normal;
+          font-weight: 600;
+          font-size: $font_16;
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

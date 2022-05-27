@@ -1,0 +1,501 @@
+/*
+1-Style Navbar . 
+2-Style Navbar Top .
+3-Style Navbar Bottom .
+  3-1-Style Navbar Contener .
+  3-2-Style Navbar Logo .
+  3-3-Style Navbar List Item .
+  3-4-Style Navbar Form .
+4-Style Modal Component .
+  4-1- Style Modal Register Component .
+  4-2- Style Modal Porperty Component .
+5- Media Queries . 
+  5-1-Style NavBar Component To Media Queries In The Max Width ("1235px").
+  5-2-Style NavBar Component To Media Queries In The Max Width ("1015px").
+  5-3-Style NavBar Component To Media Queries In The Max Width ("991px").
+
+*/
+
+// 1- Style Navbar 
+.nav {
+  width: 100%;
+  position: relative;
+  &__contener {
+    width: 95%;
+    margin: 0 auto;
+  }
+  // 2-Style Navbar Top
+  &__top {
+    width: 100%;
+    height: 40px;
+    background-color: $gray;
+    ul {
+      height: 20px;
+      width: 100%;
+      text-align: left;
+      margin: 10px 0;
+      li {
+        color: $white_two;
+        display: inline-block;
+        font-family: $font_lato;
+        font-style: normal;
+        font-weight: normal;
+        $font_14: 14px;
+        line-height: 17px;
+        margin-right: 15px;
+        i {
+          font-size: 18px !important;
+        }
+        &:first-child{
+          transform: rotate(270deg);
+        }
+        &:last-child {
+          margin-left: 0;
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+  // 3- Style Navbar Bottom
+  &__bottom {
+    width: 100%;
+    height: 80px;
+    background-color: $white_three;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    font-family: $font_poppins;
+    text-align: right;
+    .nav__contener {
+      height: 60px;
+      margin: 10px auto;
+      // 3-1-Style Navbar Contener 
+      nav.navbar {
+        padding: 0 !important;
+        width: 100%;
+        // 3-2-Style Navbar Logo
+        .navbar-brand {
+          padding: 0 !important;
+          width: 30%;
+          img {
+            width: 100px;
+            height: 60px;
+          }
+        }
+        // 3-3-Style Navbar List Item
+        div.navbar-collapse {
+          width: 70%;
+          text-align: right;
+          ul.navbar-nav {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li {
+              display: inline-block;
+              padding: 10px 15px;
+              a {
+                display: block;
+                color: $black;
+                font-size: $font_16;
+                font-weight: 500;
+              }
+            }
+            li.active {
+              a {
+                border-bottom: 2px solid $red !important;
+                color: $red !important;
+                font-size: $font_16;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        // 3-4-Style Navbar Form
+        form.form-inline {
+          .btn_navbar {
+            height: 44px;
+            padding: 10px 15px;
+            font-weight: 600;
+            font-size: $font_14;
+            line-height: 17px;
+            font-family: $font_lato;
+            font-style: normal;
+            width: auto;
+          }
+          .porperty {
+            background-color: transparent;
+            margin: 0;
+            margin-left: 15px;
+            color: $red;
+            border: 1px solid $red;
+          }
+          .register {
+            background-color: $red !important;
+            color: $white_two;
+          }
+        }
+      }
+    }
+  }
+}
+// 4- Style Modal Component.
+.modal {
+  //4-1- Style Modal Register Component.
+  &__register {
+    .modal-dialog {
+      height: 90%;
+      .modal-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .modal-header {
+      border: none;
+      position: relative;
+      button{
+        position: absolute;
+        left: 0;
+        z-index: 10;
+      }
+    }
+    .modal-body {
+      padding: 0 2rem;
+      h5 {
+        margin: 15px 0;
+      }
+      .form-group {
+        margin: 15px 0;
+        height: 55px;
+        input {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .input-group {
+        margin: 15px 0;
+      }
+      .form-checkbox {
+        margin: 15px 0;
+        h6 {
+          margin-bottom: 15px;
+        }
+        .form-check-inline {
+          .form-check-label {
+            margin-right: 30px;
+            font-weight: 500;
+            .form-check-input {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .modal-footer {
+        margin: 20px 0 30px 0;
+        height: 50px;
+        padding: 0 !important;
+        button {
+          width: 100%;
+          height: 100%;
+          background-color: $red;
+          color: $white_three;
+        }
+      }
+    }
+  }
+  //4-2- Style Modal Porperty Component.
+  &__porperty {
+    .modal-dialog {
+      height: 90%;
+      .modal-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 655px;
+        min-height: 500px;
+        max-height: auto;
+        background: #ffffff;
+        border: 1px solid #d4d4d4;
+        box-sizing: border-box;
+      }
+    }
+    .modal-header {
+      border: none;
+      padding: 0.5rem 1rem;
+      position: relative;
+      button{
+        position: absolute;
+        left: 0;
+        z-index: 10;
+      }
+    }
+    .modal-body {
+      padding: 0 2rem;
+      h5 {
+        padding: 5px 0;
+        font-family: $font_lato;
+        font-style: normal;
+        line-height: 30px;
+        color: #000000;
+        position: relative;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        font-weight: 600;
+        justify-content: space-between;
+        span {
+          &:first-of-type {
+            font-size: $font_25;
+          }
+          &:last-of-type {
+            font-size: 16px;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background-color: $red;
+        }
+      }
+      .form-group {
+        margin: 15px 0;
+        height: 55px;
+        input {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &__one {
+      display: block;
+    }
+    &__two {
+      display: none;
+    }
+    &__three {
+      display: none;
+    }
+    &__item {
+      margin: 10px 0;
+      label {
+        display: inline-block;
+        font-family: $font_lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font_16;
+        color: #000000;
+        margin: 0 4px;
+        span {
+          color: $red;
+          font-weight: 600;
+          font-size: $font_20;
+        }
+      }
+      input {
+        height: 45px;
+        border: 1px solid #d4d4d4;
+        box-sizing: border-box;
+        padding: 0 10px;
+        &:focus {
+          outline: none;
+          border: 1px solid #d4d4d4;
+        }
+      }
+      .input__datalist {
+        input {
+          width: 100%;
+        }
+      }
+      .input-group {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        .input-group-prepend,
+        .input-group-append {
+          width: 55px;
+          height: 45px;
+          span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 45px;
+            text-align: center;
+            padding: 0;
+            top: 14px;
+            font-family: $font_lato;
+            font-style: normal;
+            font-weight: 700;
+            font-size: $font_14;
+            color: #363636;
+          }
+        }
+        input {
+          width: calc(100% - 55px);
+        }
+      }
+    }
+    &__button {
+      button {
+        font-family: $font_lato;
+        width: 100%;
+        height: 43px;
+        border: 1px solid #d4d4d4;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        
+        &:focus {
+          outline: none;
+          border: 1px solid #d4d4d4;
+        }
+      }
+      .nextmodel,
+      .submitmodel {
+        background: $red;
+        color: $white_three;
+      }
+      .submitmodel {
+        display: none;
+      }
+    }
+  }
+}
+// 5-1-Style NavBar Component To Media Queries In The Max Width ("1235px").
+@media screen and(max-width: 1235px) {
+  .nav {
+    &__bottom {
+      .nav__contener {
+        // 3-1-Style Navbar Contener 
+        nav.navbar {
+          // 3-2-Style Navbar Logo
+          .navbar-brand {
+            width: 25%;
+          }
+          // 3-3-Style Navbar List Item
+          div.navbar-collapse {
+            width: 75%;
+            ul.navbar-nav {
+              width: 100%;
+              margin: 0;
+              li {
+                display: inline-block;
+                padding: 10px;
+                a {
+                  display: block;
+                  color: $black;
+                  font-size: $font_14;
+                  font-weight: 500;
+                }
+              }
+              li.active {
+                a {
+                  border-bottom: 2px solid $red !important;
+                  color: $red !important;
+                  font-size: $font_14;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+          // 3-4-Style Navbar Form
+          form.form-inline {
+            .btn_navbar {
+              height: 44px;
+              padding: 10px;
+              font-weight: 500;
+              font-size: $font_14;
+              line-height: 17px;
+              font-family: $font_lato;
+              font-style: normal;
+              width: auto;
+            }
+            .porperty {
+              background-color: transparent;
+              margin: 0;
+              margin-right: 1rem;
+              color: $red;
+              border: 1px solid $red;
+            }
+            .register {
+              background-color: $red !important;
+              color: $white_two;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 5-2-Style NavBar Component To Media Queries In The Max Width ("1015px").
+@media screen and(max-width: 1015px) {
+  .nav {
+    &__bottom {
+      .nav__contener {
+        // 3-1-Style Navbar Contener 
+        nav.navbar {
+         // 3-2-Style Navbar Logo
+          .navbar-brand {
+            width: 15%;
+          }
+          // 3-3-Style Navbar List Item
+          div.navbar-collapse {
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+}
+// 5-3-Style NavBar Component To Media Queries In The Max Width ("991px").
+@media screen and(max-width: 991px) {
+  .nav {
+    &__bottom {
+      .nav__contener {
+        // 3-1-Style Navbar Contener 
+        nav.navbar {
+          // 3-2-Style Navbar Logo
+          .navbar-brand {
+            width: 50%;
+          }
+          // 3-3-Style Navbar List Item
+          div.navbar-collapse {
+            top: 9px;
+            background-color: $white_three;
+            z-index: 10;
+            ul.navbar-nav {
+              width: 100%;
+              margin: 0;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            }
+            // 3-4-Style Navbar Form
+            form.form-inline {
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: space-between;
+              padding: 10px;
+              .btn_navbar {
+                max-width: 220px;
+              }
+              .porperty {
+                margin: 20px 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .modal-backdrop {
+      z-index: 5;
+    }
+  }
+}
