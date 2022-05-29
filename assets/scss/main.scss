@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+
 /* 
     //====== Style English ======//
     A- Variables Styles .
@@ -29,27 +30,23 @@ $font18: 18px;
 */
 // A- Variables Styles
 // Palette Color
-$red: #A71A28;
-$blue:#3E6990;
-$green:#79C99E;
-$gray: #444444;
-$dark_blue:#00072D;
-$white_one:#FCFCFC;
-$white_two: #F9ECEC;
-$white_three:#FEFEFE;
-$black:#000000;
+:root {
+  --white-color: #ffffff;
+  --yello-color:#F7942D;
+  --black-color:#000000;
+  --poppins-font:'Poppins', sans-serif;
+}
+
+// 
+
+/*
+
+  background-color: var(--white-color);
+
+*/
 // Palette Fonts Size
-$font_61:61px;
-$font_49:49px;
-$font_39:39px;
-$font_31:31px;
-$font_25:25px;
-$font_20:20px;
-$font_16:16px;
-$font_14:14px;
 // Font Family
 $font_lato: 'Lato', sans-serif;
-$font_poppins: 'Poppins', sans-serif;
 // B- Style Genaral Classes .
 * {
     margin: 0;
@@ -88,15 +85,7 @@ $font_poppins: 'Poppins', sans-serif;
   // E- Import Style Components .
 
   // E-1- Import Style Navbar Component .
-  @import "./component/navbar.scss";
-  // E-2- Import Style About Us Page .
-  @import "./component/about.scss";
-  // E-3- Import Style Home Page .
-  @import "./component/home.scss";
-  // E-4- Import Style Footer Component .
-  @import "./component/footer.scss";
-  // E-5- Import Style Projects Component .
-  @import "./component/projects.scss";
-  // E-6- Import Style Project Component .
-  @import "./component/project.scss";
-
+  @import "./vendor/intlTelInput.scss";
+ @import "./compunent/_navbar.scss";
+  
+ @import "./compunent/_signup.scss";
