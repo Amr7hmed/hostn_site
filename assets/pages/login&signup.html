@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="../css/vendor/normalize.css" />
   <link rel="stylesheet" href="../css/vendor/bootstrap.min.css" />
   <link rel="stylesheet" href="../css/vendor/fontawesome.min.css" />
-  <link rel="stylesheet" href="../css/vendor/owl.carousel.min.css" />
-  <link rel="stylesheet" href="../css/vendor/owl.theme.default.min.css" />
-
   <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet"
     media="screen">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -21,9 +18,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/css/flags.css" integrity="sha512-ORcBMqSbsUxcNOR325U8IgLDXynaWQaOrAz/9ZpWft6R9eKXbo2TwDOID4+5bi4oV3LHgWCXIrRv80qQ/cvM4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/css/flags.min.css" integrity="sha512-wLjzMv9GhdAgKsaca/ZRs5sEOVsexDeA0PllsVIgTh+St4sMmrXz4udlz/rMHAN58IMZAXVtzxI112u8QoRHfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/css/flags.css"
+    integrity="sha512-ORcBMqSbsUxcNOR325U8IgLDXynaWQaOrAz/9ZpWft6R9eKXbo2TwDOID4+5bi4oV3LHgWCXIrRv80qQ/cvM4g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/css/flags.min.css"
+    integrity="sha512-wLjzMv9GhdAgKsaca/ZRs5sEOVsexDeA0PllsVIgTh+St4sMmrXz4udlz/rMHAN58IMZAXVtzxI112u8QoRHfA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Style Genral Css File -->
   <link rel="stylesheet" href="../css/main.css" />
 </head>
@@ -34,9 +35,9 @@
     <div class="container">
       <div class="nav__navbar w-100">
         <div class="row w-100">
-          <div class="col-md-12 col-lg-6">
-            <a href="#">
-              <img src="#" alt="Hostn Logo" class="hostn__logo">
+          <div class="col-md-12 col-lg-6 navbar__logo">
+            <a href="#" class="hostn__logo">
+              <img src="../image/logo/hostnlogo.png" alt="Hostn Logo">
             </a>
           </div>
 
@@ -46,70 +47,125 @@
 
             <div class="btn-group">
               <div class="form-group">
-                
-                <div class="select-country" 
-                data-input-name="country2" 
-                data-selected-country="EG"
-                data-button-size="btn-md"
-                data-button-type="btn-default"
-                data-scrollable-height="350px"
-                data-scrollable="true"
-                >
+
+                <div class="select-country" data-input-name="country2" data-selected-country="EG"
+                  data-button-size="btn-md" data-button-type="btn-default" data-scrollable-height="350px"
+                  data-scrollable="true">
                 </div>
 
-              <button type="button" class="btn btn-outline-warning sign__in">Sign In</button>
-              <button type="button" class="btn btn-warning sign__up">Sign Up</button>
+                <a href="#" type="button" class="btn btn-outline-warning sign__in">Sign In</a>
+                <a href="#" type="button" class="btn btn-warning sign__up">Sign Up</a>
+              </div>
+              <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
           </div>
         </div>
-      </div>
   </nav>
 
   <main>
     <div class="container">
       <section class="signup">
-        <div class="signup__logo">
-          <h2>Welcome Back!</h2>
-          <p>
-            To Keep Connected With Us Please </br>
-            Login With Your Personal Info
-          </p>
-          <div class="button__signin">
+        <div class="row">
+          <div class="col-md-12 col-lg-5">
+            <div class="signup__logo">
+              <div class="container">
+                <h2>Welcome Back!</h2>
+                <p>
+                  To Keep Connected With Us Please Login With Your Personal Info
+                </p>
+                <div class="button__signin">
 
-            <button class="btn">
-              Sign In
-            </button>
+                  <button class="btn">
+                    Sign In
+                  </button>
+                </div>
+              </div>
+
+            </div>
           </div>
-        </div>
-        <div class="signup__form">
-          <div class="container">
-            <h2>Create Account</h2>
+          <div class="col-md-12 col-lg-7">
+            <div class="signup__form">
+              <div class="container">
+                <h2>Create Account</h2>
+                <div class="form">
+                  <div class="form__inputs">
+                    <form>
+                      <div class="row mt-3">
+                        <div class="col-md-12 col-lg-6 name firstname">
+                          <input type="text" class="form-control" placeholder="First name*">
+                        </div>
+                        <div class="col-md-12 col-lg-6 name lastname">
+                          <input type="text" class="form-control" placeholder="Last name*">
+                        </div>
+                        <div class="col-md-12 mt-4">
+                          <div class="input-group input-group-phone">
+                            <input id="phone" type="tel" placeholder="Phone Number*">
+                            <span id="valid-msg" class="hide">Valid</span>
+                            <span id="error-msg" class="hide">Invalid number</span>
+                          </div>
+                        </div>
 
-            <form class="form">
-              <div class="form__inputs">
-                <div class="row mb-3">
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="First name">
+                        <div class="col-md-12 mt-4 input_icon">
+                          <span class="left-icon">
+                            <img src="../image/icons/email.svg" alt="email">
+                          </span>
+                          <input type="text" class="form-control" placeholder="Your E-Mail">
+                        </div>
+
+
+                        <div class="col-md-12 mt-4 input_icon">
+                          <span class="left-icon">
+                            <img src="../image/icons/password.svg" alt="email">
+                          </span>
+                          <input type="password" class="form-control" placeholder="Password*">
+                          
+                          <span class="right-icon">
+                            <img src="../image/icons/eye-off.svg" alt="email">
+                          </span>
+                        </div>
+
+                        <div class="col-md-12 mt-4 input_icon">
+                          <span class="left-icon">
+                            <img src="../image/icons/password.svg" alt="email">
+                          </span>
+                          <input type="password" class="form-control" placeholder="Confirm Password*">
+                          
+                          <span class="right-icon">
+                            <img src="../image/icons/eye-off.svg" alt="email">
+                          </span>
+                        </div>
+
+                        <div class="button_create mt-5">
+                          <button class="btn">
+                            CREATE ACCOUNT
+                          </button>
+                        </div>
+                      </div>
+
+                    </form>
                   </div>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name">
+
+                  
+                  <div class="form__socialmedia">
+                      <a href="#" class="socialmedia mt-3"> 
+                        <i class="fa-brands fa-apple"></i>
+                      </a>
+
+                      <a href="#" class="socialmedia"> 
+                        <img src="../image/icons/google.png" alt="google">
+                      </a>
+
+                      <a href="#" class="socialmedia"> 
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+
                   </div>
-                </div>
-
-                <div class="input-group mb-3 input-group-phone">
-
-                  <input id="phone" type="tel" placeholder="Phone Number">
-                  <span id="valid-msg" class="hide">Valid</span>
-                  <span id="error-msg" class="hide">Invalid number</span>
                 </div>
 
 
               </div>
-              <div class="form__socialmedia">
-                <a href="#"> test</a>
-              </div>
-            </form>
+            </div>
+
 
           </div>
         </div>
@@ -118,16 +174,21 @@
   </main>
   <!-- Vendor Js File -->
 
+  <script src="../js/vendor/popper.min.js"></script>
+  <script src="../js/vendor/all.min.js"></script>
+  <script src="../js/vendor/bootstrap.min.js"></script>
+  <script src="../js/vendor/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/js/jquery.flagstrap.min.js" integrity="sha512-jPZiVBpHbOc0vbOJ7AMjoN8/9ynXNjLn4j2PeOWFrfDYdq896sv4CaFzTOrHwLa1fsI9m74QUf3XdG5V4JKjZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/js/jquery.flagstrap.js" integrity="sha512-SRW0oewKS0lN2Du6t7v37aRM39y4EJHhxUcHIzuO+1JkA2f4qgoF34pmGY8tAplOs2FM/3ektQpHsvJBcOWcrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/js/jquery.flagstrap.min.js"
+    integrity="sha512-jPZiVBpHbOc0vbOJ7AMjoN8/9ynXNjLn4j2PeOWFrfDYdq896sv4CaFzTOrHwLa1fsI9m74QUf3XdG5V4JKjZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/js/jquery.flagstrap.js"
+    integrity="sha512-SRW0oewKS0lN2Du6t7v37aRM39y4EJHhxUcHIzuO+1JkA2f4qgoF34pmGY8tAplOs2FM/3ektQpHsvJBcOWcrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <script src="../js/vendor/popper.min.js"></script>
-  <script src="../js/vendor/bootstrap.min.js"></script>
-  <script src="../js/vendor/bootstrap.bundle.min.js"></script>
   <!-- Script Genral Js File -->
   <script src="../js/script.js"></script>
   <script src="../js/navbar.js"></script>
