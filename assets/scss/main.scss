@@ -86,6 +86,6 @@ button:focus {
 @import "./vendor/intlTelInput.scss";
 @import "./compunent/_navbar.scss";
 
-@import "./compunent/_resstpassword.scss";
-@import "./compunent/_signup.scss";
+@import "../pages/resetpassword/_resstpassword.scss";
+@import "../pages/sign/_signup.scss";
 @import "./compunent/_intl-tel-input.scss";

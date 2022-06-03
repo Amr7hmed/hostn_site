@@ -1560,6 +1560,7 @@ button:focus {
 .resetpassword__form ul.list li.active {
   background-color: var(--yello-color);
 }
+
 .resetpassword__items {
   width: 60%;
   margin: 10px auto;
@@ -1578,6 +1579,10 @@ button:focus {
 }
 .resetpassword__items .section_one {
   padding-top: 60px;
+}
+.resetpassword__items .section_one .small_logo {
+  width: 75pxx !important;
+  height: 75px !important;
 }
 .resetpassword__items .section_one .input-group-phone {
   margin-top: 50px;
@@ -1601,6 +1606,31 @@ button:focus {
   background-color: var(--white-color);
   border: 3px solid var(--yello-color);
   color: var(--yello-color);
+}
+.resetpassword__items .section_two {
+  padding-top: 5px !important;
+}
+.resetpassword__items .section_two .receive_img {
+  width: 230px !important;
+  height: 140px !important;
+}
+.resetpassword__items .section_two P {
+  text-align: center;
+  margin: 30px 0px 24px 0px;
+  font-size: 16px;
+  color: #1d1d1d;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.resetpassword__items .section_two p.first_contnent {
+  text-align: center;
+}
+.resetpassword__items .section_two p.tahcend_contnent {
+  text-align: left;
+}
+.resetpassword__items .section_two p.tahcend_contnent a {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .signup,
@@ -2175,7 +2205,7 @@ button:focus {
   }
   .signup__form .form .form__inputs .input_icon .left-icon,
 .signin__form .form .form__inputs .input_icon .left-icon {
-    left: 9%;
+    left: 7%;
   }
   .signup__form .form .form__inputs .input_icon .right-icon,
 .signin__form .form .form__inputs .input_icon .right-icon {
