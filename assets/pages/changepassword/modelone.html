@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hostn Travel </title>
-  <link rel="icon" href="../../image/logo/small_logo.svg" />
   <!-- Vendor Css File -->
+  <link rel="icon" href="../../image/logo/small_logo.svg" />
   <link rel="stylesheet" href="../../css/vendor/normalize.css" />
   <link rel="stylesheet" href="../../css/vendor/bootstrap.min.css" />
   <link rel="stylesheet" href="../../css/vendor/fontawesome.min.css" />
@@ -54,7 +54,7 @@
                   data-scrollable="true">
                 </div>
 
-                <a href="#"  class="btn btn-outline-warning become__host">Become A Host</a>
+                <a href="#" class="btn btn-outline-warning become__host">Become A Host</a>
                 <a href="#" class="man__icon">
                   <i class="fa-solid fa-user"></i>
                 </a>
@@ -75,42 +75,57 @@
               <img src="../../image/icons/iconarrow.svg" alt="Arrow Left">
             </a>
           </span>
-          <h2>Forget Password</h2>
+          <h2>Change Password</h2>
         </div>
         <!-- Reset Password Layout-->
         <div class="resetpassword__form">
           <div class="container">
-            <ul class="list">
-              <li class="active" data-id="section_one">
-                <a href="#">
-
-                </a>
-              </li>
-              <li data-id="section_two">
-                <a href="#">
-
-                </a>
-              </li>
-              <li data-id="section_three">
-                <a href="#">
-
-                </a>
-              </li>
-            </ul>
 
             <div class="resetpassword__items">
-              <div class="section_one" id="section_one">
+              <div class="section_one section_three changepassword" id="section_one">
                 <img src="../../image/logo/small_logo.svg" alt="Small Logo" class="small_logo">
+                <form>
 
-                <div class="input-group input-group-phone">
-                  <input id="phone" type="tel" placeholder="Write Phone Number">
-                  <span id="valid-msg" class="hide">Valid</span>
-                  <span id="error-msg" class="hide">Invalid number</span>
-                </div>
+                  <div class="form-group">
+                    <label for="currentpassword">Current Password</label>
+                    <div class="input_icon ">
+                      <input type="password" class="form-control" id="currentpassword" aria-describedby="passwordHelp">
+                      <span class="right-icon">
+                        <img src="../../image/icons/eye-off.svg" alt="eye">
+                    </span>
+                    </div>
+                    <div class="link text-right">
+                      <a href="#">forget password?</a>
+                    </div>
+                  </div>
 
-                <div class="button__send">
-                  <button class="btn">Send</button>
-                </div>
+                  <div class="form-group">
+                    <label for="password">New Password</label>
+                    <div class="input_icon ">
+                      <input type="password" class="form-control" id="password" aria-describedby="passwordHelp">
+                      <span class="right-icon">
+                        <img src="../../image/icons/eye-off.svg" alt="eye">
+                    </span>
+                    </div>
+                  </div>
+
+                  
+                  <div class="form-group">
+                    <label for="confirmpassword">Confirm New Password</label>
+                    <div class="input_icon ">
+                      <input type="password" class="form-control" id="confirmpassword" aria-describedby="passwordHelp">
+                      <span class="right-icon">
+                        <img src="../../image/icons/eye-off.svg" alt="eye">
+                    </span>
+                    </div>
+                  </div>
+
+                  <div class="button__send">
+                    <button class="btn">
+                      Confirm New Password
+                    </button>
+                  </div>
+                </form>
               </div>
 
 

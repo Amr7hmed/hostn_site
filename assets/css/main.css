@@ -4031,6 +4031,33 @@ button:hover {
   text-align: center;
 }
 
+.changepassword .link {
+  color: var(--yello-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+.changepassword h4 {
+  margin: 22px auto;
+  font-family: var(--poppins-font);
+  font-size: 23px;
+  color: #424242;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.changepassword .form-group, .changepassword .input-group {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.changepassword .input-group-phone {
+  margin-top: 20px !important;
+}
+.changepassword .stopevent {
+  opacity: 0.5 !important;
+  cursor: none !important;
+  pointer-events: none !important;
+}
+
 @media screen and (max-width: 991px) {
   .resetpassword__form {
     height: auto;
