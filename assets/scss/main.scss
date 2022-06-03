@@ -82,10 +82,11 @@ button:focus {
 }
 // E- Import Style Components .
 
-// E-1- Import Style Navbar Component .
 @import "./vendor/intlTelInput.scss";
-@import "./compunent/_navbar.scss";
-
-@import "../pages/resetpassword/_resstpassword.scss";
-@import "../pages/sign/_signup.scss";
 @import "./compunent/_intl-tel-input.scss";
+
+
+// E-1- Import Style Navbar Component .
+@import "./compunent/_navbar.scss";
+@import "../pages/sign/_signup.scss";
+@import "../pages/resetpassword/_resstpassword.scss";

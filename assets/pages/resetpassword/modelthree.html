@@ -74,7 +74,7 @@
               <img src="../../image/icons/iconarrow.svg" alt="Arrow Left">
             </a>
           </span>
-          <h2>Receive OTP</h2>
+          <h2>New Password</h2>
         </div>
         <!-- Reset Password Layout-->
         <div class="resetpassword__form">
@@ -90,7 +90,7 @@
 
                 </a>
               </li>
-              <li data-id="section_three">
+              <li class="active" data-id="section_three">
                 <a href="#">
 
                 </a>
@@ -98,22 +98,36 @@
             </ul>
 
             <div class="resetpassword__items">
-              <div class="section_one section_two" id="section_two">
-                <img src="../../image/model/receiveotp.svg" alt="Receive OTP" class="receive_img">
-                <p class="first_contnent">We Have Sent OTP ON Your Number</p>
+              <div class="section_one section_three" id="section_one">
+                <img src="../../image/logo/small_logo.svg" alt="Small Logo" class="small_logo">
+                <form>
+                  <div class="form-group">
+                    <label for="password">New Password</label>
+                    <div class="input_icon ">
+                      <input type="password" class="form-control" id="password" aria-describedby="passwordHelp">
+                      <span class="right-icon">
+                        <img src="../../image/icons/eye-off.svg" alt="eye">
+                    </span>
+                    </div>
+                  </div>
 
-                <div class="input_group">
-                  <input type="text" class="resetpassword_input" id="resetpassword_input_one" placeholder="0" />
-                  <input type="text" class="resetpassword_input" id="resetpassword_input_two" placeholder="0" />
-                  <input type="text" class="resetpassword_input" id="resetpassword_input_three" placeholder="0" />
-                  <input type="text" class="resetpassword_input" id="resetpassword_input_four" placeholder="0" />
-                </div>
-                <p class="tahcend_contnent">Did'n Recive A OTP?
-                  <a href="#">Resend Otp</a>
-                </p>
-                <div class="button__send">
-                  <button class="btn">Send</button>
-                </div>
+                  
+                  <div class="form-group">
+                    <label for="confirmpassword">Confirm New Password</label>
+                    <div class="input_icon ">
+                      <input type="password" class="form-control" id="confirmpassword" aria-describedby="passwordHelp">
+                      <span class="right-icon">
+                        <img src="../../image/icons/eye-off.svg" alt="eye">
+                    </span>
+                    </div>
+                  </div>
+
+                  <div class="button__send">
+                    <button class="btn">
+                      Confirm New Password
+                    </button>
+                  </div>
+                </form>
               </div>
 
 
