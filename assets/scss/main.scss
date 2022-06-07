@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* 
-    //====== Style English ======//
     A- Variables Styles .
     B- Style Genaral Classes .
     E- Import Style Components .
@@ -32,19 +30,9 @@ $font18: 18px;
   --white-color: #ffffff;
   --yello-color: #f7942d;
   --black-color: #000000;
+  // Font Family
   --poppins-font: "Poppins", sans-serif;
 }
-
-//
-
-/*
-
-  background-color: var(--white-color);
-
-*/
-// Palette Fonts Size
-// Font Family
-$font_lato: "Lato", sans-serif;
 // B- Style Genaral Classes .
 * {
   margin: 0;
@@ -53,9 +41,9 @@ $font_lato: "Lato", sans-serif;
 }
 body {
   box-sizing: border-box;
-  font-family: $font_lato;
   background-color: #fffefe;
   direction: ltr;
+  margin: 0px !important;
 }
 .owl-stage-outer {
   direction: ltr !important;
@@ -87,6 +75,7 @@ button:focus {
 
 
 // E-1- Import Style Navbar Component .
+@import "./_home.scss";
 @import "./compunent/_navbar.scss";
 @import "../pages/sign/_signup.scss";
 @import "../pages/resetpassword/_modelpassword.scss";

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
   &__navbar {
     height: auto !important;
     display: flex;
@@ -38,6 +39,9 @@
         .select-country {
           width: 133px !important;
           text-align: center;
+          .flagstrap-selected-yqulPmo2{
+            font-weight: 600;
+          }
           a {
             border: none;
             &:hover {

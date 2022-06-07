@@ -25,51 +25,448 @@
     integrity="sha512-wLjzMv9GhdAgKsaca/ZRs5sEOVsexDeA0PllsVIgTh+St4sMmrXz4udlz/rMHAN58IMZAXVtzxI112u8QoRHfA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 
 </head>
 
 <body>
-  
+  <!--Header Compunent-->
+  <header class="header">
     <!--Navbar Component-->
     <nav class="nav">
       <div class="container">
-          <div class="nav__navbar w-100">
-              <div class="row w-100">
-                  <div class="col-md-12 col-lg-6 navbar__logo">
-                      <a href="./index.html" class="hostn__logo">
-                          <img src="./assets/image/logo/logo.svg" alt="Hostn Logo">
-                      </a>
+        <div class="nav__navbar w-100">
+          <div class="row w-100">
+            <div class="col-md-12 col-lg-6 navbar__logo">
+              <a href="./index.html" class="hostn__logo">
+                <img src="./assets/image/logo/logo.svg" alt="Hostn Logo">
+              </a>
+            </div>
+
+
+            <div class="col-md-12 col-lg-6">
+
+              <div class="btn-group">
+                <div class="form-group">
+
+                  <div class="select-country" data-input-name="country2" data-selected-country="EG"
+                    data-button-size="btn-md" data-button-type="btn-default" data-scrollable-height="350px"
+                    data-scrollable="true">
                   </div>
 
-
-                  <div class="col-md-12 col-lg-6">
-
-                      <div class="btn-group">
-                          <div class="form-group">
-
-                              <div class="select-country" data-input-name="country2" data-selected-country="EG"
-                                  data-button-size="btn-md" data-button-type="btn-default"
-                                  data-scrollable-height="350px" data-scrollable="true">
-                              </div>
-
-                              <a href="./assets/pages/sign/signin.html" type="button" class="btn btn-outline-warning sign__in">Sign In</a>
-                              <a href="./assets/pages/sign/signup.html" type="button" class="btn btn-warning sign__up">Sign Up</a>
-                          </div>
-                          <div class="clearfix"></div>
-                      </div>
-                  </div>
+                  <a href="./assets/pages/sign/signin.html" type="button" class="btn btn-outline-warning sign__in">Sign
+                    In</a>
+                  <a href="./assets/pages/sign/signup.html" type="button" class="btn btn-warning sign__up">Sign Up</a>
+                </div>
+                <div class="clearfix"></div>
               </div>
-  </nav>
+            </div>
+          </div>
+    </nav>
 
-<main>
-  <div class="container">
-    <section class="Create account">
+    <div class="container">
+      <div class="headersearch">
+
+        <section class="search">
+          <div class="input_location">
+            <img src="./assets/image/icons/location.svg" alt="location">
+            <input list="locations" name="location" id="location" placeholder="choose a location">
+            <datalist id="locations">
+              <option value="Cairo">
+              <option value="Cairo">
+              <option value="Cairo">
+            </datalist>
+          </div>
+
+          <div class="input_calendar">
+            <img src="./assets/image/icons/calendar.svg" alt="calendar">
+            <input type="text" placeholder="pick up-date">
+          </div>
+
+
+          <div class="input_calendar">
+            <img src="./assets/image/icons/calendar.svg" alt="calendar">
+            <input type="text" placeholder="return date">
+          </div>
+
+          <button class="btn">
+            Find
+          </button>
+        </section>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <!--Top Rated Compunent-->
+    <section class="toprated">
+      <div class="container">
+        <div class="toprated__header">
+          <h4>
+            Top Rated Properties
+          </h4>
+          <a href="#">
+            VIEW ALL TOP RATED PROPERTIES
+          </a>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide toprated__carousel" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="items_left">
+                <div class="overload">
+                </div>
+                <img src="./assets/image/bg/toprated-one.png" alt="">
+                <div class="review">
+                  <span>
+                    <img src="./assets/image/icons/star.svg" alt="">
+                    (2370 review)
+                  </span>
+                  <span>
+                    4.7
+                  </span>
+                </div>
+                <div class="grouptwo">
+                  <img src="./assets/image/icons/grouptwo.svg" alt="">
+                  <span>
+                    3
+                  </span>
+                </div>
+                <div class="like">
+                  <img src="./assets/image/icons/like.svg" alt="">
+                </div>
+
+                <div class="bottom">
+                  <span class="cost">
+                    EGP 250
+                    <span>
+                      /night
+                    </span>
+                  </span>
+
+                  <span class="location">
+                    <img src="./assets/image/icons/Iconmaterial-location-on.svg" alt="">
+                    Hurghada
+                  </span>
+                  <button class="btn">
+                    Villa
+                  </button>
+                </div>
+              </div>
+              <div class="items_right">
+                <div class="top">
+                  <div class="imgone">
+                    <img src="./assets/image/bg/toprated-one.png" alt="">
+                  </div>
+                  <div class="imgtwo">
+                    <img src="./assets/image/bg/toprated-three.png" alt="">
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="imgtwo">
+                    <img src="./assets/image/bg/toprated-two.png" alt="">
+                  </div>
+                  <div class="imgone">
+                    <div class="overload">
+                    </div>
+                    <div class="content">
+                      <a href="#">
+                        View All
+                      </a>
+                    </div>
+                    <img src="./assets/image/bg/toprated-one.png" alt="">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Our Partners Compunent-->
+    <section class="ourpartners">
+      <div class="container">
+        <h4>Our Partners</h4>
+
+        <div class="ourpartners__imags">
+          <div class="img">
+            <img src="./assets/image/partners/img-1.png" alt="">
+          </div>
+          <div class="img">
+            <img src="./assets/image/partners/img-2.svg" alt="">
+          </div>
+          <div class="img">
+            <img src="./assets/image/partners/img-4.svg" alt="">
+          </div>
+          <div class="img">
+            <img src="./assets/image/partners/img-7.png" alt="">
+          </div>
+        </div>
+        <div class="ourpartners__imags">
+          <div class="img">
+            <img src="./assets/image/partners/img-3.png" alt="">
+          </div>
+          <div class="img">
+            <img src="./assets/image/partners/img-5.png" alt="">
+          </div>
+          <div class="img">
+            <img src="./assets/image/partners/img-6.svg" alt="">
+          </div>
+          <div class="img">
+            <img src="./assets/image/partners/img-8.png" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--Mask Compunent-->
+    <section class="mask">
+      <div class="container">
+        <div class="mask__items">
+          <div class="mask__item">
+            <img src="./assets/image/mask/img-one.svg" alt="">
+            <span>
+              +15 Properties
+            </span>
+          </div>
+          <div class="mask__item">
+            <img src="./assets/image/mask/img-two.svg" alt="">
+            <span>
+              +15 Properties
+            </span>
+          </div>
+          <div class="mask__item">
+            <img src="./assets/image/mask/img-three.svg" alt="">
+            <span>
+              +15 Properties
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Latest News Compunent-->
+    <section class="latestnews">
+      <div class="container">
+        <h4>Latest News</h4>
+        <div class="multiple-items responsive">
+          <div class="item">
+            <div class="item__top">
+            </div>
+            <div class="item__bottom">
+              <h6>
+                Website Design Principles And Standards
+              </h6>
+              <p>
+                Learn About The Main Elements On Which The Offers Of ....
+              </p>
+              <button class="btn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item__top">
+            </div>
+            <div class="item__bottom">
+              <h6>
+                Website Design Principles And Standards
+              </h6>
+              <p>
+                Learn About The Main Elements On Which The Offers Of ....
+              </p>
+              <button class="btn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item__top">
+            </div>
+            <div class="item__bottom">
+              <h6>
+                Website Design Principles And Standards
+              </h6>
+              <p>
+                Learn About The Main Elements On Which The Offers Of ....
+              </p>
+              <button class="btn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item__top">
+            </div>
+            <div class="item__bottom">
+              <h6>
+                Website Design Principles And Standards
+              </h6>
+              <p>
+                Learn About The Main Elements On Which The Offers Of ....
+              </p>
+              <button class="btn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Host Compunent-->
+    <section class="host">
+      <div class="container">
+        <div class="host__header">
+          <h3>Become A Host Get Paid</h3>
+          <p>List Your Property, Rent It, Earn Money.</p>
+
+          <div class="host__items">
+            <div class="row">
+              <div class="col-lg-12 col-xl-4">
+                <div class="host__item">
+                  <div class="number">
+                    <span>
+                      01
+                    </span>
+                  </div>
+                  <div class="content">
+                    <div class="img">
+                      <img src="./assets/image/icons/man.svg" alt="">
+                    </div>
+                    <div class="pargrh">
+                      <h6>
+                        Create An Account
+                      </h6>
+                      <p>
+                        Create An Account In A Few Simple Steps.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-xl-4">
+                <div class="host__item">
+                  <div class="number">
+                    <span>
+                      02
+                    </span>
+                  </div>
+                  <div class="content">
+                    <div class="img">
+                      <img src="./assets/image/icons/house.svg" alt="">
+                    </div>
+                    <div class="pargrh">
+                      <h6>
+                        Upload Your Property
+                      </h6>
+                      <p>
+                        Upload Your Property Data, Like Photos, Property Details.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-xl-4">
+                <div class="host__item">
+                  <div class="number">
+                    <span>
+                      03
+                    </span>
+                  </div>
+                  <div class="content">
+                    <div class="img">
+                      <img src="./assets/image/icons/rent.svg" alt="">
+                    </div>
+                    <div class="pargrh">
+                      <h6>
+                        Ready To Rent
+                      </h6>
+                      <p>
+                        Your Property Is Ready To Rent, Earn More Money.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button class="btn">
+              List Your Property
+            </button>
+          </div>
+        </div>
+      </div>
 
     </section>
-  </div>
-</main>
+
+    <!-- Home App Compunent-->
+    <section class="homeapp">
+      <div class="container">
+        <div class="homeapp__items">
+          <div class="images">
+            <img src="./assets/image/bg/iphone.png" alt="">
+          </div>
+          <div class="homeapp__content">
+            <h4>
+              Download The App Now
+            </h4>
+            <p>
+              The easiest and safest way to rent your property in Egypt. Book from a wide variety of properties from
+              friendly and verified property owners across the country!
+            </p>
+            <div class="imags">
+              <img src="./assets/image/icons/appstore.png" alt="">
+              <img src="./assets/image/icons/playstore.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Money Compunent-->
+    <section class="money">
+      <div class="container">
+        <div class="money__header">
+          <h3>
+            Save Time & Money
+          </h3>
+          <p>
+            Subscribe To Get Best Deals In Your Area
+          </p>
+        </div>
+        <div class="money__input">
+          <input type="email" placeholder="Email Address">
+          <button class="btn">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Compunent-->
+    <footer>
+<div class="container">
+  
+</div>
+    </footer>
+  </main>
 
   <!-- Vendor Js File -->
   <script src="./assets/js/vendor/popper.min.js"></script>
@@ -86,9 +483,49 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flagstrap/1.0/js/jquery.flagstrap.js"
     integrity="sha512-SRW0oewKS0lN2Du6t7v37aRM39y4EJHhxUcHIzuO+1JkA2f4qgoF34pmGY8tAplOs2FM/3ektQpHsvJBcOWcrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <!-- Script Genral Js File -->
   <script src="./assets/js/navbar.js"></script>
   <script src="./assets/js/script.js"></script>
+  <script>
+
+    $('.responsive').slick({
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  </script>
 </body>
 
 </html>
