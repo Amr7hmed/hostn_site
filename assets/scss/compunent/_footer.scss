@@ -1,0 +1,151 @@
+/*
+    1- Style Footer Compunent
+      1- 1- Style Footer Component To Media Queris Large.
+      1- 2- Style Footer Component To Media Queris Samll.
+*/
+
+// 1- Style Footer Compunent
+.footer {
+  font-family: var(--poppins-font);
+  margin-bottom: 50px;
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__folllow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h6 {
+      color: #a2a2a2;
+      text-transform: capitalize;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+  }
+
+  &__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      font-size: 16px;
+      color: #1f1f1f;
+      text-transform: capitalize;
+      margin-right: 15px;
+    }
+  }
+
+  &__langth {
+    width: 135px;
+    height: 45px;
+    border: 2px solid #1f1f1f;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    select {
+      border: none;
+      width: auto;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    border-top: 2px solid #ddd;
+    padding: 40px 0px;
+    color: #19191b;
+    .right {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 100px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      p {
+        margin-bottom: 0px !important;
+      }
+    }
+    .left {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .nav-link {
+        margin-right: 10px;
+      }
+      p {
+        margin-bottom: 0px !important;
+        text-transform: capitalize;
+        opacity: 1;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// 1- 1- Style Footer Component To Media Queris Large.
+@media screen and (max-width: 991px) {
+  .footer {
+    &__top {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__folllow {
+      margin-bottom: 50px;
+    }
+
+    &__navbar {
+      margin-bottom: 50px;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        border-top: 2px solid #ddd;
+        padding: 40px 0px;
+        color: #19191b;
+        .right {
+            margin-bottom: 15px;
+        }
+      }
+  }
+}
+// 1- 2- Style Footer Component To Media Queris Samll.
+@media screen and (max-width: 576px) {
+  .footer {
+    margin-bottom: 100px;
+    &__navbar {
+      flex-direction: column;
+    }
+    &__bottom {
+        .left {
+            flex-direction: column;
+            .nav-link {
+              margin-bottom: 10px;
+            }
+        }
+  }
+}
+}
