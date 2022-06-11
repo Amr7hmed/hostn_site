@@ -37,11 +37,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 50%;
+    margin-right: 30px;
     a {
       font-size: 16px;
       color: #1f1f1f;
       text-transform: capitalize;
-      margin-right: 15px;
     }
   }
 
@@ -115,6 +116,8 @@
 
     &__navbar {
       margin-bottom: 50px;
+      width: 100%;
+      margin-right: none;
     }
 
     &__bottom {
@@ -138,6 +141,9 @@
     margin-bottom: 100px;
     &__navbar {
       flex-direction: column;
+      a {
+        margin-bottom: 20px;
+      }
     }
     &__bottom {
         .left {

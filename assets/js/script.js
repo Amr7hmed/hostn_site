@@ -60,43 +60,24 @@ const resetpassword_input_one = document.getElementById("resetpassword_input_one
  resetpassword_input_three = document.getElementById("resetpassword_input_three"),
  resetpassword_input_four = document.getElementById("resetpassword_input_four");
 
+ const resetpassword_input = document.querySelectorAll(".resetpassword_input");
+
  
-
-resetpassword_input_one.addEventListener("keyup",function(){
-  console.log(parseInt(this.value));
-  if(parseInt(this.value) > 0){
-    this.classList.add("active")
-  }else{
-   this.classList.remove("active")
+ 
+ function Addactive(item){
+   item.addEventListener("keyup",function(){
+     console.log(parseInt(this.value));
+     if(parseInt(this.value) >= 0){
+       this.classList.add("active")
+      }else{
+        this.classList.remove("active")
+      }
+    } )
+    
+    
   }
-} )
-
- resetpassword_input_two.addEventListener("keyup", function(){
-  console.log(parseInt(this.value));
-  if(parseInt(this.value) > 0){
-    this.classList.add("active")
-  }else{
-   this.classList.remove("active")
-  }
-})
+  resetpassword_input.forEach(item=>Addactive(item));
 
 
-resetpassword_input_three.addEventListener("keyup", function(){
-  console.log(parseInt(this.value));
-  if(parseInt(this.value) > 0){
-    this.classList.add("active")
-  }else{
-   this.classList.remove("active")
-  }
-})
 
-resetpassword_input_four.addEventListener("keyup", function(){
-  console.log(parseInt(this.value));
-  if(parseInt(this.value) > 0){
-    this.classList.add("active")
-  }else{
-   this.classList.remove("active")
-  }
-})
-
-
+  

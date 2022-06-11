@@ -68,6 +68,11 @@ button:focus {
   background-color: inherit;
   color: inherit;
 }
+
+.container{
+  width: 85%;
+  margin: 0px auto
+}
 // E- Import Style Components .
 
 @import "./vendor/intlTelInput.scss";
@@ -76,7 +81,8 @@ button:focus {
 
 // E-1- Import Style Navbar Component .
 @import "./_home.scss";
+@import "../pages/about/_style.scss";
 @import "./compunent/_navbar.scss";
-@import "./compunent/_footer.scss";
 @import "../pages/sign/_signup.scss";
 @import "../pages/resetpassword/_modelpassword.scss";
+@import "./compunent/_footer.scss";
