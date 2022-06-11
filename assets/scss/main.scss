@@ -70,7 +70,7 @@ button:focus {
 }
 
 .container{
-  width: 85%;
+  max-width: 85% !important;
   margin: 0px auto
 }
 // E- Import Style Components .
@@ -85,4 +85,6 @@ button:focus {
 @import "./compunent/_navbar.scss";
 @import "../pages/sign/_signup.scss";
 @import "../pages/resetpassword/_modelpassword.scss";
+@import "../pages/bookings/_style.scss";
+@import "../pages/other/_style.scss";
 @import "./compunent/_footer.scss";

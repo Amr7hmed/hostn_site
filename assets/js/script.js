@@ -54,11 +54,7 @@ telInput.on("keyup change", reset);
 
 
 // Reset Password Input 
-
-const resetpassword_input_one = document.getElementById("resetpassword_input_one"),
- resetpassword_input_two = document.getElementById("resetpassword_input_two"),
- resetpassword_input_three = document.getElementById("resetpassword_input_three"),
- resetpassword_input_four = document.getElementById("resetpassword_input_four");
+ 
 
  const resetpassword_input = document.querySelectorAll(".resetpassword_input");
 
