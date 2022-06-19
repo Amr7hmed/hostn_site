@@ -75,5 +75,18 @@ telInput.on("keyup change", reset);
   resetpassword_input.forEach(item=>Addactive(item));
 
 
+// Result page 
+const popupeclose = document.querySelector(".popupe-close"),
+popupe = document.querySelector(".popupe");
+viewpopupe = document.querySelectorAll(".viewpopupe");
 
+viewpopupe.forEach(item=>
+  item.addEventListener("click",function(){
+    popupe.style.display = "block";
+  })
+
+  );
   
+popupeclose.addEventListener("click",function(){
+  popupe.style.display = "none";
+})
