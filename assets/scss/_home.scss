@@ -366,24 +366,28 @@ header.header {
 
     &__carousel {
       height: auto;
-      .carousel-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+      .carousel-item{
         height: auto;
-        .items_left {
-          width: 100%;
+        .parent_items{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
           height: auto;
-          margin-bottom: 20px;
-        }
-
-        .items_right {
-          width: 100%;
-          height: auto;
-          .top {
-            margin-bottom: 15px;
+          .items_left {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+          }
+  
+          .items_right {
+            width: 100%;
+            height: auto;
+            .top {
+              margin-bottom: 15px;
+            }
           }
         }
+
       }
     }
   }

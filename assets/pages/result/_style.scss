@@ -1,6 +1,42 @@
 .result {
   font-family: var(--poppins-font);
-  // &__header { }
+  &__header {
+    .result__filter {
+      .filter__contener {
+        width: 25%;
+        margin: 0px auto;
+        text-align: center;
+        span {
+          color: #49473d;
+          text-transform: capitalize;
+          opacity: 1;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        .input_location {
+          margin-top: 25px;
+          box-shadow: 0px 3px 6px #dad9cfb8;
+          border: 2px solid #f9b767;
+          border-radius: 5px;
+          width: 100%;
+          height: 83px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 22px;
+            height: 31px;
+          }
+          input {
+            width: 130px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
   &__link {
     margin-bottom: 15px;
     display: flex;
@@ -26,12 +62,15 @@
   }
   &__gallry {
     margin-top: 25px;
-    margin-bottom: 25px;
     .images {
       width: 100%;
       display: flex;
-      .img-1 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+      .img-item {
         position: relative;
+        margin-bottom: 10px;
         .overload {
           position: absolute;
           width: 100%;
@@ -168,7 +207,45 @@
 
       .img-1 {
         width: 40%;
-        height: 531px;
+        height: 500px;
+      }
+      .img-2 {
+        width: 33%;
+        height: 500px;
+        margin: 0px 1%;
+      }
+      .img-3 {
+        width: 25%;
+        height: 460px;
+      }
+      .img-4 {
+        width: 30%;
+        height: 560px;
+      }
+      .img-5 {
+        width: 43%;
+        height: 400px;
+        margin: 0px 1%;
+      }
+      .img-6 {
+        top: -40px;
+        width: 25%;
+        height: 440px;
+      }
+      .img-7 {
+        width: 30%;
+        height: 380px;
+      }
+      .img-8 {
+        top: -155px;
+        width: 33%;
+        height: 535px;
+        margin: 0px 1%;
+      }
+      .img-9 {
+        width: 35%;
+        top: -155px;
+        height: 535px;
       }
     }
   }
@@ -293,11 +370,14 @@
       height: 510px;
       position: relative;
       overflow: hidden;
+
       .item {
         width: 300px;
-        position: relative;
         margin-bottom: 15px;
         height: 165px;
+        position: absolute;
+        z-index: 1;
+        transition: top 0.4s cubic-bezier(0.47, 0.13, 0.15, 0.89);
         &:last-of-type {
           margin-bottom: 0px;
         }
@@ -391,6 +471,78 @@
     img {
       width: 25px;
       height: 25px;
+    }
+  }
+}
+
+// 2- 1- Style Top Rated  Component To Media Queris Large.
+@media screen and (max-width: 991px) {
+  .result {
+    &__gallry {
+      .images {
+        .img-1,
+        .img-2,
+        .img-3,
+        .img-4,
+        .img-5,
+        .img-6,
+        .img-7,
+        .img-8,
+        .img-9 {
+          top: 0px;
+          width: 49%;
+          height: 500px;
+          margin-right: 0%;
+          margin-left: 0%;
+          height: 400px;
+        }
+        .img-3,
+        .img-6,
+        .img-9 {
+          width: 100%;
+        }
+        .img-1,
+        .img-4,
+        .img-7 {
+          margin-right: 2%;
+          margin-left: 0%;
+        }
+      }
+    }
+  }
+}
+
+// 3- 2- Style Our Partners ComponentTo Media Queris Samll.
+
+@media screen and (max-width: 576px) {
+  .result {
+    &__link {
+      flex-direction: column;
+      align-items: flex-start;
+      span {
+        margin-bottom: 15px;
+      }
+    }
+    &__gallry {
+      .images {
+        margin-top: 50px;
+        .img-1,
+        .img-2,
+        .img-3,
+        .img-4,
+        .img-5,
+        .img-6,
+        .img-7,
+        .img-8,
+        .img-9 {
+          top: 0px;
+          width: 100%;
+          margin-right: 0%;
+          margin-left: 0%;
+          height: 350px;
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }
@@ -543,29 +695,29 @@
           }
         }
       }
-    .popupe-carousel {
-      display: none;
-    }
-    
-    .popupe-action {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      justify-content: space-between;
-      .heart {
-        width: auto;
-        margin-bottom: 0px;
-        .btn {
+      .popupe-carousel {
+        display: none;
+      }
+
+      .popupe-action {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        .heart {
           width: auto;
-          margin-bottom: 5px;
+          margin-bottom: 0px;
+          .btn {
+            width: auto;
+            margin-bottom: 5px;
+          }
+        }
+        .details_btn,
+        .book_btn {
+          width: auto;
+          margin-bottom: 0px;
         }
       }
-      .details_btn,
-      .book_btn {
-        width: auto;
-        margin-bottom: 0px;
-      }
-    }
     }
   }
 }

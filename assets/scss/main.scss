@@ -74,6 +74,7 @@ button:focus {
   margin: 0px auto
 }
 // E- Import Style Components .
+@import "../pages/details/_style.scss";
 
 @import "./vendor/intlTelInput.scss";
 @import "./compunent/_intl-tel-input.scss";
