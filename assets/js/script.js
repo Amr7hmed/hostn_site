@@ -90,3 +90,5 @@ viewpopupe.forEach(item=>
 popupeclose.addEventListener("click",function(){
   popupe.style.display = "none";
 })
+
+
