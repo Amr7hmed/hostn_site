@@ -73,34 +73,294 @@
       <div class="container">
         <div class="result__header">
 
-          <div class="resetpassword__top">
+          <div class="result__top">
             <span class="icon_arrow">
               <a href="#">
                 <img src="../../image/icons/iconarrow.svg" alt="Arrow Left">
               </a>
             </span>
-          </div>
 
-          <div class="result__filter">
-            <div class="filter__contener">
+            <div class="result__filter">
               <span>
                 You Are Looking In
               </span>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dMloctinButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+
+                  <img src="../../image/icons/location.svg" alt="location">
+                  Location
+                </button>
+                <div class="dropdown-menu hide" id="dMloctin" aria-labelledby="dMloctinButton1">
+                  <div class="content">
+                    <div class="title">
+                      <span>Choose Search Destination</span>
+                    </div>
+                    <div class="input-search">
+                      <input type="text" placeholder="search for Destination name or compound">
+                    </div>
+                    <div class="input_lists_contener">
+                      <span class="form-check">Reset</span>
+                      <form class="input_lists">
+                        <ul class="left">
+                          <li class="form-check">
+                            <input class="left-checkbox" type="checkbox" value="" id="elsahel">
+                            <label class="form-check-label" for="elsahel">
+                              El Sahel
+                            </label>
+                          </li>
+                          <li class="form-check">
+                            <input class="left-checkbox" type="checkbox" value="" id="elsokhna">
+                            <label class="form-check-label" for="elsokhna">
+                              El Sokhna
+                            </label>
+                          </li>
+                        </ul>
+
+                        <ul class="right">
+                          <li class="form-check">
+                            <input type="checkbox" value="" id="elsahel">
+                            <label class="form-check-label" for="elsahel">
+                              El Sahel
+                            </label>
+                          </li>
+                          <li class="form-check">
+                            <input type="checkbox" value="" id="elsokhna">
+                            <label class="form-check-label" for="elsokhna">
+                              El Sokhna
+                            </label>
+                          </li>
+                        </ul>
+                      </form>
+
+                    </div>
+
+                    <button class="btn">Done</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
 
 
-              <div class="input_location">
-                <img src="../../image/icons/location.svg" alt="location">
-                <input list="locations" name="location" id="location" placeholder="Location">
-                <datalist id="locations">
-                  <option value="Cairo">
-                  <option value="Cairo">
-                  <option value="Cairo">
-                </datalist>
+          <div class="result__sort">
+            <div class="result__sort__filter">
+              <div class="dropdown">
+                <button class="btn" type="button" id="result__button__filter" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../../image/icons/icon-filter.svg" alt="">
+                  Filter
+                </button>
+                <div id="result__item__filter" class="dropdown-menu hide">
+                  <div class="top">
+                    <span>
+                      <img src="../../image/icons/icon-filter.svg" alt="">
+                      Filter
+                    </span>
+                    <span id="close_item_filter">
+                      <img src="../../image/icons/icon-back.svg" alt="">
+                    </span>
+                  </div>
+                  <h6>Filtration</h6>
+                  <button class="btn btnreset">RESET All</button>
+                  <div class="content">
+                    <div class="left">
+                      <div class="filter_price">
+                        <span class="title">Price Range<span>(Budget Per Night)</span></span>
+                        <div>
+                          <div class="range">
+                            <div>
+                              <span>0 EGP</span>
+                              <span>50,000 EGP</span>
+                            </div>
+                            <div>
+
+                              <input type="range" class="win10-thumb" min="0" max="100" value="25" step="5" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="filter_number">
+                        <span class="title">Select The Number Of Bedrooms</span>
+                        <div class="content">
+                          <span>
+                            <input type="checkbox" value="">
+                            <span class="text">1</span>
+                          </span>
+                          <span>
+                            <input type="checkbox" value="">
+                            <span class="text">2</span>
+                          </span>
+                          <span>
+                            <input type="checkbox" value="">
+                            <span class="text">3</span>
+                          </span>
+                          <span>
+                            <input type="checkbox" value="">
+                            <span class="text">4</span>
+                          </span>
+                          <span>
+                            <input type="checkbox" value="">
+                            <span class="text">5</span>
+                          </span>
+                          <span>
+                            <input type="checkbox" value="">
+                            <span class="text">6</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="filter_outer">
+                        <span>
+                          <input type="checkbox" value="">
+                          <label> Videos Only </label>
+                        </span>
+
+
+                        <span>
+                          <input type="checkbox" value="">
+                          <label> 360 Only</label>
+                        </span>
+                      </div>
+
+
+                      <div class="filter_outer">
+                        <span>
+                          <input type="checkbox" value="">
+                          <label> Pets Allow </label>
+                        </span>
+
+
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="top">
+                        <h6>Select The Property Type</h6>
+                        <select class="form-select form-select-lg" aria-label=".form-select-lg example" >
+                          <option selected>choose Property Type</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="bottom">
+                        <h6>Select The Amenities You Need</h6>
+                        <ul class="select">
+                          <li class="select-need">
+                            wifi
+                            <img src="../../image/icons/Icon-wifi.svg" alt="">
+                          </li>
+                          <li class="select-need">
+                           Tv
+                            <img src="../../image/icons/Icon-tv.svg" alt="">
+                          </li>
+                          <li class="select-need">
+                            Heater
+                            <img src="../../image/icons/icon-heater.svg" alt="">
+                          </li>
+                          <li class="select-need">
+                            wifi
+                            <img src="../../image/icons/Icon-wifi.svg" alt="">
+                          </li>
+                          <li class="select-need">
+                           Tv
+                            <img src="../../image/icons/Icon-tv.svg" alt="">
+                          </li>
+                          <li class="select-need">
+                            Heater
+                            <img src="../../image/icons/icon-heater.svg" alt="">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="btn btn_end">
+                    Show Result
+                  </button>
+                </div>
+              </div>
+
+
+              <div class="dropdown">
+                <button class="btn" type="button" id="result__button__sort" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../../image/icons/icon-sort.svg" alt="">
+                  Sort By
+                </button>
+                <div id="result__item__sort" class="dropdown-menu hide">
+                  <div class="top">
+                    <span>
+                      <img src="../../image/icons/icon-sort.svg" alt="">
+                      Sort
+                    </span>
+                    <span id="close_item__sort">
+                      <img src="../../image/icons/icon-back.svg" alt="">
+                    </span>
+                  </div>
+
+                  <div class="rating">
+                    <h6>Property Rating</h6>
+
+                    <ul class="stars">
+                      <li class="star actve">
+                        <img src="../../image/icons/star.svg" alt="">
+                      </li>
+                      <li class="star">
+                        <img src="../../image/icons/star.svg" alt="">
+                      </li>
+                      <li class="star">
+                        <img src="../../image/icons/star.svg" alt="">
+                      </li>
+                      <li class="star">
+                        <img src="../../image/icons/star.svg" alt="">
+                      </li>
+                      <li class="star">
+                        <img src="../../image/icons/star.svg" alt="">
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="checkboxarrival">
+                    <ul>
+                      <li>
+                        <input type="checkbox">
+                        <span>New Arrival</span>
+                      </li>
+                      <li>
+                        <input type="checkbox">
+                        <span>Offer Only</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  
+                  <div class="checkboxprice">
+                    <ul>
+                      <li>
+                        <input type="checkbox">
+                        <span>Highest Price</span>
+                      </li>
+                      <li>
+                        <input type="checkbox">
+                        <span>Lowest Price</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="buttons">
+                    <button class="btn">Reset</button>
+                    <button class="btn">Done</button>
+                  </div>
+
+                </div>
               </div>
             </div>
 
           </div>
-
           <div class="result__gallry">
             <div class="result__link">
               <span>23 Properties FOUND</span>
@@ -574,125 +834,163 @@
     </span>
 
     <div class="popupe__properties">
-      <div class="popupe__cover">
-        <div class="img">
+      <div class="left">
+        <div class="img-cover">
           <img src="../../image/bg/header.png" alt="">
         </div>
-        <div class="header">
-          <div class="right">
-            <h5>Lorem Ipsum</h5>
-            <span>
-              <img src="../../image/icons/location.svg" alt="">
-              New Cairo, Cairo, Egypt</span>
+
+        <div class="img-carousel">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
+            <div class="item">
+              <img src="../../image/bg/toprated-one.png" alt="">
+            </div>
           </div>
-
-          <div class="left">
-            <span class="price">
-              <span>EGP 250</span>
-              <span>/ avg night</span>
-            </span>
-
-
-            <span class="review">
-              2370 review
-            </span>
-          </div>
-        </div>
-
-        <div class="bottom">
-          <span>
-            <img src="../../image/icons/villa-icon.svg" alt="">
-            <span>
-              VILLA
-            </span>
-          </span>
-
-          <span>
-            <img src="../../image/icons/room-icon.svg" alt="">
-            <span>
-              3 ROOMS
-            </span>
-          </span>
-
-
-          <span>
-            <img src="../../image/icons/bathroom-icon.svg" alt="">
-            <span>
-              2 BATHROOMS
-            </span>
-          </span>
-
-
-          <span>
-            <img src="../../image/icons/beds-icon.svg" alt="">
-            <span>
-              5 BEDS
-            </span>
-          </span>
-
-
-          <span>
-            <img src="../../image/icons/mater-icon.svg" alt="">
-            <span>
-              150M
-            </span>
-          </span>
-
         </div>
       </div>
-
-      <div class="popupe-carousel">
-
-
-        <div class="item">
-          <img src="../../image/bg/toprated-one.png" alt="">
-          <span>
-            RECEPTION
-          </span>
-        </div>
-
-        <div class="item">
-          <img src="../../image/bg/toprated-one.png" alt="">
-          <span>
-            RECEPTION
-          </span>
-        </div>
-
-        <div class="item">
-          <img src="../../image/bg/toprated-one.png" alt="">
-          <span>
-            RECEPTION
-          </span>
-        </div>
-      </div>
-
-      <div class="popupe-action">
-        <div class="heart">
-          <button class="btn">
-            <img src="../../image/icons/Icon-heart.svg" alt="">
-            <span>
+      <div class="right">
+        <div class="top">
+          <span class="heart">
+            <button class="btn img">
+              <img src="../../image/icons/Icon-heart.svg" alt="">
+            </button>
+            <span class="text">
               Save
             </span>
-          </button>
-          <button class="btn">
-            <img src="../../image/icons/Icon-share.svg" alt="">
-            <span>
+          </span>
+
+
+          <span class="share">
+            <button class="btn img">
+              <img src="../../image/icons/icon-share-poup.svg" alt="">
+            </button>
+            <span class="text">
               Share
             </span>
+          </span>
+
+
+        </div>
+
+        <div class="content">
+          <h4>Lorem Ipsum</h4>
+          <div class="loction">
+            <img src="../../image/icons/location.svg" alt="">
+            <span>
+              New Cairo, Cairo, Egypt
+            </span>
+          </div>
+
+          <div class="price">
+            <span>EGP 2,550</span><span>/ avg night</span>
+          </div>
+
+          <div class="review">
+            <div class="stars">
+              <img src="../../image/icons/star.svg" alt="">
+              <img src="../../image/icons/star.svg" alt="">
+              <img src="../../image/icons/star.svg" alt="">
+              <img src="../../image/icons/star.svg" alt="">
+              <img src="../../image/icons/star.svg" alt="">
+            </div>
+            <div class="text">
+              2370 review
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="icons">
+          <div class="one">
+
+            <div class="icon">
+              <span class="img">
+                <img src="../../image/icons/icon-villa.svg" alt="">
+              </span>
+              <span class="text">
+                VILLA
+              </span>
+            </div>
+            <div class="icon">
+              <span class="img">
+                <img src="../../image/icons/icon-room.svg" alt="">
+              </span>
+              <span class="text">
+                3 ROOMS
+              </span>
+            </div>
+          </div>
+          <div class="two">
+
+            <div class="icon">
+              <span class="img">
+                <img src="../../image/icons/icon-bathroom.svg" alt="">
+              </span>
+              <span class="text">
+                2 BATHROOMS
+              </span>
+            </div>
+            <div class="icon">
+              <span class="img">
+                <img src="../../image/icons/icon-bed.svg" alt="">
+              </span>
+              <span class="text">
+                5 BEDS
+              </span>
+            </div>
+          </div>
+          <div class="icon">
+            <span class="img">
+              <img src="../../image/icons/icon-metar.svg" alt="">
+            </span>
+            <span class="text">
+              150M
+            </span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn">
+            Book Now
+          </button>
+          <button class="btn">
+            All Details
           </button>
         </div>
 
-        <button class="btn book_btn">
-          Book Now
-        </button>
-
-
-        <button class="btn details_btn">
-          All Details
-        </button>
-
       </div>
-
     </div>
   </div>
 
@@ -725,6 +1023,73 @@
 
 
   <script>
+    const dropdownMenuButtonloction = document.getElementById("dMloctinButton1");
+    dropdownMenuButtonloction.addEventListener("click", function () {
+      if (document.getElementById("dMloctin").classList.contains("hide") === true) {
+        document.getElementById("dMloctin").classList.add("show")
+        document.getElementById("dMloctin").classList.remove("hide")
+      } else {
+        document.getElementById("dMloctin").classList.add("hide")
+        document.getElementById("dMloctin").classList.remove("show")
+      }
+    })
+
+
+    const resultbuttonfilter = document.getElementById("result__button__filter");
+    resultbuttonfilter.addEventListener("click", function () {
+      if (document.getElementById("result__item__filter").classList.contains("hide") === true) {
+        document.getElementById("result__item__filter").classList.add("show")
+        document.getElementById("result__item__filter").classList.remove("hide")
+      } else {
+        document.getElementById("result__item__filter").classList.add("hide")
+        document.getElementById("result__item__filter").classList.remove("show")
+      }
+
+    })
+
+
+
+    const resultbuttonsort = document.getElementById("result__button__sort");
+    resultbuttonsort.addEventListener("click", function () {
+      if (document.getElementById("result__item__sort").classList.contains("hide") === true) {
+        document.getElementById("result__item__sort").classList.add("show")
+        document.getElementById("result__item__sort").classList.remove("hide")
+      } else {
+        document.getElementById("result__item__sort").classList.add("hide")
+        document.getElementById("result__item__sort").classList.remove("show")
+      }
+
+    })
+
+    document.getElementById("close_item_filter").addEventListener("click", function () {
+      document.getElementById("result__item__filter").classList.add("hide")
+      document.getElementById("result__item__filter").classList.remove("show")
+    })
+
+    document.getElementById("close_item__sort").addEventListener("click", function () {
+      document.getElementById("result__item__sort").classList.add("hide")
+      document.getElementById("result__item__sort").classList.remove("show")
+    })
+
+    
+
+    document.querySelectorAll(".select-need").forEach(item =>
+    item.addEventListener("click",function(){
+      if (item.classList.contains("active") === true) {
+        item.classList.remove("active")
+      } else {
+        item.classList.add("active")
+      }
+
+    })
+    )
+
+    document.querySelectorAll(".star").forEach(item =>
+    item.addEventListener("click",function(){
+        item.classList.add("actve")
+    })
+    )
+    
     $('.owl-carousel').owlCarousel({
       loop: false,
       margin: 10,
@@ -734,16 +1099,19 @@
           items: 1
         },
         600: {
-          items: 2
+          items: 3
         },
         1000: {
+          items: 2.5
+        },
+        1200: {
           items: 3
+        },
+        1600: {
+          items: 3.5
         }
       }
     })
-
-
-
   </script>
 </body>
 

@@ -73,6 +73,16 @@ button:focus {
   max-width: 85% !important;
   margin: 0px auto
 }
+
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+input[type='checkbox'] {
+  accent-color: #f7942d !important;
+}
 // E- Import Style Components .
 @import "../pages/details/_style.scss";
 
@@ -89,4 +99,5 @@ button:focus {
 @import "../pages/bookings/_style.scss";
 @import "../pages/other/_style.scss";
 @import "../pages/result/_style.scss";
+@import "../pages/result/_range.scss";
 @import "./compunent/_footer.scss";
