@@ -87,6 +87,10 @@ input[type=checkbox] {
   accent-color: #f7942d !important;
 }
 
+input[type=radio] {
+  accent-color: #f7942d !important;
+}
+
 .details {
   font-family: var(--poppins-font);
 }
@@ -6900,10 +6904,60 @@ header.header .headersearch .search .input_calendar input {
 .result__header .result__sort #result__item__sort .rating .stars .star.actve img {
   filter: inherit !important;
 }
-.result__header .result__sort #result__item__sort .checkboxarrival input, .result__header .result__sort #result__item__sort .checkboxprice input {
+.result__header .result__sort #result__item__sort .checkboxarrival,
+.result__header .result__sort #result__item__sort .checkboxprice {
+  margin: 20px 0px;
+}
+.result__header .result__sort #result__item__sort .checkboxarrival input,
+.result__header .result__sort #result__item__sort .checkboxprice input {
   width: 15px;
   height: 15px;
   margin-right: 5px;
+}
+.result__header .result__sort #result__item__sort .checkboxarrival li {
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.result__header .result__sort #result__item__sort .checkboxprice ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.result__header .result__sort #result__item__sort .checkboxprice ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.result__header .result__sort #result__item__sort .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.result__header .result__sort #result__item__sort .buttons .btn {
+  width: 45%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.result__header .result__sort #result__item__sort .buttons .btn:first-of-type {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #d1d1d1;
+  color: #3e3e3e;
+  text-transform: capitalize;
+}
+.result__header .result__sort #result__item__sort .buttons .btn:last-of-type {
+  background: #ff8027 0% 0% no-repeat padding-box;
+  color: #ffffff;
 }
 .result__link {
   margin-bottom: 15px;
@@ -6969,6 +7023,10 @@ header.header .headersearch .search .input_calendar input {
   display: flex;
   flex-direction: column;
   font-size: 14px;
+}
+.result__gallry .images .img-item .review img {
+  width: 25px;
+  height: 25px;
 }
 .result__gallry .images .img-item .review button {
   background-color: #f7941d;

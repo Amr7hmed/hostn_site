@@ -83,6 +83,9 @@ button:focus {
 input[type='checkbox'] {
   accent-color: #f7942d !important;
 }
+input[type='radio']{
+  accent-color: #f7942d !important;
+}
 // E- Import Style Components .
 @import "../pages/details/_style.scss";
 
