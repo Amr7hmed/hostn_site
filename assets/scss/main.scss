@@ -95,8 +95,8 @@ input[type='radio']{
 
 // E-1- Import Style Navbar Component .
 @import "./_home.scss";
-@import "../pages/about/_style.scss";
 @import "./compunent/_navbar.scss";
+@import "../pages/about/_style.scss";
 @import "../pages/sign/_signup.scss";
 @import "../pages/resetpassword/_modelpassword.scss";
 @import "../pages/bookings/_style.scss";

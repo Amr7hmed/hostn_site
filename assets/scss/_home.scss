@@ -19,26 +19,20 @@ header.header {
   background-image: url("../image/bg/header.png");
   background-size: cover;
   height: 100vh;
+  position: relative;
   nav.nav {
     border: none !important;
     background-color: transparent;
   }
-  .container {
-    height: 100%;
-  }
   .headersearch {
-    position: relative;
-    height: 100%;
     .search {
-      width: 100%;
+      width: 85%;
       min-height: 100px;
       padding: 20px 10px;
       max-height: auto;
       background-color: #fafafa;
       position: absolute;
-      bottom: 20%;
-      left: 50%;
-      transform: translate(-50%, -20%);
+      bottom: 5%;
       border-radius: 16px;
       display: flex;
       flex-direction: row;
@@ -83,8 +77,6 @@ header.header {
   header.header {
     .headersearch {
       .search {
-        bottom: 20%;
-        transform: translate(-50%, -30%);
         flex-direction: column;
         .input_location,
         .input_calendar {
@@ -107,8 +99,7 @@ header.header {
   header.header {
     .headersearch {
       .search {
-        bottom: 40%;
-        transform: translate(-50%, -30%);
+        bottom: 1%;
         flex-direction: column;
         .input_location,
         .input_calendar {
