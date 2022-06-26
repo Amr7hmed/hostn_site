@@ -6569,7 +6569,6 @@ header.header .headersearch .search .input_calendar input {
 }
 .result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists_contener .form-check {
   font-size: 14px;
-  color: red;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -6787,13 +6786,36 @@ header.header .headersearch .search .input_calendar input {
   display: block;
   text-align: left;
 }
-.result__header .result__sort #result__item__filter .content .right .top select {
+.result__header .result__sort #result__item__filter .content .right .top #dropdown_filter_right {
+  width: 100%;
+}
+.result__header .result__sort #result__item__filter .content .right .top #dropdown_filter_right #dPropertyButton1 {
   font-size: 14px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #adadad;
   width: 100%;
   height: 50px;
   color: #adadad;
+}
+.result__header .result__sort #result__item__filter .content .right .top #dropdown_filter_right #dPropertyButton1:hover {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #adadad;
+  color: #adadad;
+}
+.result__header .result__sort #result__item__filter .content .right .top #dropdown_filter_right #dProperty {
+  width: 100%;
+}
+.result__header .result__sort #result__item__filter .content .right .top #dropdown_filter_right li {
+  margin-bottom: 10px;
+}
+.result__header .result__sort #result__item__filter .content .right .top #dropdown_filter_right li input {
+  width: 10px;
+  height: 10px;
+}
+.result__header .result__sort #result__item__filter .content .right .top #dropdown_filter_right li label {
+  font-size: 14px;
+  color: #3b3b3b;
+  text-transform: capitalize;
 }
 .result__header .result__sort #result__item__filter .content .right .bottom {
   margin-top: 20px;
@@ -6982,6 +7004,23 @@ header.header .headersearch .search .input_calendar input {
   height: 25px;
   margin-right: 5px;
 }
+.result__tags {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0px;
+}
+.result__tags .tag {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: var(--yello-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+.result__tags .tag .text {
+  font-size: 12px;
+  font-weight: bold;
+}
 .result__gallry {
   margin-top: 25px;
 }
@@ -7030,7 +7069,7 @@ header.header .headersearch .search .input_calendar input {
 }
 .result__gallry .images .img-item .review button {
   background-color: #f7941d;
-  opacity: 0.8;
+  opacity: 0.7;
   width: 90px;
   margin-top: 25px;
   color: var(--white-color);

@@ -92,7 +92,6 @@
               .input_lists_contener {
                 .form-check {
                   font-size: 14px;
-                  color: red;
                   margin-bottom: 10px;
                   cursor: pointer;
                 }
@@ -351,13 +350,39 @@
                 display: block;
                 text-align: left;
               }
-              select {
-                font-size: 14px;
-                background: #ffffff 0% 0% no-repeat padding-box;
-                border: 1px solid #adadad;
+              #dropdown_filter_right {
                 width: 100%;
-                height: 50px;
-                color: #adadad;
+                #dPropertyButton1 {
+                  font-size: 14px;
+                  background: #ffffff 0% 0% no-repeat padding-box;
+                  border: 1px solid #adadad;
+                  width: 100%;
+                  height: 50px;
+                  color: #adadad;
+                  &:hover {
+                    background: #ffffff 0% 0% no-repeat padding-box;
+                    border: 1px solid #adadad;
+                    color: #adadad;
+                  }
+                }
+#dProperty{
+  width: 100%;
+}
+                li {
+                  margin-bottom: 10px;
+
+                  input {
+                    width: 10px;
+                    height: 10px;
+                  }
+
+                  label {
+                    font-size: 14px;
+                    color: #3b3b3b;
+                    text-transform: capitalize;
+                  }
+                }
+                
               }
             }
 
@@ -573,7 +598,23 @@
       }
     }
   }
-
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px;
+    .tag {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-right: 10px;
+      background-color: var(--yello-color);
+      color: var(--white-color);
+      cursor: pointer;
+      .text {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
   &__gallry {
     margin-top: 25px;
 

@@ -239,12 +239,37 @@
                     <div class="right">
                       <div class="top">
                         <h6>Select The Property Type</h6>
-                        <select class="form-select form-select-lg" aria-label=".form-select-lg example" >
-                          <option selected>choose Property Type</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
+
+
+                        <div class="dropdown" id="dropdown_filter_right">
+                          <button class="btn dropdown-toggle" type="button" id="dPropertyButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Choose Property Type
+                          </button>
+                          <div class="dropdown-menu hide" id="dProperty" aria-labelledby="dPropertyButton1">
+                            <div class="content">
+                                <form>
+                                  <ul>
+                                    <li class="form-check">
+                                      <input class="left-checkbox" type="checkbox" value="" id="elsahel">
+                                      <label class="form-check-label" for="elsahel">
+                                        El Sahel
+                                      </label>
+                                    </li>
+                                    <li class="form-check">
+                                      <input class="left-checkbox" type="checkbox" value="" id="elsokhna">
+                                      <label class="form-check-label" for="elsokhna">
+                                        El Sokhna
+                                      </label>
+                                    </li>
+                                  </ul>
+
+                                </form>
+
+                            </div>
+
+                          </div>
+                        </div>
                       </div>
                       <div class="bottom">
                         <h6>Select The Amenities You Need</h6>
@@ -254,7 +279,7 @@
                             <img src="../../image/icons/Icon-wifi.svg" alt="">
                           </li>
                           <li class="select-need">
-                           Tv
+                            Tv
                             <img src="../../image/icons/Icon-tv.svg" alt="">
                           </li>
                           <li class="select-need">
@@ -266,7 +291,7 @@
                             <img src="../../image/icons/Icon-wifi.svg" alt="">
                           </li>
                           <li class="select-need">
-                           Tv
+                            Tv
                             <img src="../../image/icons/Icon-tv.svg" alt="">
                           </li>
                           <li class="select-need">
@@ -337,7 +362,7 @@
                     </ul>
                   </div>
 
-                  
+
                   <div class="checkboxprice">
                     <ul>
                       <li>
@@ -367,6 +392,14 @@
               <span><img src="../../image/icons/fi-rr-calendar.svg" alt=""> 15 Feb To 18 Feb (3Nignts)</span>
             </div>
 
+            <div class="result__tags">
+              <span class="tag show">
+                <span class="text">Cairo</span>
+              </span>
+              <span class="tag show">
+                <span class="text">Cairo</span>
+              </span>
+            </div>
             <div class="images">
               <div class="img-item img-1">
                 <div class="overload"></div>
@@ -1047,6 +1080,17 @@
 
     })
 
+    const dPropertyButton = document.getElementById("dPropertyButton1");
+    dPropertyButton.addEventListener("click", function () {
+      if (document.getElementById("dProperty").classList.contains("hide") === true) {
+        document.getElementById("dProperty").classList.add("show")
+        document.getElementById("dProperty").classList.remove("hide")
+      } else {
+        document.getElementById("dProperty").classList.add("hide")
+        document.getElementById("dProperty").classList.remove("show")
+      }
+
+    })
 
 
     const resultbuttonsort = document.getElementById("result__button__sort");
@@ -1071,25 +1115,34 @@
       document.getElementById("result__item__sort").classList.remove("show")
     })
 
-    
+
 
     document.querySelectorAll(".select-need").forEach(item =>
-    item.addEventListener("click",function(){
-      if (item.classList.contains("active") === true) {
-        item.classList.remove("active")
-      } else {
-        item.classList.add("active")
-      }
+      item.addEventListener("click", function () {
+        if (item.classList.contains("active") === true) {
+          item.classList.remove("active")
+        } else {
+          item.classList.add("active")
+        }
 
-    })
+      })
     )
+
+
+    document.querySelectorAll(".result__tags .tag").forEach(item =>
+      item.addEventListener("click", function () {
+        item.classList.remove("show")
+        item.classList.add("hide")
+      })
+    )
+
 
     document.querySelectorAll(".star").forEach(item =>
-    item.addEventListener("click",function(){
+      item.addEventListener("click", function () {
         item.classList.add("actve")
-    })
+      })
     )
-    
+
     $('.owl-carousel').owlCarousel({
       loop: false,
       margin: 10,
