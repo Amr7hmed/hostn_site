@@ -3,18 +3,21 @@
   background-color: #f3f3f3;
   max-height: auto;
   padding: 1px;
+
   .resetpassword__top {
     .icon_arrow {
       width: 25px;
       height: 16px;
     }
   }
+
   &__items {
     margin: 60px 0px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
+
   &__buttons {
     width: 250px;
     display: flex;
@@ -22,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 50px;
+
     .btn {
       background-color: #dddddd;
       width: 100%;
@@ -33,11 +37,13 @@
       text-transform: capitalize;
       opacity: 1;
       font-size: 20px;
+
       &:hover {
         border: none;
         box-shadow: none;
       }
     }
+
     .active {
       background-color: var(--yello-color);
       color: var(--white-color);
@@ -63,42 +69,50 @@
     &:first-of-type {
       margin-right: 5%;
     }
+
     img {
       width: 100%;
       height: 200px;
       border-radius: 0px;
       margin-bottom: 15px;
     }
+
     .body {
       color: #161616;
       padding: 10px;
       background-color: var(--white-color);
+
       .title {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         font-size: 18px;
         font-weight: 500;
+
         span {
           &:last-of-type {
             text-align: right;
           }
         }
+
         .btnoutborder {
           font-size: 14px;
           color: var(--yello-color);
           border: 1px solid var(--yello-color);
           width: 70%;
           margin-top: 10px;
+
           svg {
             font-size: 12px;
             margin-right: 5px;
           }
+
           &:hover {
             background-color: var(--white-color);
           }
         }
       }
+
       .rate,
       .reveiw {
         display: inline-block;
@@ -107,27 +121,33 @@
         letter-spacing: 0px;
         text-transform: capitalize;
       }
+
       .reveiw {
         color: #898989;
+
         .star {
           svg {
             color: var(--yello-color);
           }
         }
       }
+
       .rate {
         color: #161616;
+
         .star {
           display: inline-block;
           border: 1px solid #9c9a8a;
           border-radius: 2px;
           padding: 5px 10px;
+
           svg {
             font-size: 12px;
             color: #9c9a8a;
           }
         }
       }
+
       p {
         margin-top: 20px;
         font-size: 18px;
@@ -140,6 +160,7 @@
         border-radius: 3px;
         padding: 10px;
         font-family: var(--poppins-font);
+
         .first {
           display: block;
           text-align: center;
@@ -148,10 +169,12 @@
           text-transform: capitalize;
           margin-bottom: 20px;
         }
+
         .checking {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+
           .checkin {
             span {
               font-size: 16px;
@@ -159,6 +182,7 @@
               font-weight: 500;
             }
           }
+
           .checkout {
             span {
               font-size: 16px;
@@ -166,14 +190,17 @@
               font-weight: 500;
             }
           }
+
           .checkin,
           .checkout {
             ul {
               text-transform: capitalize;
+
               li {
                 font-size: 14px;
                 color: #161616;
                 font-weight: 400;
+
                 span {
                   color: #6e6c5a;
                 }
@@ -181,10 +208,8 @@
             }
           }
         }
-
       }
 
-      
       .services {
         h6 {
           text-align: left;
@@ -211,6 +236,7 @@
           height: 25px;
           margin-bottom: 0px;
         }
+
         .servicethree {
           margin-top: 5px;
           display: block;
@@ -226,6 +252,274 @@
   }
 }
 
+.booking__confirmation {
+  font-family: var(--poppins-font);
+
+  &__top {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .icon_arrow {
+      width: 31px;
+      height: 20px;
+
+      Img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    h2 {
+      width: 70%;
+      color: #0d0d0d;
+      text-align: center;
+      text-transform: capitalize;
+      font-family: var(--poppins-font);
+      font-size: 24px;
+    }
+  }
+
+  &__row {
+    margin: 60px 0px;
+
+    .img_cover {
+      width: 85%;
+      text-align: center;
+      margin: 0px auto;
+      height: 400px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__list {
+    width: 85%;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: row;
+
+    .left,
+    .right {
+      width: 50%;
+
+      h6 {
+        font-size: 20px;
+        letter-spacing: 0.39px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #0d0d0d;
+        text-transform: capitalize;
+      }
+    }
+
+    .item {
+      background-color: var(--white-color);
+      padding: 30px 15px;
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 73px;
+
+      span {
+        color: #4a4a4a;
+        text-transform: capitalize;
+        font-size: 12px;
+        font-weight: 500;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .table {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #c9c9c9;
+      border-radius: 3px;
+      padding: 10px;
+      font-family: var(--poppins-font);
+
+      .first {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        color: #969696;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+      }
+
+      .checking {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .checkin {
+          span {
+            font-size: 16px;
+            color: #329a56;
+            font-weight: 500;
+          }
+        }
+
+        .checkout {
+          span {
+            font-size: 16px;
+            color: #d94f4f;
+            font-weight: 500;
+          }
+        }
+
+        .checkin,
+        .checkout {
+          ul {
+            text-transform: capitalize;
+
+            li {
+              font-size: 14px;
+              color: #161616;
+              font-weight: 400;
+
+              span {
+                color: #6e6c5a;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .btn {
+      height: 50px;
+      width: 90%;
+      background: #d8d8d8 0% 0% no-repeat padding-box;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1.08px;
+      color: #101010;
+    }
+  }
+
+  &__price {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    padding: 20px 15px;
+
+    h6 {
+      color: #0d0d0d;
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    ul.first {
+      li {
+        text-transform: uppercase;
+        color: #7c7c7c;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 0px;
+        border-bottom: 1px solid #c4c2c2;
+        font-weight: 500;
+        &:last-of-type {
+          border-bottom: none;
+        }
+        .bg {
+          color: #0a0a0a;
+        }
+      }
+    }
+    .totle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: bold;
+      color: #0a0a0a;
+      padding: 15px 0px;
+      border-top: 1px solid #0a0a0a;
+    }
+    .promocode {
+      margin: 30px auto;
+      width: 90%;
+      p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #101010;
+        text-transform: capitalize;
+      }
+      .inputs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40px;
+        input {
+          height: 40px;
+        }
+        .btn {
+          background: #ff802799 0% 0% no-repeat padding-box;
+          border-radius: 5px;
+          font-size: 14px;
+          color: #ffffff;
+          text-transform: capitalize;
+          opacity: 0.7;
+          height: 40px;
+          margin-left: 5px;
+        }
+      }
+    }
+    .payment_code {
+      margin-top: 40px;
+      h4 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #0d0d0d;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      ul {
+        li {
+          padding: 15px 0px;
+          border-bottom: 1px solid #c4c2c2;
+          display: flex;
+          flex-direction: row;
+          font-size: 14px;
+          font-weight: bold;
+          color: #141414;
+          input {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+
+    .checkout {
+      width: 100%;
+      margin-top: 30px;
+      height: 60px;
+      background: #f7942c 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: capitalize;
+    }
+  }
+}
+
 // 4- 1- Style Mask Component To Media Queris Large.
 @media screen and (max-width: 991px) {
   .booking {
@@ -234,6 +528,7 @@
       flex-direction: column;
       align-items: flex-start;
     }
+
     &__buttons {
       flex-direction: row;
       width: 100%;
@@ -247,11 +542,28 @@
         width: auto;
       }
     }
+
     &__cards {
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+    }
+  }
+
+  .booking__confirmation {
+    &__row {
+      margin: 60px 0px;
+  
+      .img_cover {
+        width: 100%;
+      }
+    }
+    &__list {
+      width: 100%;
+      .item {
+        margin-bottom: 93px;
+      }
     }
   }
 }
@@ -274,6 +586,7 @@
         width: 100%;
       }
     }
+
     &__cards {
       width: 100%;
       display: flex;
@@ -294,6 +607,7 @@
   height: 100vh;
   position: relative;
   font-family: var(--poppins-font);
+
   .ovarload {
     width: 100%;
     height: 100%;
@@ -303,24 +617,29 @@
     background-color: #00000094;
     z-index: 1;
   }
+
   .resetpassword__top {
     position: relative;
     z-index: 2;
+
     .icon_arrow {
       width: 25px;
       height: 16px;
+
       img {
         filter: invert(86%) sepia(100%) saturate(1%) hue-rotate(176deg)
           brightness(109%) contrast(101%);
       }
     }
   }
+
   .booking__info {
     width: 40%;
     position: relative;
     z-index: 4;
     margin-left: auto;
     margin-right: auto;
+
     h4 {
       font-weight: 600;
       font-size: 26px;
@@ -329,16 +648,19 @@
       text-transform: capitalize;
       margin-bottom: 15px;
     }
+
     &__detiles {
       background-color: #91919167;
       padding: 30px 20px;
       border-radius: 10px;
+
       ul {
         li {
           margin-bottom: 40px;
           display: flex;
           flex-direction: row;
           align-items: center;
+
           .img {
             width: 50px;
             height: 50px;
@@ -351,6 +673,7 @@
             text-align: center;
             line-height: 50px;
             margin-right: 20px;
+
             img {
               width: 25px;
               height: 25px;
@@ -364,9 +687,11 @@
             text-transform: capitalize;
             opacity: 1;
             font-weight: 500;
+
             ul {
               li {
                 margin-bottom: 5px;
+
                 .crcel-green,
                 .crcel-red {
                   width: 11px;
@@ -375,9 +700,11 @@
                   display: inline-block;
                   margin-right: 10px;
                 }
+
                 .crcel-green {
                   background: #329a56 0% 0% no-repeat padding-box;
                 }
+
                 .crcel-red {
                   background: #d94f4f 0% 0% no-repeat padding-box;
                 }
@@ -386,6 +713,7 @@
           }
         }
       }
+
       .btn {
         width: 100%;
         background-color: var(--yello-color);
@@ -404,8 +732,10 @@
   .booking__img {
     .booking__info {
       width: 60%;
+
       &__detiles {
         padding: 20px;
+
         ul {
           li {
             .img {
@@ -423,6 +753,7 @@
   .booking__img {
     .booking__info {
       width: 80%;
+
       &__detiles {
         padding: 15px;
       }

@@ -3,6 +3,7 @@
   padding: 1px;
   font-family: var(--poppins-font);
   padding: 80px 0px;
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -10,10 +11,12 @@
     align-items: center;
     text-transform: capitalize;
     text-align: center;
+
     img {
       width: 275px;
       height: 190px;
     }
+
     h5 {
       font-size: 36px;
       font-weight: 700;
@@ -22,6 +25,7 @@
       opacity: 1;
       margin-top: 30px;
     }
+
     p {
       font-size: 24px;
       letter-spacing: 1.2px;
@@ -35,39 +39,98 @@
       border: 1px solid var(--yello-color);
       color: var(--yello-color);
       margin-top: 40px;
-    width: 300px;
-    height: 50px;
+      width: 300px;
+      height: 50px;
+    }
+  }
+}
+
+.cancellationpolicy {
+  &__top {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .icon_arrow {
+      width: 31px;
+      height: 20px;
+
+      Img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    h2 {
+      width: 100%;
+      color: #0d0d0d;
+      text-align: center;
+      text-transform: capitalize;
+      font-family: var(--poppins-font);
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    margin: 60px auto;
+    overflow-y: scroll;
+    height: 600px;
+    .lastupdated {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.72px;
+      color: #f7942c;
+      text-transform: capitalize;
+    }
+    .item {
+      margin: 20px 0px;
+      h5 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #161616;
+        text-transform: capitalize;
+      }
+      p {
+        width: 70%;
+        font-size: 16px;
+        font-weight: 600;
+        color: #0d0d0d;
+        text-transform: capitalize;
+      }
     }
   }
 }
 
 // 4- 1- Style Mask Component To Media Queris Large.
 @media screen and (max-width: 991px) {
-    .other {
-        &__item {
-          h5 {
-            font-size: 28px;
-            margin-top: 20px;
-          }
-          p {
-            font-size: 18px;
-          }
-          .btn {
-            margin-top: 20px;
-          }
-        }
+  .other {
+    &__item {
+      h5 {
+        font-size: 28px;
+        margin-top: 20px;
       }
-}
 
+      p {
+        font-size: 18px;
+      }
+
+      .btn {
+        margin-top: 20px;
+      }
+    }
+  }
+}
 
 // 1- 2- Style Footer Component To Media Queris Samll.
 @media screen and (max-width: 576px) {
-    .other {
-        &__item {
-          p {
-            font-size: 16px;
-          }
-        }
+  .other {
+    &__item {
+      p {
+        font-size: 16px;
       }
-
+    }
+  }
 }
