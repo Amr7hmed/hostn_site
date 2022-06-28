@@ -1,0 +1,209 @@
+.contactus {
+  font-family: var(--poppins-font);
+
+  .row {
+    .rowone {
+      padding: 0px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 50px;
+
+    h3 {
+      letter-spacing: 0.8px;
+      color: #2b2b2b;
+      text-transform: capitalize;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 30px;
+      letter-spacing: 1.5px;
+      color: #4e4e4e;
+    }
+  }
+
+  &__form,
+  &__info {
+    height: 850px;
+  }
+
+  &__info {
+    background-color: var(--yello-color);
+    color: var(--white-color);
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 1px;
+    box-shadow: 0px 0px 19px #4a4a4a3b;
+    border-radius: 5px 0px 0px 5px;
+
+    h3 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: capitalize;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    ul {
+      width: 60%;
+      margin: 0px auto;
+
+      li {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+
+        img {
+          margin-right: 10px;
+          width: 27px;
+          height: 27px;
+        }
+
+        img.email {
+          filter: invert(100%) sepia(7%) saturate(642%) hue-rotate(249deg)
+            brightness(107%) contrast(100%);
+        }
+
+        .text {
+          font-size: 18px;
+          color: #ffffff;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  &__folllow {
+    width: 60%;
+    margin: 90px auto;
+    display: flex;
+    flex-direction: row;
+
+    a {
+      width: 51px;
+      height: 51px;
+      border-radius: 50%;
+      background-color: #ffffff4e;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        filter: invert(100%) sepia(7%) saturate(642%) hue-rotate(249deg)
+          brightness(107%) contrast(100%);
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 1px;
+    box-shadow: 0px 0px 19px #4a4a4a3b;
+    border-radius: 0px 5px 5px 0px;
+
+    h3 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: capitalize;
+      margin-top: 80px;
+      margin-bottom: 8px;
+      color: var(--yello-color);
+    }
+
+    p {
+      text-align: center;
+      letter-spacing: 0px;
+      color: #6a6a6a;
+      font-size: 26px;
+      margin-bottom: 50px;
+    }
+
+    form {
+      width: 80%;
+      margin: 0px auto;
+
+      .form-label {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+
+        span {
+          color: #b3171c;
+        }
+      }
+
+      input {
+        height: 50px;
+        background: #ffffff00 0% 0% no-repeat padding-box;
+        border: 2px solid #dddddd;
+        border-radius: 5px;
+      }
+
+      textarea {
+        height: 150px;
+        padding: 15px;
+      }
+
+      .btn-send {
+        margin-top: 30px;
+        width: 180px;
+        height: 57px;
+        background: #f7942c 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+        color: var(--white-color);
+        font-size: 20px;
+        color: #ffffff;
+        text-transform: capitalize;
+
+        &:hover {
+          border: none;
+          color: #ffffff;
+          background: #f7942c 0% 0% no-repeat padding-box;
+        }
+      }
+    }
+  }
+}
+
+// 4- 1- Style Mask Component To Media Queris Large.
+@media screen and (max-width: 991px) {
+  .contactus {
+    &__form,
+    &__info {
+      height: auto;
+    }
+
+    &__info {
+      margin-bottom: 0px;
+      border-radius: 5px 5px 0px 0px;
+
+      ul {
+        width: 95%;
+      }
+    }
+
+    &__folllow {
+      width: 95%;
+    }
+
+    &__form {
+      margin-bottom: 50px;
+      border-radius: 0px 0px 5px 5px;
+      padding-bottom: 40px;
+      form {
+        width: 95%;
+      }
+    }
+  }
+}

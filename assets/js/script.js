@@ -94,6 +94,8 @@ popupeclose.addEventListener("click",function(){
 })
 
 
+
+
  const locationSearch = document.getElementById("location-search"),
         listserch = document.querySelectorAll(".result_list_serch");
     locationSearch.onchange=function (){
@@ -106,3 +108,11 @@ popupeclose.addEventListener("click",function(){
         }
         )
     }
+
+
+    // class="btn btn-block text-left collapsed"
+    document.querySelectorAll(".btn-block").forEach(item =>
+      item.addEventListener("click",function(){
+        console.log("test");
+      })
+      )
