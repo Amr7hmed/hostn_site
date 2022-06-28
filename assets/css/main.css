@@ -5317,14 +5317,13 @@ header.header .headersearch .search .input_calendar input {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 350px;
+    height: auto;
     margin: 40px 0px;
   }
   .about__cards .item .img {
     width: 90%;
     margin: 20px auto;
-    background: #9d9d9d 0% 0% no-repeat padding-box;
-    height: 100%;
+    height: 300px;
   }
   .about__cards .item .text {
     width: 90%;
@@ -7043,11 +7042,16 @@ header.header .headersearch .search .input_calendar input {
 .result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left li,
 .result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .right li {
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left li input,
 .result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .right li input {
-  width: 20px;
-  width: 20px;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
 }
 .result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left li label,
 .result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .right li label {
@@ -7070,6 +7074,11 @@ header.header .headersearch .search .input_calendar input {
   background-color: var(--yello-color);
   color: var(--white-color);
   border: none;
+}
+.result__header .result__top .result__filter .dropdown #dMloctin .content .btn.reset {
+  color: var(--yello-color);
+  background-color: transparent;
+  margin: 15px;
 }
 .result__header .result__sort .dropdown {
   display: inline-block;

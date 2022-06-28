@@ -97,19 +97,19 @@
                       <span>Choose Search Destination</span>
                     </div>
                     <div class="input-search">
-                      <input type="text" placeholder="search for Destination name or compound">
+                      <input  name="location" id="location-search" placeholder="search for Destination name or compound">
                     </div>
                     <div class="input_lists_contener">
-                      <span class="form-check">Reset</span>
+                      <button class="reset btn">Reset</button>
                       <form class="input_lists">
                         <ul class="left">
-                          <li class="form-check">
+                          <li class="form-check result_list_serch">
                             <input class="left-checkbox" type="checkbox" value="" id="elsahel">
                             <label class="form-check-label" for="elsahel">
                               El Sahel
                             </label>
                           </li>
-                          <li class="form-check">
+                          <li class="form-check result_list_serch">
                             <input class="left-checkbox" type="checkbox" value="" id="elsokhna">
                             <label class="form-check-label" for="elsokhna">
                               El Sokhna
@@ -118,13 +118,13 @@
                         </ul>
 
                         <ul class="right">
-                          <li class="form-check">
+                          <li class="form-check result_list_serch">
                             <input type="checkbox" value="" id="elsahel">
                             <label class="form-check-label" for="elsahel">
                               El Sahel
                             </label>
                           </li>
-                          <li class="form-check">
+                          <li class="form-check result_list_serch">
                             <input type="checkbox" value="" id="elsokhna">
                             <label class="form-check-label" for="elsokhna">
                               El Sokhna
@@ -435,7 +435,7 @@
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe">
+                  <button class="btn viewpopupe" id="1">
                     Quick View
                   </button>
 
@@ -478,7 +478,7 @@
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe">
+                  <button class="btn viewpopupe"  id="2">
                     Quick View
                   </button>
 
@@ -521,7 +521,7 @@
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe">
+                  <button class="btn viewpopupe"  id="3">
                     Quick View
                   </button>
 
@@ -564,7 +564,7 @@
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe">
+                  <button class="btn viewpopupe" id="4">
                     Quick View
                   </button>
 
@@ -607,7 +607,7 @@
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe">
+                  <button class="btn viewpopupe" id="5">
                     Quick View
                   </button>
 
@@ -650,7 +650,7 @@
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe">
+                  <button class="btn viewpopupe" id="6">
                     Quick View
                   </button>
 
@@ -693,7 +693,7 @@
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe">
+                  <button class="btn viewpopupe" id="7">
                     Quick View
                   </button>
 
@@ -736,7 +736,7 @@
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe">
+                  <button class="btn viewpopupe" id="8">
                     Quick View
                   </button>
 
@@ -779,7 +779,7 @@
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe">
+                  <button class="btn viewpopupe" id="9">
                     Quick View
                   </button>
 
@@ -1143,6 +1143,8 @@
       })
     )
 
+
+   
     $('.owl-carousel').owlCarousel({
       loop: false,
       margin: 10,

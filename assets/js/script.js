@@ -83,6 +83,8 @@ viewpopupe = document.querySelectorAll(".viewpopupe");
 viewpopupe.forEach(item=>
   item.addEventListener("click",function(){
     popupe.style.display = "block";
+    console.log(item.id);
+    popupe.setAttribute("id",`Poupe_${item.id}`)
   })
 
   );
@@ -92,3 +94,15 @@ popupeclose.addEventListener("click",function(){
 })
 
 
+ const locationSearch = document.getElementById("location-search"),
+        listserch = document.querySelectorAll(".result_list_serch");
+    locationSearch.onchange=function (){
+      console.log(locationSearch.value);
+      listserch.forEach(item =>
+        function(){
+          item.classList.add("hide")
+          // {locationSearch.value === item.id ? console.log("true"):console.log("false")}
+
+        }
+        )
+    }
