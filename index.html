@@ -75,9 +75,21 @@
             <img src="./assets/image/icons/location.svg" alt="location">
             
         <select multiple data-multi-select-plugin>
-          <option value="Cairo">Cairo</option>
-          <option value="Alx">Alx</option>
-          <option value="AlSohna">Al Sohna</option>
+          <option value="Cairo">Cairo test </option>
+          <option value="Alx">Alx test </option>
+          <option value="AlSohna">Al Sohna test </option>
+          <option value="Cairo">Cairo test </option>
+          <option value="Alx">Alx test </option>
+          <option value="AlSohna">Al Sohna test </option>
+          <option value="Cairo">Cairo test </option>
+          <option value="Alx">Alx test </option>
+          <option value="AlSohna">Al Sohna test </option>
+          <option value="Cairo">Cairo test </option>
+          <option value="Alx">Alx test </option>
+          <option value="AlSohna">Al Sohna test </option>
+          <option value="Cairo">Cairo test </option>
+          <option value="Alx">Alx test </option>
+          <option value="AlSohna">Al Sohna test </option>
       </select>
           </div>
 
@@ -760,7 +772,6 @@ function inputChange(e) {
     const wrapper = e.target.parentNode.parentNode;
     const select = wrapper.querySelector("select");
     const dropdown = wrapper.querySelector(".dropdown-icon");
-
     const input_val = e.target.value;
 
     if (input_val) {
@@ -865,7 +876,6 @@ function populateAutocompleteList(select, query, dropdown = false) {
         autocomplete_options
     } = getOptions(select);
 
-
     let options_to_show;
 
     if (dropdown)
@@ -914,8 +924,7 @@ function selectOption(e) {
     const wrapper = e.target.parentNode.parentNode.parentNode;
     const input_search = wrapper.querySelector(".selected-input");
     const option = wrapper.querySelector(`select option[value="${e.target.dataset.value}"]`);
-
-    option.setAttribute("selected", "");
+    console.log(e.target);
     createToken(wrapper, e.target.dataset.value);
     if (input_search.value) {
         input_search.value = "";
@@ -962,12 +971,12 @@ function getOptions(select) {
     // Select all the options available
     const all_options = Array.from(
         select.querySelectorAll("option")
-    ).map(el => el.value);
-
+    ).map(el => el.innerText);
+console.log(select);
     // Get the options that are selected from the user
     const options_selected = Array.from(
         select.querySelectorAll("option:checked")
-    ).map(el => el.value);
+    ).map(el => el.innerText);
 
     // Create an autocomplete options array with the options that are not selected by the user
     const autocomplete_options = [];
@@ -989,13 +998,13 @@ function getOptions(select) {
 // Listener for when the user wants to remove a given token.
 function removeToken(e) {
     // Get the value to remove
+    console.log(e.target);
     const value_to_remove = e.target.dataset.option;
     const wrapper = e.target.parentNode.parentNode;
     const input_search = wrapper.querySelector(".selected-input");
     const dropdown = wrapper.querySelector(".dropdown-icon");
     // Get the options in the select to be unselected
     const option_to_unselect = wrapper.querySelector(`select option[value="${value_to_remove}"]`);
-    option_to_unselect.removeAttribute("selected");
     // Remove token attribute
     e.target.parentNode.remove();
     input_search.focus();

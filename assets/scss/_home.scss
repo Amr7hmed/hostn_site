@@ -914,6 +914,7 @@ select[data-multi-select-plugin] {
     position: relative;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     height: auto;
     width: 80%;
     font-size: 14px;

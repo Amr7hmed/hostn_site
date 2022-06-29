@@ -4838,6 +4838,7 @@ select[data-multi-select-plugin] {
   position: relative;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   height: auto;
   width: 80%;
   font-size: 14px;
@@ -7720,7 +7721,6 @@ select[data-multi-select-plugin] {
 .result__gallry .images .img-item .review button {
   background-color: #f7941d;
   opacity: 0.7;
-  width: 90px;
   margin-top: 25px;
   color: var(--white-color);
 }
