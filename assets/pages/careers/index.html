@@ -652,6 +652,24 @@
     <!-- Script Genral Js File -->
     <script src="../../js/navbar.js"></script>
     <script src="../../js/script.js"></script>
+    <script>
+        document.getElementById("man__icon").addEventListener("click", function () {
+            if (document.getElementById("profile").classList.contains("hide") === true) {
+                document.getElementById("profile").classList.add("show")
+                document.getElementById("profile").classList.remove("hide")
+            } else {
+                document.getElementById("profile").classList.add("hide")
+                document.getElementById("profile").classList.remove("show")
+            }
+
+        })
+
+        document.getElementById("btn-close-profile").addEventListener("click", function () {
+            document.getElementById("profile").classList.add("hide")
+            document.getElementById("profile").classList.remove("show")
+        })
+
+    </script>
 </body>
 
 </html>

@@ -7001,6 +7001,9 @@ header.header .headersearch .search .input_calendar input {
   margin-right: 7px;
   filter: invert(43%) sepia(4%) saturate(1762%) hue-rotate(16deg) brightness(94%) contrast(86%);
 }
+.result__header .result__top .result__filter .dropdown .dropdown-toggle::after {
+  display: none !important;
+}
 .result__header .result__top .result__filter .dropdown #dMloctin {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 5px 26px #33333371;
@@ -7485,9 +7488,29 @@ header.header .headersearch .search .input_calendar input {
   display: flex;
   flex-direction: row;
   margin: 15px 0px;
+  justify-content: space-between;
+  width: 100%;
+}
+.result__tags .left,
+.result__tags .buttons {
+  width: 50%;
+}
+.result__tags .left {
+  display: flex;
+  flex-direction: row;
+}
+.result__tags .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.result__tags .buttons div.input.calendar-picker {
+  width: 25% !important;
+  margin-left: 2% !important;
+  height: 38px !important;
+  border: 1px solid var(--yello-color) !important;
 }
 .result__tags .tag {
-  display: inline-block;
   padding: 10px 15px;
   margin-right: 10px;
   background-color: var(--yello-color);
@@ -7497,6 +7520,9 @@ header.header .headersearch .search .input_calendar input {
 .result__tags .tag .text {
   font-size: 12px;
   font-weight: bold;
+}
+.result__tags .tag .show {
+  display: inline-block !important;
 }
 .result__gallry {
   margin-top: 25px;
