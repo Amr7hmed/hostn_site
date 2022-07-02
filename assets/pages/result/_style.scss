@@ -662,11 +662,10 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-
-      div.input.calendar-picker{
-        width: 25% !important;
-        margin-left: 2% !important;
-        height: 38px !important;
+      font-size: 14px;
+      font-weight: 500;
+      input{
+width: auto;
         border: 1px solid var(--yello-color) !important;
       }
     }
