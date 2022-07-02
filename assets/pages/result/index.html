@@ -28,9 +28,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="../../css/main.css" />
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
 
 
 </head>
@@ -98,7 +98,7 @@
                       <span>Choose Search Destination</span>
                     </div>
                     <div class="input-search">
-                      <input  name="location" id="location-search" placeholder="search for Destination name or compound">
+                      <input name="location" id="location-search" placeholder="search for Destination name or compound">
                     </div>
                     <div class="input_lists_contener">
                       <button class="reset btn">Reset</button>
@@ -249,23 +249,23 @@
                           </button>
                           <div class="dropdown-menu hide" id="dProperty" aria-labelledby="dPropertyButton1">
                             <div class="content">
-                                <form>
-                                  <ul>
-                                    <li class="form-check">
-                                      <input class="left-checkbox" type="checkbox" value="" id="elsahel">
-                                      <label class="form-check-label" for="elsahel">
-                                        El Sahel
-                                      </label>
-                                    </li>
-                                    <li class="form-check">
-                                      <input class="left-checkbox" type="checkbox" value="" id="elsokhna">
-                                      <label class="form-check-label" for="elsokhna">
-                                        El Sokhna
-                                      </label>
-                                    </li>
-                                  </ul>
+                              <form>
+                                <ul>
+                                  <li class="form-check">
+                                    <input class="left-checkbox" type="checkbox" value="" id="elsahel">
+                                    <label class="form-check-label" for="elsahel">
+                                      El Sahel
+                                    </label>
+                                  </li>
+                                  <li class="form-check">
+                                    <input class="left-checkbox" type="checkbox" value="" id="elsokhna">
+                                    <label class="form-check-label" for="elsokhna">
+                                      El Sokhna
+                                    </label>
+                                  </li>
+                                </ul>
 
-                                </form>
+                              </form>
 
                             </div>
 
@@ -405,10 +405,12 @@
                 </span>
               </div>
               <div class="buttons">
-                <input type="text" data-role="calendarpicker"
-    data-input-format="%d/%m/%y" value="01/07/2022">
-    <input type="text" data-role="calendarpicker"
-data-input-format="%d/%m/%y" value="20/07/2022">
+
+                <!--- To Day-->
+                <input type="text" data-role="calendarpicker" data-input-format="%d/%m/%y" value="01/07/2022">
+
+                <!--- End Day-->
+                <input type="text" data-role="calendarpicker" data-input-format="%d/%m/%y" value="20/07/2022" >
               </div>
             </div>
             <div class="images">
@@ -489,7 +491,7 @@ data-input-format="%d/%m/%y" value="20/07/2022">
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe"  id="2">
+                  <button class="btn viewpopupe" id="2">
                     Quick View
                   </button>
 
@@ -532,7 +534,7 @@ data-input-format="%d/%m/%y" value="20/07/2022">
                 </div>
 
                 <div class="detiles">
-                  <button class="btn viewpopupe"  id="3">
+                  <button class="btn viewpopupe" id="3">
                     Quick View
                   </button>
 
@@ -1061,7 +1063,7 @@ data-input-format="%d/%m/%y" value="20/07/2022">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
     integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+  <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
   <!-- Script Genral Js File -->
   <script src="../../js/navbar.js"></script>
   <script src="../../js/script.js"></script>
@@ -1156,7 +1158,7 @@ data-input-format="%d/%m/%y" value="20/07/2022">
     )
 
 
-   
+
     $('.owl-carousel').owlCarousel({
       loop: false,
       margin: 10,
