@@ -7882,15 +7882,15 @@ header.header .headersearch .search .input_calendar input {
   color: #0d0d0d;
   text-transform: uppercase;
 }
-.popupe__properties .right .content .review {
+.popupe__properties .right .content .reviewpoupe {
   margin-top: 14px;
   margin-bottom: 65px;
 }
-.popupe__properties .right .content .review .stars img {
+.popupe__properties .right .content .reviewpoupe .stars img {
   width: 34px;
   height: 34px;
 }
-.popupe__properties .right .content .review .text {
+.popupe__properties .right .content .reviewpoupe .text {
   display: inline-block;
   margin-top: 5px;
   font-size: 18px;

@@ -54,10 +54,12 @@
             }
           }
 
-          .dropdown-toggle{
+          .dropdown-toggle {
             &::after {
-            display: none !important;
-        }}
+              display: none !important;
+            }
+          }
+
           #dMloctin {
             background: #ffffff 0% 0% no-repeat padding-box;
             box-shadow: 0px 5px 26px #33333371;
@@ -658,17 +660,20 @@
       display: flex;
       flex-direction: row;
     }
-    .buttons{
+
+    .buttons {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       font-size: 14px;
       font-weight: 500;
-      input{
-width: auto;
+
+      input {
+        width: auto;
         border: 1px solid var(--yello-color) !important;
       }
     }
+
     .tag {
       padding: 10px 15px;
       margin-right: 10px;
@@ -1101,7 +1106,7 @@ width: auto;
           }
         }
 
-        .review {
+        .reviewpoupe {
           margin-top: 14px;
           margin-bottom: 65px;
 
@@ -1796,3 +1801,5 @@ width: auto;
     }
   }
 }
+
+
