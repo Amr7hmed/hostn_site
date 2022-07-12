@@ -68,12 +68,12 @@ button:focus {
   background-color: inherit;
   color: inherit;
 }
-
+/*
 .container{
   max-width: 85% !important;
   margin: 0px auto
 }
-
+*/
 .hide {
   display: none !important;
 }
@@ -89,23 +89,24 @@ input[type='radio']{
 
 
 // E- Import Style Components .
-@import "../pages/details/_style.scss";
 
 @import "./vendor/intlTelInput.scss";
 @import "./compunent/_intl-tel-input.scss";
 
 
 // E-1- Import Style Navbar Component .
-@import "./_home.scss";
 @import "./compunent/_navbar.scss";
-@import "../pages/about/_style.scss";
-@import "../pages/sign/_signup.scss";
-@import "../pages/resetpassword/_modelpassword.scss";
-@import "../pages/bookings/_style.scss";
-@import "../pages/other/_style.scss";
-@import "../pages/result/_style.scss";
-@import "../pages/result/_range.scss";
-@import "../pages/contactus/_style.scss";
+@import "./pages/_signup.scss";
+@import "./pages/_home.scss";
+@import "./pages/_modelpassword.scss";
+@import "./pages/_other.scss";
+@import "./pages/_about.scss";
+@import "./pages/_contactus.scss";
+@import "./pages/_details.scss";
+@import "./pages/_bookings.scss";
+@import "./pages/_result.scss";
+@import "./pages/_result_range.scss";
 @import "./compunent/_footer.scss";
+
+@import "./pages/_careers.scss";
 @import "./compunent/_profile.scss";
-@import "./compunent/_careers.scss";

@@ -70,55 +70,187 @@
     </nav>
 
     <main>
-        <section class="booking">
+        <section class="careers">
             <div class="container">
 
-                <div class="resetpassword__top">
+
+
+                <div class="careers__top">
                     <span class="icon_arrow">
                         <a href="#">
                             <img src="../../image/icons/iconarrow.svg" alt="Arrow Left">
                         </a>
                     </span>
+                    <h2>Host’n Careers</h2>
                 </div>
-            </div>
-        </section>
-
-        <section class="careers">
-            <div class="container">
-                <div class="careers__header">
-                    <h4>Host’n Careers</h4>
-                </div>
-                <div class="careers__cover">
-                    <img src="../../image/bg/mask_careers.png" alt="">
+                <div class="careers__cover" style="background-image: url(../../image/bg/mask_careers.png)">
                     <div class="overload"></div>
                 </div>
 
                 <div class="careers__content">
                     <h6>Positions</h6>
+                    <div id="accordionCareers">
 
-                    <div class="careers__item">
-                        <span class="top">
-                            <span>Sales Specialist</span>
-                            <span>Posted 15 May / 2020</span>
-                        </span>
-                        <span class="left">Posted 15 May / 2020</span>
-                        <a href="#" class="apply">Apply</a>
-                    </div>
-                    <div class="careers__item">
-                        <span class="top">
-                            <span>Sales Specialist</span>
-                            <span>Posted 15 May / 2020</span>
-                        </span>
-                        <span class="left">Posted 15 May / 2020</span>
-                        <a href="#" class="apply">Apply</a>
-                    </div>
-                    <div class="careers__item">
-                        <span class="top">
-                            <span>Sales Specialist</span>
-                            <span>Posted 15 May / 2020</span>
-                        </span>
-                        <span class="left">Posted 15 May / 2020</span>
-                        <a href="#" class="apply">Apply</a>
+                        <div class="careers__card">
+                            <div class="careers__item" id="headingcareersOne">
+                                <span class="top">
+                                    <span>Sales Specialist</span>
+                                    <span>Posted 15 May / 2020</span>
+                                </span>
+                                <span class="left">Posted 15 May / 2020</span>
+                                <a href="#" class="apply" type="button" data-toggle="collapse"
+                                    data-target="#collapsecareersOne" aria-expanded="true"
+                                    aria-controls="collapsecareersOne">Apply</a>
+                            </div>
+
+                            <div id="collapsecareersOne" class="collapse" aria-labelledby="headingcareersOne"
+                                data-parent="#accordionCareers">
+                                <div class="card-body">
+                                    
+                            <form>
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Your Phone</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Your Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+
+                                
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Resume</label>
+                                    <div class="input-file">
+                                        <span>
+                                            Upload Your Cv Here
+                                            <input type="file">
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-submit">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="careers__card">
+                            <div class="careers__item" id="headingcareersTwo">
+                                <span class="top">
+                                    <span>Sales Specialist</span>
+                                    <span>Posted 15 May / 2020</span>
+                                </span>
+                                <span class="left">Posted 15 May / 2020</span>
+                                <a href="#" class="apply" type="button" data-toggle="collapse"
+                                    data-target="#collapsecareersTwo" aria-expanded="true"
+                                    aria-controls="collapsecareersTwo">Apply</a>
+                            </div>
+
+                            <div id="collapsecareersTwo" class="collapse" aria-labelledby="headingcareersTwo"
+                                data-parent="#accordionCareers">
+                                <div class="card-body">
+                                    
+                            <form>
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Your Phone</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Your Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+
+                                
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Resume</label>
+                                    <div class="input-file">
+                                        <span>
+                                            Upload Your Cv Here
+                                            <input type="file">
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-submit">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="careers__card">
+                            <div class="careers__item" id="headingcareersThree">
+                                <span class="top">
+                                    <span>Sales Specialist</span>
+                                    <span>Posted 15 May / 2020</span>
+                                </span>
+                                <span class="left">Posted 15 May / 2020</span>
+                                <a href="#" class="apply" type="button" data-toggle="collapse"
+                                    data-target="#collapsecareersThree" aria-expanded="true"
+                                    aria-controls="collapsecareersThree">Apply</a>
+                            </div>
+
+                            <div id="collapsecareersThree" class="collapse" aria-labelledby="headingcareersThree"
+                                data-parent="#accordionCareers">
+                                <div class="card-body">
+                                    
+                            <form>
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Your Phone</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Your Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+
+                                
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Resume</label>
+                                    <div class="input-file">
+                                        <span>
+                                            Upload Your Cv Here
+                                            <input type="file">
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-submit">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -190,6 +322,7 @@
 
 
 
+    
     <section class="profile hide" id="profile">
         <span class="btn-close-profile" id="btn-close-profile">
             <img src="../../image/icons/icon-back.svg" alt=""></span>
@@ -209,13 +342,13 @@
                 </span>
             </div>
 
-            <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordionProfile">
 
                 <div class="card">
-                    <div class="card-header" id="headingOne">
+                    <div class="card-header" id="headingprofileOne">
                         <h2 class="mb-0">
                             <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                                data-target="#collapseOne" aria-controls="collapseOne">
+                                data-target="#collapseprofileOne" aria-controls="collapseprofileOne">
                                 <div>
                                     <span class="img"><img src="../../image/profile/user_siting.svg" alt=""></span>
                                     <span class="text">Manage Your Account</span>
@@ -225,7 +358,7 @@
                         </h2>
                     </div>
 
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div id="collapseprofileOne" class="collapse" aria-labelledby="headingprofileOne" data-parent="#accordionProfile">
                         <div class="card-body">
                             <div class="form-account">
                                 <div class="left">
@@ -264,10 +397,10 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingTwo">
+                    <div class="card-header" id="headingprofileTwo">
                         <h2 class="mb-0">
                             <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                data-target="#collapseprofileTwo" aria-expanded="false" aria-controls="collapseprofileTwo">
                                 <div>
                                     <span class="img"><img src="../../image/profile/settings.svg" alt=""></span>
                                     <span class="text">Settings</span>
@@ -276,7 +409,7 @@
                             </button>
                         </h2>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div id="collapseprofileTwo" class="collapse" aria-labelledby="headingprofileTwo" data-parent="#accordionProfile">
                         <div class="card-body">
 
                             <div class="form-account">
@@ -308,10 +441,10 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingThree">
+                    <div class="card-header" id="headingprofileThree">
                         <h2 class="mb-0">
                             <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                data-target="#collapseprofileThree" aria-expanded="false" aria-controls="collapseprofileThree">
 
                                 <div>
                                     <span class="img"><img src="../../image/profile/notifications.svg" alt=""></span>
@@ -321,8 +454,8 @@
                             </button>
                         </h2>
                     </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                        data-parent="#accordionExample">
+                    <div id="collapseprofileThree" class="collapse" aria-labelledby="headingprofileThree"
+                        data-parent="#accordionProfile">
                         <div class="card-body">
                             <div class="form-account">
                                 <div class="left">
@@ -347,10 +480,10 @@
 
 
                 <div class="card">
-                    <div class="card-header" id="headingFour">
+                    <div class="card-header" id="headingprofileFour">
                         <h2 class="mb-0">
                             <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                data-target="#collapseprofileFour" aria-expanded="false" aria-controls="collapseprofileFour">
 
                                 <div>
                                     <span class="img"><img src="../../image/profile/bookings.svg" alt=""></span>
@@ -360,8 +493,8 @@
                             </button>
                         </h2>
                     </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                        data-parent="#accordionExample">
+                    <div id="collapseprofileFour" class="collapse" aria-labelledby="headingprofileFour"
+                        data-parent="#accordionProfile">
                         <div class="card-body">
                             <div class="form-account">
                                 <ul class="bookings">
@@ -384,10 +517,10 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingFive">
+                    <div class="card-header" id="headingprofileFive">
                         <h2 class="mb-0">
                             <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                data-target="#collapseprofileFive" aria-expanded="false" aria-controls="collapseprofileFive">
 
                                 <div>
                                     <span class="img"><img src="../../image/profile/saved.svg" alt=""></span>
@@ -397,8 +530,8 @@
                             </button>
                         </h2>
                     </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                        data-parent="#accordionExample">
+                    <div id="collapseprofileFive" class="collapse" aria-labelledby="headingprofileFive"
+                        data-parent="#accordionProfile">
                         <div class="card-body">
                             <div class="saveditems">
                                 <div class="saveditems__header">
@@ -581,7 +714,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingSix">
+                    <div class="card-header" id="headingprofileSix">
                         <h2 class="mb-0">
                             <a href="#" class="btn btn-block">
 
@@ -595,7 +728,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingSiven">
+                    <div class="card-header" id="headingprofileSiven">
                         <h2 class="mb-0">
                             <a href="#" class="btn btn-block">
 
@@ -609,7 +742,7 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-header" id="headingEagth">
+                    <div class="card-header" id="headingprofileEagth">
                         <h2 class="mb-0">
                             <a href="#" class="btn btn-block">
                                 <div>
@@ -669,6 +802,12 @@
             document.getElementById("profile").classList.remove("show")
         })
 
+        window.addEventListener('mouseup', function(e) {
+    if (event.target != document.getElementById("btn-close-profile")) {
+        document.getElementById("profile").classList.add("hide")
+        document.getElementById("profile").classList.remove("show")
+    }
+});
     </script>
 </body>
 

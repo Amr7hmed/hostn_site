@@ -19,7 +19,7 @@
   }
 
   &__buttons {
-    width: 250px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,14 +29,14 @@
     .btn {
       background-color: #dddddd;
       width: 100%;
-      height: 70px;
+      height: 50px;
       border-radius: 10px;
       margin-bottom: 15px;
       text-align: center;
       color: #6e6c5a;
       text-transform: capitalize;
       opacity: 1;
-      font-size: 20px;
+      font-size: 16px;
 
       &:hover {
         border: none;
@@ -86,7 +86,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
 
         span {
@@ -96,7 +96,7 @@
         }
 
         .btnoutborder {
-          font-size: 14px;
+          font-size: 12px;
           color: var(--yello-color);
           border: 1px solid var(--yello-color);
           width: 70%;
@@ -124,7 +124,7 @@
 
       .reveiw {
         color: #898989;
-
+        font-size: 12px;
         .star {
           svg {
             color: var(--yello-color);
@@ -150,7 +150,7 @@
 
       p {
         margin-top: 20px;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
       }
 
@@ -177,17 +177,19 @@
 
           .checkin {
             span {
-              font-size: 16px;
+              font-size: 14px;
               color: #329a56;
               font-weight: 500;
+              margin-bottom: 5px;
             }
           }
 
           .checkout {
             span {
-              font-size: 16px;
+              font-size: 14px;
               color: #d94f4f;
               font-weight: 500;
+              margin-bottom: 5px;
             }
           }
 
@@ -197,11 +199,12 @@
               text-transform: capitalize;
 
               li {
-                font-size: 14px;
+                font-size: 12px;
                 color: #161616;
                 font-weight: 400;
 
                 span {
+                  font-size: 12px;
                   color: #6e6c5a;
                 }
               }
@@ -213,11 +216,11 @@
       .services {
         h6 {
           text-align: left;
-          font: normal normal medium 18px/24px Poppins;
           letter-spacing: 0px;
           color: #333333;
           text-transform: capitalize;
           opacity: 1;
+          font-size: 16px;
         }
 
         .serviceone,
@@ -229,11 +232,12 @@
           padding: 5px 10px;
           width: 135px;
           font-weight: 500;
+          font-size: 12px;
         }
 
         img {
-          width: 25px;
-          height: 25px;
+          width: 20px;
+          height: 20px;
           margin-bottom: 0px;
         }
 
@@ -246,6 +250,7 @@
           padding: 5px 10px;
           width: 275px;
           font-weight: 500;
+          font-size: 12px;
         }
       }
     }
@@ -604,7 +609,8 @@
 .booking__img {
   padding: 1px;
   background-size: cover;
-  height: 100vh;
+  max-height: auto;
+  min-height: 100vh;
   position: relative;
   font-family: var(--poppins-font);
 
@@ -642,7 +648,7 @@
 
     h4 {
       font-weight: 600;
-      font-size: 26px;
+      font-size: 22px;
       color: var(--white-color);
       text-align: center;
       text-transform: capitalize;
@@ -730,6 +736,8 @@
 // 4- 1- Style  Component To Media Queris Large.
 @media screen and (max-width: 991px) {
   .booking__img {
+    height: auto;
+    padding: 10px 0px;
     .booking__info {
       width: 60%;
 

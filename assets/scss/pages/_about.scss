@@ -13,7 +13,7 @@
       linear-gradient(221deg, #f9b767 0%, #f7942d 100%, #f7942c 100%) 0% 0%
       no-repeat padding-box;
     opacity: 1;
-    height: 90vh;
+    height: 80vh;
     overflow: hidden;
     font-family: var(--poppins-font);
 
@@ -28,57 +28,29 @@
       p {
         width: 100%;
         text-align: left;
-        font-size: 24px;
+        font-size: 16px;
       }
 
       h4 {
         text-align: center;
-        font-size: 24px;
+        font-size: 18px;
         text-transform: capitalize;
       }
     }
 
     .imags {
-      margin-top: 40px;
       position: relative;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      bottom: -50px;
 
       img {
-        width: calc(100% / 5);
+        width: 75%;
         height: 500px;
         position: relative;
-      }
-
-      .img1 {
-        margin-top: 90px;
-        z-index: 1;
-      }
-
-      .img2 {
-        margin-top: 40px;
-        margin-left: -60px;
-        z-index: 2;
-      }
-
-      .img3 {
-        margin-top: 0px;
-        margin-left: -60px;
-        z-index: 3;
-      }
-
-      .img4 {
-        margin-top: 40px;
-        margin-left: -60px;
-        z-index: 2;
-      }
-
-      .img5 {
-        margin-top: 90px;
-        margin-left: -60px;
-        z-index: 1;
+        margin: 0px auto;
       }
     }
   }
@@ -87,7 +59,6 @@
   &__host {
     background: #eaeaea 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-bottom: 40px;
     font-family: var(--poppins-font);
     padding: 25px 0px;
 
@@ -100,7 +71,7 @@
       h4 {
         letter-spacing: 0px;
         color: #19191b;
-        font-size: 28px;
+        font-size: 22px;
         font-weight: bold;
         width: 25%;
       }
@@ -116,17 +87,16 @@
   }
 
   &__work {
-    margin: 30px 0px;
-    padding: 60px 0px;
+    padding: 40px 0px;
+    background-color: #f7f7f7;
 
     .header {
       text-align: center;
       margin-bottom: 50px;
       text-transform: capitalize;
-      background-color: #f7f7f7;
 
       h5 {
-        font-size: 28px;
+        font-size: 20px;
         color: #0d0d0d;
         text-transform: capitalize;
         font-weight: bold;
@@ -136,14 +106,14 @@
       p {
         width: 60%;
         margin: 0 auto;
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 14px;
+        font-weight: 600;
         color: #696871;
       }
     }
 
     &__item {
-      height: 605px;
+      height: 500px;
       border-radius: 20px 20px 0px 0px;
       overflow: hidden;
       display: flex;
@@ -178,7 +148,7 @@
       text-align: center;
       padding: 30px 0px;
       h6 {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: bold;
         letter-spacing: 0px;
         color: #19191b;
@@ -186,7 +156,6 @@
       p {
         font-size: 16px;
         margin-top: 15px;
-
         letter-spacing: 0px;
         color: #696871;
         opacity: 1;
@@ -202,7 +171,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      height: 350px;
+      height: 300px;
       margin: 40px 0px;
 
       .img {
@@ -216,24 +185,32 @@
         text-align: left;
 
         h5 {
-          font-size: 30px;
+          font-size: 20px;
           font-weight: 600;
           color: #0b0b0b;
           text-transform: capitalize;
-          margin-bottom: 10px;
+          margin-bottom: 15px;
         }
 
         p {
-          font-size: 16px;
-
+          font-size: 14px;
           letter-spacing: 0.12px;
-          color: #070707;
-          font-weight: 500;
+          color: #4d4d4d;
           width: 85%;
         }
       }
     }
   }
+}
+
+
+// 1- 1- Style About Header Component To Media Queris Large.
+@media screen and (min-width: 1400px) {
+  
+.about {
+  &__header {
+    height: 70vh;
+  }}
 }
 
 // 1- 1- Style About Header Component To Media Queris Large.
@@ -258,12 +235,7 @@
         margin-bottom: 20px;
         text-align: center;
         h4 {
-          font-size: 24px;
           margin-bottom: 20px;
-        }
-
-        p {
-          font-size: 14px;
         }
       }
     }
@@ -275,7 +247,6 @@
       .header {
 
         h5 {
-          font-size: 28px;
           color: #0d0d0d;
           text-transform: capitalize;
           font-weight: bold;
@@ -285,7 +256,6 @@
         p {
           width: 60%;
           margin: 0 auto;
-          font-size: 16px;
           font-weight: bold;
           color: #696871;
         }
@@ -373,6 +343,3 @@
   }
 }
 
-// 1- 2- Style About Header Component To Media Queris Samll.
-@media screen and (max-width: 576px) {
-}

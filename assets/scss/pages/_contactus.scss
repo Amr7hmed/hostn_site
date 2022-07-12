@@ -15,12 +15,12 @@
       letter-spacing: 0.8px;
       color: #2b2b2b;
       text-transform: capitalize;
-      font-size: 36px;
+      font-size: 26px;
       font-weight: bold;
     }
 
     p {
-      font-size: 30px;
+      font-size: 18px;
       letter-spacing: 1.5px;
       color: #4e4e4e;
     }
@@ -42,7 +42,7 @@
 
     h3 {
       text-align: center;
-      font-size: 32px;
+      font-size: 22px;
       font-weight: bold;
       text-transform: capitalize;
       margin-top: 80px;
@@ -60,8 +60,8 @@
 
         img {
           margin-right: 10px;
-          width: 27px;
-          height: 27px;
+          width: 24px;
+          height: 24px;
         }
 
         img.email {
@@ -70,7 +70,7 @@
         }
 
         .text {
-          font-size: 18px;
+          font-size: 16px;
           color: #ffffff;
           text-transform: capitalize;
         }
@@ -85,8 +85,8 @@
     flex-direction: row;
 
     a {
-      width: 51px;
-      height: 51px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       background-color: #ffffff4e;
       display: flex;
@@ -113,7 +113,7 @@
 
     h3 {
       text-align: center;
-      font-size: 32px;
+      font-size: 22px;
       font-weight: bold;
       text-transform: capitalize;
       margin-top: 80px;
@@ -125,7 +125,7 @@
       text-align: center;
       letter-spacing: 0px;
       color: #6a6a6a;
-      font-size: 26px;
+      font-size: 16px;
       margin-bottom: 50px;
     }
 
@@ -134,7 +134,7 @@
       margin: 0px auto;
 
       .form-label {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
         text-transform: capitalize;
 
@@ -148,11 +148,13 @@
         background: #ffffff00 0% 0% no-repeat padding-box;
         border: 2px solid #dddddd;
         border-radius: 5px;
+        font-size: 14px;
       }
 
       textarea {
         height: 150px;
         padding: 15px;
+        font-size: 14px;
       }
 
       .btn-send {
@@ -162,7 +164,7 @@
         background: #f7942c 0% 0% no-repeat padding-box;
         border-radius: 5px;
         color: var(--white-color);
-        font-size: 20px;
+        font-size: 18px;
         color: #ffffff;
         text-transform: capitalize;
 

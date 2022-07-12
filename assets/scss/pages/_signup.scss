@@ -1,33 +1,36 @@
 .signup,
 .signin {
   height: auto;
-  margin-top: 30px;
+  margin: 30px 0px;
   font-family: var(--poppins-font);
+  max-height: auto;
+  min-height: 450px;
+
   .row {
     margin-right: 0px;
     margin-left: 0px;
-    > div {
+
+    >div {
       padding-left: 0px;
       padding-right: 0px;
     }
   }
+
   &__logo {
     background-color: var(--yello-color);
     border-radius: 10px 0px 0px 10px;
     opacity: 1;
     padding: 1px;
-    max-height: auto;
-    min-height: 675px;
     width: 100%;
     -webkit-border-radius: 10px 0px 0px 10px;
     -moz-border-radius: 10px 0px 0px 10px;
     -ms-border-radius: 10px 0px 0px 10px;
     -o-border-radius: 10px 0px 0px 10px;
+height: 100%;
     h2 {
       text-align: center;
-      margin-top: 90px;
-      margin-bottom: 80px;
-      font-size: 35px;
+      margin: 50px 0px;
+      font-size: 22px;
       letter-spacing: 0px;
       color: #fcf7f1;
       text-transform: capitalize;
@@ -36,34 +39,33 @@
 
     p {
       text-align: center;
-      font-size: 22px;
+      font-size: 16px;
       letter-spacing: 0px;
       color: #f3f3f3;
       text-transform: capitalize;
-      margin: 0px auto;
     }
 
     .button__signin {
       text-align: center;
-      margin-top: 80px;
+      margin-top: 50px;
 
       a {
-        padding: 15px 0px;
-        border: 3px solid #fcf7f1;
+        padding: 10px 60px;
+        border: 2px solid #fcf7f1;
         border-radius: 10px;
-
-        width: 300px;
         letter-spacing: 0px;
         font-family: var(--poppins-font);
         color: #fcf7f1;
         text-transform: capitalize;
         opacity: 1;
-        font-size: 24px;
+        font-size: 16px;
         height: auto;
         transition: all 2s;
+        font-weight: 500;
+
         &:hover {
           background-color: var(--white-color);
-          border: 3px solid var(--yello-color);
+          border: 2px solid var(--yello-color);
           color: var(--yello-color);
         }
       }
@@ -76,22 +78,21 @@
     border-radius: 0px 10px 10px 0px;
     opacity: 1;
     width: 100%;
-    max-width: auto;
-    padding: 1px;
-    max-height: auto;
-    min-height: 675px;
+    padding: 10px 0px;
+    height: 100%;
 
     .form-control {
       &:focus {
         box-shadow: none !important;
       }
     }
+
     h2 {
-      margin: 33px 0px 23px 0px;
+      margin: 20px 0px;
       text-align: center;
       color: var(--yello-color);
       text-transform: capitalize;
-      font-size: 35px;
+      font-size: 22px;
     }
 
     .form {
@@ -99,96 +100,127 @@
       flex-direction: row;
       background: #fafafa;
       font-family: var(--poppins-font);
+
       .form__inputs {
+        .mt-4 {
+          margin-top: 1rem !important;
+        }
+
         .name {
           .form-control {
             width: 95%;
             display: inline;
           }
         }
+
         .firstname {
           text-align: left;
         }
+
         .lastname {
           text-align: right;
         }
+
         input {
           border: 1px solid #acacac;
-          color: #cccccc;
+          color: #020202;
           text-transform: capitalize;
-          height: 60px;
+          height: 40px;
           border-radius: 10px;
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
           -ms-border-radius: 10px;
           -o-border-radius: 10px;
+          font-size: 12px;
+        }
+
+        #error-msg {
+          color: rgb(253, 63, 63);
+        }
+
+        .mt-5 {
+          margin-top: 1.5rem !important;
         }
 
         .button_create {
-          width: 398px;
-          height: auto;
-          margin: 0px auto;
+          height: 45px;
+          width: 100%;
+          text-align: center;
+
           button {
-            padding: 15px 0px;
-            width: 100%;
+            width: 40%;
             height: 100%;
             border-radius: 10px;
             background-color: var(--yello-color);
             color: var(--white-color);
             text-transform: capitalize;
-            font-size: 20px;
+            font-size: 16px;
             font-family: var(--poppins-font);
             transition: all 2s;
+
             &:hover {
-              border: 3px solid var(--yello-color);
+              border: 2px solid var(--yello-color);
               background-color: transparent;
               color: var(--yello-color);
             }
+
             &:focus {
               box-shadow: none !important;
             }
           }
         }
+
         .input_icon {
           position: relative;
+
           .left-icon {
             left: 4%;
           }
+
           .right-icon {
             right: 2%;
           }
+
           span {
             position: absolute;
             top: 45%;
             transform: translate(-50%, -50%);
             width: 35px;
             height: 20px;
+
             img {
               width: 100%;
               height: 100%;
             }
           }
+
           input {
             padding-left: 40px;
           }
         }
+
         .input-group-prepend {
           border-right: none;
+
           .btn-outline-secondary {
             color: var(--black-color);
+
             &:hover {
               background-color: var(--white-color);
               color: var(--black-color);
             }
+
             &:focus {
               box-shadow: none !important;
             }
           }
         }
+
         .dropdown-toggle {
           border: 1px solid #cccccc;
           height: 50px;
           border-right: none;
+
           img {
             margin-top: 5px;
             margin-bottom: 5px;
@@ -200,11 +232,12 @@
 
       .form__socialmedia {
         margin: 0px 20px;
+
         .socialmedia {
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           text-align: center;
-          line-height: 50px;
+          line-height: 40px;
           box-shadow: 0px 3px 6px #00000029;
           border-radius: 10px;
           -webkit-border-radius: 10px;
@@ -214,15 +247,19 @@
           display: inline-block;
           margin-bottom: 20px;
           font-size: 20px;
+
           &:first-of-type {
             color: #000000;
           }
+
           &:last-of-type {
             color: #3b5998;
           }
+
           &:hover {
             color: #3b5998;
           }
+
           img {
             width: 30px;
             height: 30px;
@@ -241,21 +278,23 @@
   &__form {
     background-color: #fafafa;
     box-shadow: 0px 0px 18px #84848474;
-    border-radius: 10px 0px 0px 10px ;
+    border-radius: 10px 0px 0px 10px;
     opacity: 1;
     width: 100%;
-    max-width: auto;
     padding: 1px;
-    max-height: auto;
-    min-height: 675px;
+
+    form {
+      width: 90%;
+      margin: 0px auto;
+    }
 
     .form-control {
       &:focus {
         box-shadow: none !important;
       }
     }
+
     h2 {
-      margin: 33px 0px 23px 0px;
       text-align: center;
       color: var(--yello-color);
       text-transform: capitalize;
@@ -268,24 +307,14 @@
       align-items: center;
       background: #fafafa;
       font-family: var(--poppins-font);
-      .form__inputs {
-        input {
-          border: 1px solid #acacac;
-          color: #cccccc;
-          text-transform: capitalize;
-          height: 60px;
-          border-radius: 10px;
-          -webkit-border-radius: 10px;
-          -moz-border-radius: 10px;
-          -ms-border-radius: 10px;
-          -o-border-radius: 10px;
-        }
 
+      .form__inputs {
         .button_create {
           width: 342px;
           height: auto;
           margin: 0px auto;
           text-align: center;
+
           button {
             padding: 10px 0px;
             width: 70%;
@@ -297,56 +326,70 @@
             font-size: 20px;
             font-family: var(--poppins-font);
             transition: all 2s;
+
             &:hover {
-              border: 3px solid var(--yello-color);
+              border: 2px solid var(--yello-color);
               background-color: transparent;
               color: var(--yello-color);
             }
+
             &:focus {
               box-shadow: none !important;
             }
           }
         }
+
         .input_icon {
           position: relative;
+
           .left-icon {
             left: 4%;
           }
+
           .right-icon {
             right: 2%;
           }
+
           span {
             position: absolute;
             top: 45%;
             transform: translate(-50%, -50%);
             width: 35px;
             height: 20px;
+
             img {
               width: 100%;
               height: 100%;
             }
           }
+
           input {
             padding-left: 40px;
           }
         }
+
         .input-group-prepend {
           border-right: none;
+
           .btn-outline-secondary {
             color: var(--black-color);
+
             &:hover {
               background-color: var(--white-color);
               color: var(--black-color);
             }
+
             &:focus {
               box-shadow: none !important;
             }
           }
         }
+
         .dropdown-toggle {
           border: 1px solid #cccccc;
           height: 50px;
           border-right: none;
+
           img {
             margin-top: 5px;
             margin-bottom: 5px;
@@ -359,8 +402,9 @@
           margin-top: 21px;
           color: var(--yello-color);
           font-family: var(--poppins-font);
-          font-size: 16px;
+          font-size: 14px;
           text-transform: capitalize;
+
           a {
             &:hover {
               color: var(--yello-color);
@@ -373,11 +417,9 @@
         margin: 50px auto;
         width: 90%;
         text-align: center;
+
         .socialmedia {
-          width: 50px;
-          height: 50px;
           text-align: center;
-          line-height: 50px;
           box-shadow: 0px 3px 6px #00000029;
           border-radius: 10px;
           -webkit-border-radius: 10px;
@@ -388,16 +430,20 @@
           margin-right: 50px;
           margin-bottom: 0px;
           font-size: 20px;
+
           &:first-of-type {
             color: #3b5998;
           }
+
           &:last-of-type {
             color: #000000;
             margin-right: 0px;
           }
+
           &:hover {
             color: #3b5998;
           }
+
           img {
             width: 30px;
             height: 30px;
@@ -407,10 +453,12 @@
     }
   }
 }
+
 // E- Style About Component To Media Queris.
 @media screen and(max-width: 991px) {
+
   .signup,
-  .signin  {
+  .signin {
     &__logo {
       border-radius: 10px 10px 0px 0px;
       -webkit-border-radius: 10px 10px 0px 0px;
@@ -421,6 +469,7 @@
       max-height: auto !important;
       min-height: auto !important;
       padding-bottom: 80px;
+
       h2 {
         text-align: center;
         margin-top: 90px;
@@ -447,29 +496,35 @@
       height: auto;
       max-height: auto;
       min-height: auto;
+
       .form {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
         .form__inputs {
           .name {
             .form-control {
               width: 100%;
             }
           }
+
           .firstname {
             text-align: left;
           }
+
           .lastname {
             text-align: left;
             margin-top: 1.5rem !important;
           }
         }
+
         .form__socialmedia {
           margin: 50px auto;
           width: 90%;
           text-align: center;
+
           .socialmedia {
             width: 50px;
             height: 50px;
@@ -497,27 +552,33 @@
       -webkit-border-radius: 0px 0px 10px 10px;
       -moz-border-radius: 0px 0px 10px 10px;
       -ms-border-radius: 0px 0px 10px 10px;
-      -o-border-radius: 0px 0px 10px 10px;}
+      -o-border-radius: 0px 0px 10px 10px;
+    }
+
     &__form {
       border-radius: 10px 10px 0px 0px;
       -webkit-border-radius: 10px 10px 0px 0px;
       -moz-border-radius: 10px 10px 0px 0px;
       -ms-border-radius: 10px 10px 0px 0px;
-      -o-border-radius: 10px 10px 0px 0px;}
+      -o-border-radius: 10px 10px 0px 0px;
+    }
   }
 }
 
 // E- Style About Component To Media Queris Samll.
 
 @media screen and (max-width: 576px) {
+
   .signup,
   .signin {
     &__logo {
       h2 {
         margin-bottom: 50px;
       }
+
       .button__signin {
         margin-top: 50px;
+
         a {
           width: 90%;
           padding: 10px 0px;
@@ -530,27 +591,33 @@
       max-height: auto;
       min-height: auto;
       padding-bottom: 10px;
+
       h2 {
         font-size: 26px;
         width: 90%;
-       margin-left: auto;
-       margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
       }
+
       .form {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
         .form__inputs {
           width: 95%;
+
           .name {
             .form-control {
               width: 100%;
             }
           }
+
           .firstname {
             text-align: center;
           }
+
           .lastname {
             text-align: center;
             margin-top: 1.5rem !important;
@@ -560,31 +627,37 @@
             .left-icon {
               left: 7%;
             }
+
             .right-icon {
               right: 1%;
             }
+
             span {
               position: absolute;
               top: 45%;
               transform: translate(-50%, -50%);
               width: 35px;
               height: 20px;
+
               img {
                 width: 100%;
                 height: 100%;
               }
             }
+
             input {
               padding-left: 40px;
             }
           }
         }
-        
+
         .form__socialmedia {
           width: 95%;
+
           .socialmedia {
             margin-right: 10px;
-            &:last-of-type{
+
+            &:last-of-type {
               margin-right: 0px;
             }
           }
@@ -595,29 +668,31 @@
 
 
   .signin {
-  &__logo {
-    h2 {
-      text-align: center;
-      margin-top: 90px;
-      margin-bottom: 80px;
-      font-size: 28px;
-      letter-spacing: 0px;
-      color: #fcf7f1;
-      text-transform: capitalize;
-      opacity: 1;
-    }
-     p {
+    &__logo {
+      h2 {
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 80px;
+        font-size: 28px;
+        letter-spacing: 0px;
+        color: #fcf7f1;
+        text-transform: capitalize;
+        opacity: 1;
+      }
+
+      p {
         width: 95%;
         font-size: 18px;
       }
+
       .button__signin {
-  
+
         a {
           font-size: 18px;
         }
       }
-  }
+    }
 
-}
+  }
 
 }

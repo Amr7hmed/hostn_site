@@ -1,5 +1,5 @@
 .profile {
-    width: 530px;
+    width: 400px;
     position: absolute;
     top: 2%;
     right: 12%;
@@ -10,30 +10,30 @@
     z-index: 10;
     font-family: var(--poppins-font);
     padding-bottom: 50px;
-
     .btn-close-profile {
         display: inline-block;
         margin: 10px;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         text-align: center;
-        line-height: 40px;
         cursor: pointer;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
     }
-
     .content {
-        width: 90%;
-        margin: 20px auto;
+        width: 95%;
+        margin: 5px auto;
         text-align: center;
-
         .name {
-            width: 150px;
             margin: 0px auto;
 
             .img {
                 display: block;
-                width: 80px;
-                height: 80px;
+                width: 50px;
+                height: 50px;
                 border-radius: 50%;
                 margin: 0px auto;
                 border: 4px solid #ffffff;
@@ -59,14 +59,12 @@
                     right: -10px;
 
                     input {
-
                         bottom: 0;
                         height: 100%;
                         opacity: 0;
                         position: absolute;
                         right: 0;
                         width: 100%;
-
                     }
 
                     img {
@@ -78,23 +76,21 @@
             }
 
             .text {
-                margin-top: 5px;
+                margin: 5px auto;
                 display: inline-block;
-                font-size: 20px;
+                font-size: 14px;
                 font-weight: 600;
                 letter-spacing: 0.6px;
                 color: #222222;
                 text-transform: capitalize;
                 opacity: 1;
-                margin-bottom: 10px;
             }
         }
     }
-
     .accordion {
+        margin: 5px 0px;
         .card {
             box-shadow: 0px 1px 6px #FFFFFF;
-
             .card-header {
                 h2 {
                     .btn-block {
@@ -109,18 +105,16 @@
                             border: none;
                             box-shadow: none;
                         }
-
                         .img {
                             img {
-                                width: 24px;
-                                height: 25px;
+                                width: 20px;
+                                height: 20px;
                                 margin-right: 10px;
                             }
                         }
-
                         .text,
                         .arrow {
-                            font-size: 18px;
+                            font-size: 14px;
                             font-weight: 600;
                             letter-spacing: 0.6px;
                             color: #222222;
@@ -130,30 +124,30 @@
                     }
                 }
             }
-
             .collapsed {
                 .arrow {
                     transform: rotate(0deg);
                 }
             }
-
             .card-body {
                 .form-account {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
                     text-align: left;
-
                     .left,
                     .right {
                         width: 50%;
-
                         select {
                             width: 95%;
-                        }
+                            font-size: 14px;
 
+                            option {
+                                font-size: 14px;
+                            }
+                        }
                         span.label {
-                            font-size: 16px;
+                            font-size: 12px;
                             font-weight: 500;
                             color: #8B8B8B;
                             text-transform: capitalize;
@@ -170,12 +164,13 @@
                                 cursor: pointer;
                             }
                         }
-
                         .input_edite {
                             width: 90%;
                             margin-bottom: 15px;
+                            font-size: 12px;
+                            padding: 0px 5px;
+                            height: 30px;
                         }
-
                         .buttons {
                             display: flex;
                             flex-direction: row;
@@ -184,8 +179,8 @@
                             margin-top: 34px;
 
                             .btn {
-                                width: 40%;
-                                font-size: 14px;
+                                width: 45%;
+                                font-size: 12px;
                                 font-weight: 600;
                                 text-transform: capitalize;
                                 height: 35px;
@@ -211,16 +206,16 @@
                             label {
                                 color: #222222;
                                 text-transform: capitalize;
-                                font-size: 14px;
-                                font-weight: bold;
+                                font-size: 12px;
+                                font-weight: 550;
                                 display: flex;
                                 flex-direction: row;
                                 align-items: center;
 
                                 .input-gender {
                                     margin-left: 5px;
-                                    width: 22px;
-                                    height: 22px;
+                                    width: 15px;
+                                    height: 15px;
                                     border: 2px solid #F7942C;
                                 }
                             }
@@ -231,13 +226,13 @@
                         width: 100%;
 
                         li {
-                            padding: 20px 0px;
+                            border-bottom: 1px solid #e3e1e1;
+                            padding: 10px 0px;
                             font-family: var(--poppins-font);
                             color: #0D0D0D;
                             text-transform: capitalize;
-                            font-size: 16px;
-                            font-weight: bold;
-                            border-bottom: 1px solid #e3e1e1;
+                            font-size: 12px;
+                            font-weight: 600;
 
                             &:last-of-type {
                                 border-bottom: none;
@@ -250,17 +245,21 @@
             }
         }
     }
-
     .btn-logout {
-        margin: 20px 0px;
+        margin: 10px 0px;
         text-align: left;
         .btn {
             color: #F22929;
             text-transform: capitalize;
             background-color: transparent;
             border: none;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
+            img {
+                width: 15px;
+                height: 15px;
+                margin-right: 5px;
+            }
             &:hover {
                 background-color: transparent;
                 border: none;
@@ -269,13 +268,11 @@
     }
 }
 
-
-
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 23px;
 }
 
 .switch input {
@@ -299,10 +296,10 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 18px;
+    width: 18px;
     left: 4px;
-    bottom: 4px;
+    bottom: 3px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -339,8 +336,8 @@ input:checked+.slider:before {
         align-items: center;
 
         .btn {
-            font-size: 16px;
-            font-weight: 500;
+            font-size: 14px;
+            font-weight: 600;
             font-family: var(--poppins-font);
             letter-spacing: 0.48px;
             color: #6D6D6D;
@@ -356,7 +353,7 @@ input:checked+.slider:before {
     }
 
     &__content {
-        height: 400px;
+        height: 300px;
         overflow-y: auto;
         margin-top: 20px;
     }
@@ -368,7 +365,7 @@ input:checked+.slider:before {
         margin: 0px auto;
 
         .btn-remove {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             font-family: var(--poppins-font);
             letter-spacing: 0.48px;
@@ -392,7 +389,7 @@ input:checked+.slider:before {
 
         .detiles {
             width: 100%;
-            height: 190px;
+            height: 150px;
             border-radius: 5px;
             position: relative;
 
@@ -425,17 +422,19 @@ input:checked+.slider:before {
                     border-radius: 3px;
                     opacity: 0.62;
                     border: none;
-                    padding: 5px 15px
+                    padding: 3px 8px;
+                    font-size: 12px;
+                    height: auto;
                 }
 
                 img {
                     margin: 5px 0px;
-                    width: 21px;
-                    height: 20px;
+                    width: 15px;
+                    height: 15px;
                 }
 
                 .text-icons {
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 500;
                     letter-spacing: 0px;
                     color: #FFFFFF;
@@ -452,12 +451,12 @@ input:checked+.slider:before {
                 z-index: 2;
                 align-items: flex-start;
                 color: #FFFFFF;
-                font-size: 16px;
+                font-size: 12px;
 
                 span {
                     &:first-of-type {
-                        font-size: 18px;
-                        font-weight: bold;
+                        font-size: 12px;
+                        font-weight: 600;
                         text-transform: uppercase;
                     }
                 }
@@ -468,7 +467,7 @@ input:checked+.slider:before {
                 z-index: 2;
                 bottom: 10px;
                 color: #FFFFFF;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 500;
                 text-transform: capitalize;
                 display: flex;
@@ -479,16 +478,16 @@ input:checked+.slider:before {
                 width: 100%;
 
                 img {
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 3px;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 2px;
                     filter: invert(40%) sepia(7%) saturate(3%) hue-rotate(1deg) brightness(1000%) contrast(100%);
                 }
 
                 .location,
                 .amwag {
                     color: #FFFFFF;
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 500;
                 }
             }
