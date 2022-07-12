@@ -86,13 +86,13 @@
               
               <div class="input_calendar">
                 <img src="./assets/image/icons/calendar.svg" alt="calendar">
-                <input type="date" placeholder="pick up-date">
+                <input type="text" name="daterange" id="demo_calendar_one"/>
               </div>
               
               
               <div class="input_calendar">
                 <img src="./assets/image/icons/calendar.svg" alt="calendar">
-                <input type="date" placeholder="return date">
+                <input type="text" name="daterange" id="demo_calendar_two"/>
               </div>
 
           <button class="btn btn-find">
@@ -682,6 +682,11 @@
   <!-- Script Genral Js File -->
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js" integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <script src="./assets/js/navbar.js"></script>
   <script src="./assets/js/script.js"></script>
   <script>
@@ -728,6 +733,59 @@
         }
       ]
     });
+
+
+    $('#demo_calendar_one').daterangepicker({
+      "showDropdowns": true,
+      "showWeekNumbers": true,
+      "showISOWeekNumbers": true,
+      "timePicker": true,
+      "timePicker24Hour": true,
+      "timePickerSeconds": true,
+      "minDate": new Date(),
+      ranges: {
+        'Today': [moment(), moment()],
+        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+        'This Month': [moment().startOf('month'), moment().endOf('month')],
+        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+      },
+      "alwaysShowCalendars": true,
+    "singleDatePicker": true,
+      "drops": "auto"
+    }, function (start, end, label) {
+      console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+
+    });
+
+
+    
+
+    $('#demo_calendar_two').daterangepicker({
+      "showDropdowns": true,
+      "showWeekNumbers": true,
+      "showISOWeekNumbers": true,
+      "timePicker": true,
+      "timePicker24Hour": true,
+      "timePickerSeconds": true,
+      "minDate": new Date(),
+      ranges: {
+        'Today': [moment(), moment()],
+        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+        'This Month': [moment().startOf('month'), moment().endOf('month')],
+        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+      },
+      "alwaysShowCalendars": true,
+    "singleDatePicker": true,
+      "drops": "auto"
+    }, function (start, end, label) {
+      console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+
+    });
+    
   </script>
 </body>
 

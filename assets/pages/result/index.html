@@ -92,6 +92,11 @@
                   Location
                 </button>
                 <div class="dropdown-menu hide" id="dMloctin" aria-labelledby="dMloctinButton1">
+                  <div class="top">
+                    <span id="dMloctin_button_close">
+                      <img src="../../image/icons/icon-back.svg" alt="">
+                    </span>
+                  </div>
                   <div class="content">
                     <div class="title">
                       <span>Choose Search Destination</span>
@@ -135,7 +140,7 @@
 
                     </div>
 
-                    <button class="btn">Done</button>
+                    <button class="btn" id="loction_done">Done</button>
                   </div>
 
                 </div>
@@ -146,6 +151,8 @@
 
           <div class="result__sort">
             <div class="result__sort__filter">
+
+
               <div class="dropdown">
                 <button class="btn" type="button" id="result__button__filter" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -168,18 +175,16 @@
                     <div class="left">
                       <div class="filter_price">
                         <span class="title">Price Range<span>(Budget Per Night)</span></span>
-                        <div>
-                          <div class="range">
-                            <div>
-                              <span>0 EGP</span>
-                              <span>50,000 EGP</span>
-                            </div>
-                            <div>
+                        
+                        <div class="price-slider">
+                          <span class="price-slider-number">
+                          <input type="number" value="5000" min="0" max="120000"/>
+                          <input type="number" value="50000" min="0" max="120000"/>
+                        </span>
+                        <input value="25000" min="0" max="120000" step="500" type="range"/>
+                        <input value="50000" min="0" max="120000" step="500" type="range"/>
+                      </div>
 
-                              <input type="range" class="win10-thumb" min="0" max="100" value="25" step="5" />
-                            </div>
-                          </div>
-                        </div>
                       </div>
 
 
@@ -303,7 +308,7 @@
                     </div>
                   </div>
 
-                  <button class="btn btn_end">
+                  <button class="btn btn_end" id="show_result_filter">
                     Show Result
                   </button>
                 </div>
@@ -329,25 +334,23 @@
 
                   <div class="rating">
                     <h6>Property Rating</h6>
-
-                    <ul class="stars">
-                      <li class="star actve">
-                        <img src="../../image/icons/star.svg" alt="">
-                      </li>
-                      <li class="star">
-                        <img src="../../image/icons/star.svg" alt="">
-                      </li>
-                      <li class="star">
-                        <img src="../../image/icons/star.svg" alt="">
-                      </li>
-                      <li class="star">
-                        <img src="../../image/icons/star.svg" alt="">
-                      </li>
-                      <li class="star">
-                        <img src="../../image/icons/star.svg" alt="">
-                      </li>
-                    </ul>
                   </div>
+                    
+                          <div class="stars">
+                            <div class="rate">
+                              <input type="radio" id="star5" name="rate" value="5" />
+                              <label for="star5" title="text">5 stars</label>
+                              <input type="radio" id="star4" name="rate" value="4" />
+                              <label for="star4" title="text">4 stars</label>
+                              <input type="radio" id="star3" name="rate" value="3" />
+                              <label for="star3" title="text">3 stars</label>
+                              <input type="radio" id="star2" name="rate" value="2" />
+                              <label for="star2" title="text">2 stars</label>
+                              <input type="radio" id="star1" name="rate" value="1" />
+                              <label for="star1" title="text">1 star</label>
+                            </div>
+                          </div>
+                  
 
                   <div class="checkboxarrival">
                     <ul>
@@ -378,7 +381,7 @@
 
                   <div class="buttons">
                     <button class="btn">Reset</button>
-                    <button class="btn">Done</button>
+                    <button class="btn" id="done_result__sort">Done</button>
                   </div>
 
                 </div>
@@ -389,8 +392,12 @@
           <div class="result__gallry">
             <div class="result__link">
               <span>23 Properties FOUND</span>
-              <span>
+              <span class="result__dayinput">
                 <img src="../../image/icons/fi-rr-calendar.svg" alt=""> 15 Feb To 18 Feb (3Nignts)
+
+                <div class="inputs">
+                  <input type="text" name="daterange" id="demo" />
+                </div>
               </span>
             </div>
 
@@ -402,9 +409,6 @@
                 <span class="tag show">
                   <span class="text">Cairo</span>
                 </span>
-              </div>
-              <div class="buttons">
-                <input type="text" name="daterange" value="07/01/2022 - 07/15/2022" />
               </div>
             </div>
             <div class="images">
@@ -440,8 +444,8 @@
                   Hurghada
                 </div>
 
-                <div class="detiles">
-                  <button class="btn viewpopupe_1" id="1">
+                <div class="detiles ">
+                  <button class="btn viewpopupe_1" id="2">
                     Quick View
                   </button>
 
@@ -465,10 +469,10 @@
                       <div class="img-carousel">
                         <div class="owl-carousel owl-theme">
                           <div class="item">
-                            <img src="../../image/bg/toprated-three.png" alt="" class="item_img_carousel">
+                            <img src="../../image/bg/toprated-one.png" alt="" class="item_img_carousel">
                           </div>
                           <div class="item">
-                            <img src="../../image/bg/toprated-two.png" alt="" class="item_img_carousel">
+                            <img src="../../image/bg/toprated-one.png" alt="" class="item_img_carousel">
                           </div>
                           <div class="item">
                             <img src="../../image/bg/toprated-one.png" alt="" class="item_img_carousel">
@@ -542,11 +546,18 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
+                            <div class="rate">
+                              <input type="radio" id="star5_popupe_1" name="rate" value="5" />
+                              <label for="star5_popupe_1" title="text">5 stars</label>
+                              <input type="radio" id="star4_popupe_1" name="rate" value="4" />
+                              <label for="star4_popupe_1" title="text">4 stars</label>
+                              <input type="radio" id="star3_popupe_1" name="rate" value="3" />
+                              <label for="star3_popupe_1" title="text">3 stars</label>
+                              <input type="radio" id="star2_popupe_1" name="rate" value="2" />
+                              <label for="star2_popupe_1" title="text">2 stars</label>
+                              <input type="radio" id="star1_popupe_1" name="rate" value="1" />
+                              <label for="star1_popupe_1" title="text">1 star</label>
+                            </div>
                           </div>
                           <div class="text">
                             2370 review
@@ -751,11 +762,18 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
+                            <div class="rate">
+                              <input type="radio" id="star5_popupe_2" name="rate" value="5" />
+                              <label for="star5_popupe_2" title="text">5 stars</label>
+                              <input type="radio" id="star4_popupe_2" name="rate" value="4" />
+                              <label for="star4_popupe_2" title="text">4 stars</label>
+                              <input type="radio" id="star3_popupe_2" name="rate" value="3" />
+                              <label for="star3_popupe_2" title="text">3 stars</label>
+                              <input type="radio" id="star2_popupe_2" name="rate" value="2" />
+                              <label for="star2_popupe_2" title="text">2 stars</label>
+                              <input type="radio" id="star1_popupe_2" name="rate" value="1" />
+                              <label for="star1_popupe_2" title="text">1 star</label>
+                            </div>
                           </div>
                           <div class="text">
                             2370 review
@@ -829,7 +847,7 @@
 
               <div class="img-item img-3" style="background-image: url(../../image/bg/toprated-three.png);">
                 <div class="overload"></div>
-                
+
                 <div class="review">
                   <span>
                     <img src="../../image/icons/star.svg" alt="">
@@ -962,11 +980,18 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
+                            <div class="rate">
+                              <input type="radio" id="star5_popupe_3" name="rate" value="5" />
+                              <label for="star5_popupe_3" title="text">5 stars</label>
+                              <input type="radio" id="star4_popupe_3" name="rate" value="4" />
+                              <label for="star4_popupe_3" title="text">4 stars</label>
+                              <input type="radio" id="star3_popupe_3" name="rate" value="3" />
+                              <label for="star3_popupe_3" title="text">3 stars</label>
+                              <input type="radio" id="star2_popupe_3" name="rate" value="2" />
+                              <label for="star2_popupe_3" title="text">2 stars</label>
+                              <input type="radio" id="star1_popupe_3" name="rate" value="1" />
+                              <label for="star1_popupe_3" title="text">1 star</label>
+                            </div>
                           </div>
                           <div class="text">
                             3370 review
@@ -1040,7 +1065,7 @@
 
               <div class="img-item img-4" style="background-image: url(../../image/bg/header.png);">
                 <div class="overload"></div>
-                
+
                 <div class="review">
                   <span>
                     <img src="../../image/icons/star.svg" alt="">
@@ -1173,11 +1198,18 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
+                            <div class="rate">
+                              <input type="radio" id="star5_popupe_4" name="rate" value="5" />
+                              <label for="star5_popupe_4" title="text">5 stars</label>
+                              <input type="radio" id="star4_popupe_4" name="rate" value="4" />
+                              <label for="star4_popupe_4" title="text">4 stars</label>
+                              <input type="radio" id="star3_popupe_4" name="rate" value="3" />
+                              <label for="star3_popupe_4" title="text">3 stars</label>
+                              <input type="radio" id="star2_popupe_4" name="rate" value="2" />
+                              <label for="star2_popupe_4" title="text">2 stars</label>
+                              <input type="radio" id="star1_popupe_4" name="rate" value="1" />
+                              <label for="star1_popupe_4" title="text">1 star</label>
+                            </div>
                           </div>
                           <div class="text">
                             4470 review
@@ -1251,7 +1283,7 @@
 
               <div class="img-item img-5" style="background-image: url(../../image/bg/header.png);">
                 <div class="overload"></div>
-                
+
                 <div class="review">
                   <span>
                     <img src="../../image/icons/star.svg" alt="">
@@ -1370,7 +1402,7 @@
                       </div>
 
                       <div class="content">
-                        <h5>Lorem Ipsum</h5>
+                        <h4>Lorem Ipsum</h4>
                         <div class="loction">
                           <img src="../../image/icons/location.svg" alt="">
                           <span>
@@ -1384,11 +1416,18 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
+                            <div class="rate">
+                              <input type="radio" id="star5_popupe_5" name="rate" value="5" />
+                              <label for="star5_popupe_5" title="text">5 stars</label>
+                              <input type="radio" id="star4_popupe_5" name="rate" value="4" />
+                              <label for="star4_popupe_5" title="text">4 stars</label>
+                              <input type="radio" id="star3_popupe_5" name="rate" value="3" />
+                              <label for="star3_popupe_5" title="text">3 stars</label>
+                              <input type="radio" id="star2_popupe_5" name="rate" value="2" />
+                              <label for="star2_popupe_5" title="text">2 stars</label>
+                              <input type="radio" id="star1_popupe_5" name="rate" value="1" />
+                              <label for="star1_popupe_5" title="text">1 star</label>
+                            </div>
                           </div>
                           <div class="text">
                             5570 review
@@ -1462,7 +1501,7 @@
 
               <div class="img-item img-6" style="background-image: url(../../image/bg/header.png);">
                 <div class="overload"></div>
-                
+
                 <div class="review">
                   <span>
                     <img src="../../image/icons/star.svg" alt="">
@@ -1581,7 +1620,7 @@
                       </div>
 
                       <div class="content">
-                        <h6>Lorem Ipsum</h6>
+                        <h4>Lorem Ipsum</h4>
                         <div class="loction">
                           <img src="../../image/icons/location.svg" alt="">
                           <span>
@@ -1595,11 +1634,18 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
+                            <div class="rate">
+                              <input type="radio" id="star5_popupe_6" name="rate" value="5" />
+                              <label for="star5_popupe_6" title="text">5 stars</label>
+                              <input type="radio" id="star4_popupe_6" name="rate" value="4" />
+                              <label for="star4_popupe_6" title="text">4 stars</label>
+                              <input type="radio" id="star3_popupe_6" name="rate" value="3" />
+                              <label for="star3_popupe_6" title="text">3 stars</label>
+                              <input type="radio" id="star2_popupe_6" name="rate" value="2" />
+                              <label for="star2_popupe_6" title="text">2 stars</label>
+                              <input type="radio" id="star1_popupe_6" name="rate" value="1" />
+                              <label for="star1_popupe_6" title="text">1 star</label>
+                            </div>
                           </div>
                           <div class="text">
                             6670 review
@@ -1673,7 +1719,7 @@
 
               <div class="img-item img-7" style="background-image: url(../../image/bg/header.png);">
                 <div class="overload"></div>
-                
+
                 <div class="review">
                   <span>
                     <img src="../../image/icons/star.svg" alt="">
@@ -1792,7 +1838,7 @@
                       </div>
 
                       <div class="content">
-                        <h7>Lorem Ipsum</h7>
+                        <h4>Lorem Ipsum</h4>
                         <div class="loction">
                           <img src="../../image/icons/location.svg" alt="">
                           <span>
@@ -1806,11 +1852,18 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
+                            <div class="rate">
+                              <input type="radio" id="star5_popupe_7" name="rate" value="5" />
+                              <label for="star5_popupe_7" title="text">5 stars</label>
+                              <input type="radio" id="star4_popupe_7" name="rate" value="4" />
+                              <label for="star4_popupe_7" title="text">4 stars</label>
+                              <input type="radio" id="star3_popupe_7" name="rate" value="3" />
+                              <label for="star3_popupe_7" title="text">3 stars</label>
+                              <input type="radio" id="star2_popupe_7" name="rate" value="2" />
+                              <label for="star2_popupe_7" title="text">2 stars</label>
+                              <input type="radio" id="star1_popupe_7" name="rate" value="1" />
+                              <label for="star1_popupe_7" title="text">1 star</label>
+                            </div>
                           </div>
                           <div class="text">
                             7770 review
@@ -1884,7 +1937,7 @@
 
               <div class="img-item img-8" style="background-image: url(../../image/bg/header.png);">
                 <div class="overload"></div>
-                
+
                 <div class="review">
                   <span>
                     <img src="../../image/icons/star.svg" alt="">
@@ -2003,7 +2056,7 @@
                       </div>
 
                       <div class="content">
-                        <h8>Lorem Ipsum</h8>
+                        <h4>Lorem Ipsum</h4>
                         <div class="loction">
                           <img src="../../image/icons/location.svg" alt="">
                           <span>
@@ -2017,11 +2070,18 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
+                            <div class="rate">
+                              <input type="radio" id="star5_popupe_8" name="rate" value="5" />
+                              <label for="star5_popupe_8" title="text">5 stars</label>
+                              <input type="radio" id="star4_popupe_8" name="rate" value="4" />
+                              <label for="star4_popupe_8" title="text">4 stars</label>
+                              <input type="radio" id="star3_popupe_8" name="rate" value="3" />
+                              <label for="star3_popupe_8" title="text">3 stars</label>
+                              <input type="radio" id="star2_popupe_8" name="rate" value="2" />
+                              <label for="star2_popupe_8" title="text">2 stars</label>
+                              <input type="radio" id="star1_popupe_8" name="rate" value="1" />
+                              <label for="star1_popupe_8" title="text">1 star</label>
+                            </div>
                           </div>
                           <div class="text">
                             8880 review
@@ -2095,7 +2155,7 @@
 
               <div class="img-item img-9" style="background-image: url(../../image/bg/header.png);">
                 <div class="overload"></div>
-                
+
                 <div class="review">
                   <span>
                     <img src="../../image/icons/star.svg" alt="">
@@ -2214,7 +2274,7 @@
                       </div>
 
                       <div class="content">
-                        <h9>Lorem Ipsum</h9>
+                        <h4>Lorem Ipsum</h4>
                         <div class="loction">
                           <img src="../../image/icons/location.svg" alt="">
                           <span>
@@ -2228,11 +2288,18 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
-                            <img src="../../image/icons/star.svg" alt="">
+                            <div class="rate">
+                              <input type="radio" id="star5_popupe_9" name="rate" value="5" />
+                              <label for="star5_popupe_9" title="text">5 stars</label>
+                              <input type="radio" id="star4_popupe_9" name="rate" value="4" />
+                              <label for="star4_popupe_9" title="text">4 stars</label>
+                              <input type="radio" id="star3_popupe_9" name="rate" value="3" />
+                              <label for="star3_popupe_9" title="text">3 stars</label>
+                              <input type="radio" id="star2_popupe_9" name="rate" value="2" />
+                              <label for="star2_popupe_9" title="text">2 stars</label>
+                              <input type="radio" id="star1_popupe_9" name="rate" value="1" />
+                              <label for="star1_popupe_9" title="text">1 star</label>
+                            </div>
                           </div>
                           <div class="text">
                             9990 review
@@ -2412,26 +2479,160 @@
   <script>
     const dropdownMenuButtonloction = document.getElementById("dMloctinButton1");
     dropdownMenuButtonloction.addEventListener("click", function () {
-      if (document.getElementById("dMloctin").classList.contains("hide") === true) {
+
+      if (document.getElementById("dMloctin").classList.contains("show") === true) {
+        document.getElementById("dMloctin").classList.add("hide");
+        document.getElementById("dMloctin").classList.remove("show");
+        document.getElementById("result__button__filter").classList.remove("noactive")
+        document.getElementById("result__button__sort").classList.remove("noactive")
+        document.getElementById("demo").classList.remove("noactive");
+
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+      } else {
         document.getElementById("dMloctin").classList.add("show")
         document.getElementById("dMloctin").classList.remove("hide")
-      } else {
-        document.getElementById("dMloctin").classList.add("hide")
-        document.getElementById("dMloctin").classList.remove("show")
+        document.getElementById("result__button__filter").classList.add("noactive");
+        document.getElementById("result__button__sort").classList.add("noactive");
+        document.getElementById("demo").classList.add("noactive");
+
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.add('noactive');
+        });
       }
     })
 
 
     const resultbuttonfilter = document.getElementById("result__button__filter");
     resultbuttonfilter.addEventListener("click", function () {
-      if (document.getElementById("result__item__filter").classList.contains("hide") === true) {
-        document.getElementById("result__item__filter").classList.add("show")
-        document.getElementById("result__item__filter").classList.remove("hide")
-      } else {
+      if (document.getElementById("result__item__filter").classList.contains("show") === true) {
         document.getElementById("result__item__filter").classList.add("hide")
         document.getElementById("result__item__filter").classList.remove("show")
+        document.getElementById("dMloctinButton1").classList.remove("noactive")
+        document.getElementById("result__button__sort").classList.remove("noactive")
+        document.getElementById("demo").classList.remove("noactive");
+
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+      } else {
+        document.getElementById("result__item__filter").classList.add("show")
+        document.getElementById("result__item__filter").classList.remove("hide")
+        document.getElementById("dMloctinButton1").classList.add("noactive");
+        document.getElementById("result__button__sort").classList.add("noactive");
+        document.getElementById("demo").classList.add("noactive");
+
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.add('noactive');
+        });
       }
 
+    })
+
+
+
+
+    const resultbuttonsort = document.getElementById("result__button__sort");
+    resultbuttonsort.addEventListener("click", function () {
+      if (document.getElementById("result__item__sort").classList.contains("show") === true) {
+        document.getElementById("result__item__sort").classList.add("hide")
+        document.getElementById("result__item__sort").classList.remove("show")
+        document.getElementById("dMloctinButton1").classList.remove("noactive")
+        document.getElementById("result__button__filter").classList.remove("noactive");
+        document.getElementById("demo").classList.remove("noactive");
+        
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+      } else {
+        document.getElementById("result__item__sort").classList.add("show")
+        document.getElementById("result__item__sort").classList.remove("hide")
+        document.getElementById("dMloctinButton1").classList.add("noactive");
+        document.getElementById("result__button__filter").classList.add("noactive");
+        document.getElementById("demo").classList.add("noactive");
+        
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.add('noactive');
+        });
+      }
+
+    })
+
+    document.getElementById("close_item_filter").addEventListener("click", function () {
+      document.getElementById("result__item__filter").classList.add("hide")
+      document.getElementById("result__item__filter").classList.remove("show")
+      document.getElementById("dMloctinButton1").classList.remove("noactive")
+      document.getElementById("result__button__sort").classList.remove("noactive")
+      document.getElementById("demo").classList.remove("noactive");
+      
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+    })
+
+    document.getElementById("show_result_filter").addEventListener("click", function () {
+      document.getElementById("result__item__filter").classList.add("hide")
+      document.getElementById("result__item__filter").classList.remove("show")
+      document.getElementById("dMloctinButton1").classList.remove("noactive")
+      document.getElementById("result__button__sort").classList.remove("noactive")
+      document.getElementById("demo").classList.remove("noactive");
+      
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+    })
+    
+
+    document.getElementById("close_item__sort").addEventListener("click", function () {
+      document.getElementById("result__item__sort").classList.add("hide")
+      document.getElementById("result__item__sort").classList.remove("show")
+      document.getElementById("dMloctinButton1").classList.remove("noactive")
+      document.getElementById("result__button__filter").classList.remove("noactive");
+      document.getElementById("demo").classList.remove("noactive");
+
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+    })
+
+
+      document.getElementById("done_result__sort").addEventListener("click", function () {
+      document.getElementById("result__item__sort").classList.add("hide")
+      document.getElementById("result__item__sort").classList.remove("show")
+      document.getElementById("dMloctinButton1").classList.remove("noactive")
+      document.getElementById("result__button__filter").classList.remove("noactive");
+      document.getElementById("demo").classList.remove("noactive");
+
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+    })
+
+
+    document.getElementById("dMloctin_button_close").addEventListener("click", function () {
+      document.getElementById("dMloctin").classList.add("hide");
+      document.getElementById("dMloctin").classList.remove("show");
+      document.getElementById("result__button__filter").classList.remove("noactive")
+      document.getElementById("result__button__sort").classList.remove("noactive")
+      document.getElementById("demo").classList.remove("noactive");
+      
+      document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+    })
+
+    
+    document.getElementById("loction_done").addEventListener("click", function () {
+      document.getElementById("dMloctin").classList.add("hide");
+      document.getElementById("dMloctin").classList.remove("show");
+      document.getElementById("result__button__filter").classList.remove("noactive")
+      document.getElementById("result__button__sort").classList.remove("noactive")
+      document.getElementById("demo").classList.remove("noactive");
+      
+      document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
     })
 
     const dPropertyButton = document.getElementById("dPropertyButton1");
@@ -2445,42 +2646,6 @@
       }
 
     })
-
-
-    const resultbuttonsort = document.getElementById("result__button__sort");
-    resultbuttonsort.addEventListener("click", function () {
-      if (document.getElementById("result__item__sort").classList.contains("hide") === true) {
-        document.getElementById("result__item__sort").classList.add("show")
-        document.getElementById("result__item__sort").classList.remove("hide")
-      } else {
-        document.getElementById("result__item__sort").classList.add("hide")
-        document.getElementById("result__item__sort").classList.remove("show")
-      }
-
-    })
-
-    document.getElementById("close_item_filter").addEventListener("click", function () {
-      document.getElementById("result__item__filter").classList.add("hide")
-      document.getElementById("result__item__filter").classList.remove("show")
-    })
-
-    document.getElementById("close_item__sort").addEventListener("click", function () {
-      document.getElementById("result__item__sort").classList.add("hide")
-      document.getElementById("result__item__sort").classList.remove("show")
-    })
-
-    window.addEventListener('mouseup', function(e) {
-    if (event.target != document.getElementById("btn-close-profile")) {
-      document.getElementById("result__item__sort").classList.add("hide")
-      document.getElementById("result__item__sort").classList.remove("show")
-      document.getElementById("result__item__filter").classList.add("hide")
-      document.getElementById("result__item__filter").classList.remove("show")
-        document.getElementById("dProperty").classList.add("hide")
-        document.getElementById("dProperty").classList.remove("show")
-        document.getElementById("dMloctin").classList.add("hide")
-        document.getElementById("dMloctin").classList.remove("show")
-    }
-});
 
     document.querySelectorAll(".select-need").forEach(item =>
       item.addEventListener("click", function () {
@@ -2502,21 +2667,16 @@
     )
 
 
-    document.querySelectorAll(".star").forEach(item =>
-      item.addEventListener("click", function () {
-        item.classList.add("actve")
-      })
-    )
 
     let Itemimags = document.querySelectorAll(".item_img_carousel"),
-        itemcover = document.querySelector(".item-img-cover");
+      itemcover = document.querySelector(".item-img-cover");
 
-      Itemimags.forEach(item =>
-        item.addEventListener("click", function () {
-          itemcover.src = item.src;
-        })
+    Itemimags.forEach(item =>
+      item.addEventListener("click", function () {
+        itemcover.src = item.src;
+      })
 
-      );
+    );
 
 
     $('.owl-carousel').owlCarousel({
@@ -2540,13 +2700,74 @@
     });
 
 
-    $(function () {
-      $('input[name="daterange"]').daterangepicker({
-        opens: 'left'
-      }, function (start, end, label) {
-        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-      });
+    $('#demo').daterangepicker({
+      "showDropdowns": true,
+      "showWeekNumbers": true,
+      "showISOWeekNumbers": true,
+      "timePicker": true,
+      "timePicker24Hour": true,
+      "timePickerSeconds": true,
+      "minDate": new Date(),
+      ranges: {
+        'Today': [moment(), moment()],
+        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+        'This Month': [moment().startOf('month'), moment().endOf('month')],
+        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+      },
+      "alwaysShowCalendars": true,
+      "startDate": new Date(),
+      //"endDate": "07/12/2022",
+      "drops": "auto"
+    }, function (start, end, label) {
+      console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+
     });
+
+
+
+    (function() {
+ 
+  var parent = document.querySelector(".price-slider");
+  if(!parent) return;
+ 
+  var
+    rangeS = parent.querySelectorAll("input[type=range]"),
+    numberS = parent.querySelectorAll("input[type=number]");
+ 
+  rangeS.forEach(function(el) {
+    el.oninput = function() {
+      var slide1 = parseFloat(rangeS[0].value),
+        	slide2 = parseFloat(rangeS[1].value);
+ 
+      if (slide1 > slide2) {
+		[slide1, slide2] = [slide2, slide1];
+      }
+ 
+      numberS[0].value = slide1;
+      numberS[1].value = slide2;
+    }
+  });
+ 
+  numberS.forEach(function(el) {
+    el.oninput = function() {
+		var number1 = parseFloat(numberS[0].value),
+		number2 = parseFloat(numberS[1].value);
+		
+      if (number1 > number2) {
+        var tmp = number1;
+        numberS[0].value = number2;
+        numberS[1].value = tmp;
+      }
+ 
+      rangeS[0].value = number1;
+      rangeS[1].value = number2;
+ 
+    }
+  });
+ 
+})();
   </script>
 </body>
 

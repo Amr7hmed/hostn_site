@@ -74,6 +74,9 @@ button:focus {
   margin: 0px auto
 }
 */
+.noactive{
+  pointer-events: none;
+}
 .hide {
   display: none !important;
 }

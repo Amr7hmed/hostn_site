@@ -77,7 +77,24 @@ header.header {
           }
         }
       }
+      .input_calendar{
+        position: relative;
+    justify-content: flex-start;
+    padding: 0px 15px;
+        cursor: pointer;
+        #demo_calendar_one,
+        #demo_calendar_two{
+            height: 100%;
+            cursor: pointer;
 
+        }
+        input{
+          
+          &:focus-visible{
+            border: 1px solid var(--yello-color);
+          }
+        }
+      }
       .btn-find {
         background-color: var(--yello-color);
         color: var(--white-color);
