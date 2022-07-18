@@ -38,7 +38,7 @@
 
   <!--Navbar Component-->
   <nav class="nav">
-    <div class="container">
+    <div class="container-fluid">
       <div class="nav__navbar w-100">
         <div class="row w-100">
           <div class="col-md-12 col-lg-6 navbar__logo">
@@ -89,7 +89,7 @@
                   aria-expanded="false">
 
                   <img src="../../image/icons/location.svg" alt="location">
-                  Location
+                  Destination
                 </button>
                 <div class="dropdown-menu hide" id="dMloctin" aria-labelledby="dMloctinButton1">
                   <div class="top">
@@ -102,12 +102,63 @@
                       <span>Choose Search Destination</span>
                     </div>
                     <div class="input-search">
-                      <input name="location" id="location-search" placeholder="search for Destination name or compound">
+                      <input name="destination" id="destination-search" placeholder="search for Destination name " 
+                      onkeyup="destinationsearch()">
+                    </div>
+                    <div class="input_lists_contener">
+                      <button class="reset btn">Reset</button>
+                      <form class="input_lists" onchange="opencompoundsearch()">
+                        <ul class="left" id="myULdestinationsearch">
+                          <li class="form-check result_list_serch">
+                            <input class="left-checkbox" type="checkbox" value="" id="elsahel" name="destination">
+                            <label class="form-check-label" for="elsahel">
+                              El Sahel
+                            </label>
+                          </li>
+                          <li class="form-check result_list_serch">
+                            <input class="left-checkbox" type="checkbox" value="" id="elsokhna" name="destination">
+                            <label class="form-check-label" for="elsokhna">
+                              El Sokhna
+                            </label>
+                          </li>
+                        </ul>
+
+                      </form>
+
+                    </div>
+
+                    <button class="btn" id="destination_done">Done</button>
+                  </div>
+
+                </div>
+              </div>
+
+              
+              <div class="dropdown">
+                <button class="btn dropdown-toggle noactive" type="button" id="dMloctinButton2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+
+                  <img src="../../image/icons/location.svg" alt="location">
+                  Compound
+                </button>
+                <div class="dropdown-menu hide" id="dMloctin2" aria-labelledby="dMloctinButton2">
+                  <div class="top">
+                    <span id="dMloctin2_button_close">
+                      <img src="../../image/icons/icon-back.svg" alt="">
+                    </span>
+                  </div>
+                  <div class="content">
+                    <div class="title">
+                      <span>Choose Search compound</span>
+                    </div>
+                    <div class="input-search">
+                      <input name="compound" id="compound-search" placeholder="search for Destination name or Compound"
+                      onkeyup="compoundsearch()"> 
                     </div>
                     <div class="input_lists_contener">
                       <button class="reset btn">Reset</button>
                       <form class="input_lists">
-                        <ul class="left">
+                        <ul class="left" id="myULcompoundsearch">
                           <li class="form-check result_list_serch">
                             <input class="left-checkbox" type="checkbox" value="" id="elsahel">
                             <label class="form-check-label" for="elsahel">
@@ -122,25 +173,11 @@
                           </li>
                         </ul>
 
-                        <ul class="right">
-                          <li class="form-check result_list_serch">
-                            <input type="checkbox" value="" id="elsahel">
-                            <label class="form-check-label" for="elsahel">
-                              El Sahel
-                            </label>
-                          </li>
-                          <li class="form-check result_list_serch">
-                            <input type="checkbox" value="" id="elsokhna">
-                            <label class="form-check-label" for="elsokhna">
-                              El Sokhna
-                            </label>
-                          </li>
-                        </ul>
                       </form>
 
                     </div>
 
-                    <button class="btn" id="loction_done">Done</button>
+                    <button class="btn" id="compound_done">Done</button>
                   </div>
 
                 </div>
@@ -546,18 +583,10 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <div class="rate">
-                              <input type="radio" id="star5_popupe_1" name="rate" value="5" />
-                              <label for="star5_popupe_1" title="text">5 stars</label>
-                              <input type="radio" id="star4_popupe_1" name="rate" value="4" />
-                              <label for="star4_popupe_1" title="text">4 stars</label>
-                              <input type="radio" id="star3_popupe_1" name="rate" value="3" />
-                              <label for="star3_popupe_1" title="text">3 stars</label>
-                              <input type="radio" id="star2_popupe_1" name="rate" value="2" />
-                              <label for="star2_popupe_1" title="text">2 stars</label>
-                              <input type="radio" id="star1_popupe_1" name="rate" value="1" />
-                              <label for="star1_popupe_1" title="text">1 star</label>
-                            </div>
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
                           </div>
                           <div class="text">
                             2370 review
@@ -762,18 +791,10 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <div class="rate">
-                              <input type="radio" id="star5_popupe_2" name="rate" value="5" />
-                              <label for="star5_popupe_2" title="text">5 stars</label>
-                              <input type="radio" id="star4_popupe_2" name="rate" value="4" />
-                              <label for="star4_popupe_2" title="text">4 stars</label>
-                              <input type="radio" id="star3_popupe_2" name="rate" value="3" />
-                              <label for="star3_popupe_2" title="text">3 stars</label>
-                              <input type="radio" id="star2_popupe_2" name="rate" value="2" />
-                              <label for="star2_popupe_2" title="text">2 stars</label>
-                              <input type="radio" id="star1_popupe_2" name="rate" value="1" />
-                              <label for="star1_popupe_2" title="text">1 star</label>
-                            </div>
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
                           </div>
                           <div class="text">
                             2370 review
@@ -980,18 +1001,10 @@
 
                         <div class="reviewpoupe">
                           <div class="stars">
-                            <div class="rate">
-                              <input type="radio" id="star5_popupe_3" name="rate" value="5" />
-                              <label for="star5_popupe_3" title="text">5 stars</label>
-                              <input type="radio" id="star4_popupe_3" name="rate" value="4" />
-                              <label for="star4_popupe_3" title="text">4 stars</label>
-                              <input type="radio" id="star3_popupe_3" name="rate" value="3" />
-                              <label for="star3_popupe_3" title="text">3 stars</label>
-                              <input type="radio" id="star2_popupe_3" name="rate" value="2" />
-                              <label for="star2_popupe_3" title="text">2 stars</label>
-                              <input type="radio" id="star1_popupe_3" name="rate" value="1" />
-                              <label for="star1_popupe_3" title="text">1 star</label>
-                            </div>
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
                           </div>
                           <div class="text">
                             3370 review
@@ -1197,19 +1210,12 @@
                         </div>
 
                         <div class="reviewpoupe">
+                          
                           <div class="stars">
-                            <div class="rate">
-                              <input type="radio" id="star5_popupe_4" name="rate" value="5" />
-                              <label for="star5_popupe_4" title="text">5 stars</label>
-                              <input type="radio" id="star4_popupe_4" name="rate" value="4" />
-                              <label for="star4_popupe_4" title="text">4 stars</label>
-                              <input type="radio" id="star3_popupe_4" name="rate" value="3" />
-                              <label for="star3_popupe_4" title="text">3 stars</label>
-                              <input type="radio" id="star2_popupe_4" name="rate" value="2" />
-                              <label for="star2_popupe_4" title="text">2 stars</label>
-                              <input type="radio" id="star1_popupe_4" name="rate" value="1" />
-                              <label for="star1_popupe_4" title="text">1 star</label>
-                            </div>
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
                           </div>
                           <div class="text">
                             4470 review
@@ -1415,19 +1421,12 @@
                         </div>
 
                         <div class="reviewpoupe">
+                          
                           <div class="stars">
-                            <div class="rate">
-                              <input type="radio" id="star5_popupe_5" name="rate" value="5" />
-                              <label for="star5_popupe_5" title="text">5 stars</label>
-                              <input type="radio" id="star4_popupe_5" name="rate" value="4" />
-                              <label for="star4_popupe_5" title="text">4 stars</label>
-                              <input type="radio" id="star3_popupe_5" name="rate" value="3" />
-                              <label for="star3_popupe_5" title="text">3 stars</label>
-                              <input type="radio" id="star2_popupe_5" name="rate" value="2" />
-                              <label for="star2_popupe_5" title="text">2 stars</label>
-                              <input type="radio" id="star1_popupe_5" name="rate" value="1" />
-                              <label for="star1_popupe_5" title="text">1 star</label>
-                            </div>
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
                           </div>
                           <div class="text">
                             5570 review
@@ -1633,19 +1632,12 @@
                         </div>
 
                         <div class="reviewpoupe">
+                          
                           <div class="stars">
-                            <div class="rate">
-                              <input type="radio" id="star5_popupe_6" name="rate" value="5" />
-                              <label for="star5_popupe_6" title="text">5 stars</label>
-                              <input type="radio" id="star4_popupe_6" name="rate" value="4" />
-                              <label for="star4_popupe_6" title="text">4 stars</label>
-                              <input type="radio" id="star3_popupe_6" name="rate" value="3" />
-                              <label for="star3_popupe_6" title="text">3 stars</label>
-                              <input type="radio" id="star2_popupe_6" name="rate" value="2" />
-                              <label for="star2_popupe_6" title="text">2 stars</label>
-                              <input type="radio" id="star1_popupe_6" name="rate" value="1" />
-                              <label for="star1_popupe_6" title="text">1 star</label>
-                            </div>
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
                           </div>
                           <div class="text">
                             6670 review
@@ -1851,19 +1843,12 @@
                         </div>
 
                         <div class="reviewpoupe">
+                          
                           <div class="stars">
-                            <div class="rate">
-                              <input type="radio" id="star5_popupe_7" name="rate" value="5" />
-                              <label for="star5_popupe_7" title="text">5 stars</label>
-                              <input type="radio" id="star4_popupe_7" name="rate" value="4" />
-                              <label for="star4_popupe_7" title="text">4 stars</label>
-                              <input type="radio" id="star3_popupe_7" name="rate" value="3" />
-                              <label for="star3_popupe_7" title="text">3 stars</label>
-                              <input type="radio" id="star2_popupe_7" name="rate" value="2" />
-                              <label for="star2_popupe_7" title="text">2 stars</label>
-                              <input type="radio" id="star1_popupe_7" name="rate" value="1" />
-                              <label for="star1_popupe_7" title="text">1 star</label>
-                            </div>
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
                           </div>
                           <div class="text">
                             7770 review
@@ -2069,19 +2054,12 @@
                         </div>
 
                         <div class="reviewpoupe">
+                          
                           <div class="stars">
-                            <div class="rate">
-                              <input type="radio" id="star5_popupe_8" name="rate" value="5" />
-                              <label for="star5_popupe_8" title="text">5 stars</label>
-                              <input type="radio" id="star4_popupe_8" name="rate" value="4" />
-                              <label for="star4_popupe_8" title="text">4 stars</label>
-                              <input type="radio" id="star3_popupe_8" name="rate" value="3" />
-                              <label for="star3_popupe_8" title="text">3 stars</label>
-                              <input type="radio" id="star2_popupe_8" name="rate" value="2" />
-                              <label for="star2_popupe_8" title="text">2 stars</label>
-                              <input type="radio" id="star1_popupe_8" name="rate" value="1" />
-                              <label for="star1_popupe_8" title="text">1 star</label>
-                            </div>
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
                           </div>
                           <div class="text">
                             8880 review
@@ -2287,19 +2265,12 @@
                         </div>
 
                         <div class="reviewpoupe">
+                          
                           <div class="stars">
-                            <div class="rate">
-                              <input type="radio" id="star5_popupe_9" name="rate" value="5" />
-                              <label for="star5_popupe_9" title="text">5 stars</label>
-                              <input type="radio" id="star4_popupe_9" name="rate" value="4" />
-                              <label for="star4_popupe_9" title="text">4 stars</label>
-                              <input type="radio" id="star3_popupe_9" name="rate" value="3" />
-                              <label for="star3_popupe_9" title="text">3 stars</label>
-                              <input type="radio" id="star2_popupe_9" name="rate" value="2" />
-                              <label for="star2_popupe_9" title="text">2 stars</label>
-                              <input type="radio" id="star1_popupe_9" name="rate" value="1" />
-                              <label for="star1_popupe_9" title="text">1 star</label>
-                            </div>
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
+                            <img src="../../image/icons/star.svg" alt="" class="activestar">
                           </div>
                           <div class="text">
                             9990 review
@@ -2381,7 +2352,7 @@
 
   <!-- Footer Compunent-->
   <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
       <section class="footer__top">
         <div class="footer__folllow">
           <h6>
@@ -2486,6 +2457,7 @@
         document.getElementById("result__button__filter").classList.remove("noactive")
         document.getElementById("result__button__sort").classList.remove("noactive")
         document.getElementById("demo").classList.remove("noactive");
+        document.getElementById("dMloctinButton2").classList.remove("noactive");
 
         document.querySelectorAll('.img-item').forEach(function (elem) {
           elem.classList.remove('noactive');
@@ -2495,6 +2467,36 @@
         document.getElementById("dMloctin").classList.remove("hide")
         document.getElementById("result__button__filter").classList.add("noactive");
         document.getElementById("result__button__sort").classList.add("noactive");
+        document.getElementById("dMloctinButton2").classList.add("noactive");
+        document.getElementById("demo").classList.add("noactive");
+
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.add('noactive');
+        });
+      }
+    })
+
+    
+    const dropdownMenuButtonloction2 = document.getElementById("dMloctinButton2");
+    dropdownMenuButtonloction2.addEventListener("click", function () {
+
+      if (document.getElementById("dMloctin2").classList.contains("show") === true) {
+        document.getElementById("dMloctin2").classList.add("hide");
+        document.getElementById("dMloctin2").classList.remove("show");
+        document.getElementById("result__button__filter").classList.remove("noactive")
+        document.getElementById("result__button__sort").classList.remove("noactive")
+        document.getElementById("dMloctinButton1").classList.remove("noactive")
+        document.getElementById("demo").classList.remove("noactive");
+
+        document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+      } else {
+        document.getElementById("dMloctin2").classList.add("show")
+        document.getElementById("dMloctin2").classList.remove("hide")
+        document.getElementById("result__button__filter").classList.add("noactive");
+        document.getElementById("result__button__sort").classList.add("noactive");
+        document.getElementById("dMloctinButton1").classList.add("noactive")
         document.getElementById("demo").classList.add("noactive");
 
         document.querySelectorAll('.img-item').forEach(function (elem) {
@@ -2512,6 +2514,7 @@
         document.getElementById("dMloctinButton1").classList.remove("noactive")
         document.getElementById("result__button__sort").classList.remove("noactive")
         document.getElementById("demo").classList.remove("noactive");
+        document.getElementById("dMloctinButton2").classList.remove("noactive");
 
         document.querySelectorAll('.img-item').forEach(function (elem) {
           elem.classList.remove('noactive');
@@ -2522,6 +2525,7 @@
         document.getElementById("dMloctinButton1").classList.add("noactive");
         document.getElementById("result__button__sort").classList.add("noactive");
         document.getElementById("demo").classList.add("noactive");
+        document.getElementById("dMloctinButton2").classList.add("noactive");
 
         document.querySelectorAll('.img-item').forEach(function (elem) {
           elem.classList.add('noactive');
@@ -2541,6 +2545,7 @@
         document.getElementById("dMloctinButton1").classList.remove("noactive")
         document.getElementById("result__button__filter").classList.remove("noactive");
         document.getElementById("demo").classList.remove("noactive");
+        document.getElementById("dMloctinButton2").classList.remove("noactive");
         
         document.querySelectorAll('.img-item').forEach(function (elem) {
           elem.classList.remove('noactive');
@@ -2551,6 +2556,7 @@
         document.getElementById("dMloctinButton1").classList.add("noactive");
         document.getElementById("result__button__filter").classList.add("noactive");
         document.getElementById("demo").classList.add("noactive");
+        document.getElementById("dMloctinButton2").classList.add("noactive");
         
         document.querySelectorAll('.img-item').forEach(function (elem) {
           elem.classList.add('noactive');
@@ -2565,6 +2571,7 @@
       document.getElementById("dMloctinButton1").classList.remove("noactive")
       document.getElementById("result__button__sort").classList.remove("noactive")
       document.getElementById("demo").classList.remove("noactive");
+        document.getElementById("dMloctinButton2").classList.remove("noactive");
       
         document.querySelectorAll('.img-item').forEach(function (elem) {
           elem.classList.remove('noactive');
@@ -2576,6 +2583,7 @@
       document.getElementById("result__item__filter").classList.remove("show")
       document.getElementById("dMloctinButton1").classList.remove("noactive")
       document.getElementById("result__button__sort").classList.remove("noactive")
+        document.getElementById("dMloctinButton2").classList.remove("noactive");
       document.getElementById("demo").classList.remove("noactive");
       
         document.querySelectorAll('.img-item').forEach(function (elem) {
@@ -2589,6 +2597,7 @@
       document.getElementById("result__item__sort").classList.remove("show")
       document.getElementById("dMloctinButton1").classList.remove("noactive")
       document.getElementById("result__button__filter").classList.remove("noactive");
+        document.getElementById("dMloctinButton2").classList.remove("noactive");
       document.getElementById("demo").classList.remove("noactive");
 
         document.querySelectorAll('.img-item').forEach(function (elem) {
@@ -2603,6 +2612,7 @@
       document.getElementById("dMloctinButton1").classList.remove("noactive")
       document.getElementById("result__button__filter").classList.remove("noactive");
       document.getElementById("demo").classList.remove("noactive");
+        document.getElementById("dMloctinButton2").classList.remove("noactive");
 
         document.querySelectorAll('.img-item').forEach(function (elem) {
           elem.classList.remove('noactive');
@@ -2616,6 +2626,20 @@
       document.getElementById("result__button__filter").classList.remove("noactive")
       document.getElementById("result__button__sort").classList.remove("noactive")
       document.getElementById("demo").classList.remove("noactive");
+        document.getElementById("dMloctinButton2").classList.remove("noactive");
+      
+      document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+    })
+
+    document.getElementById("dMloctin2_button_close").addEventListener("click", function () {
+        document.getElementById("dMloctin2").classList.add("hide");
+        document.getElementById("dMloctin2").classList.remove("show");
+      document.getElementById("result__button__filter").classList.remove("noactive")
+      document.getElementById("result__button__sort").classList.remove("noactive")
+      document.getElementById("demo").classList.remove("noactive");
+      document.getElementById("dMloctinButton1").classList.remove("noactive")
       
       document.querySelectorAll('.img-item').forEach(function (elem) {
           elem.classList.remove('noactive');
@@ -2623,12 +2647,27 @@
     })
 
     
-    document.getElementById("loction_done").addEventListener("click", function () {
+    document.getElementById("destination_done").addEventListener("click", function () {
       document.getElementById("dMloctin").classList.add("hide");
       document.getElementById("dMloctin").classList.remove("show");
       document.getElementById("result__button__filter").classList.remove("noactive")
       document.getElementById("result__button__sort").classList.remove("noactive")
       document.getElementById("demo").classList.remove("noactive");
+        document.getElementById("dMloctinButton2").classList.remove("noactive");
+      
+      document.querySelectorAll('.img-item').forEach(function (elem) {
+          elem.classList.remove('noactive');
+        });
+    })
+
+
+    document.getElementById("compound_done").addEventListener("click", function () {
+      document.getElementById("dMloctin2").classList.add("hide");
+      document.getElementById("dMloctin2").classList.remove("show");
+      document.getElementById("result__button__filter").classList.remove("noactive")
+      document.getElementById("result__button__sort").classList.remove("noactive")
+      document.getElementById("demo").classList.remove("noactive");
+      document.getElementById("dMloctinButton1").classList.remove("noactive")
       
       document.querySelectorAll('.img-item').forEach(function (elem) {
           elem.classList.remove('noactive');
@@ -2679,6 +2718,51 @@
     );
 
 
+    // destination-search
+
+    function destinationsearch() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("destination-search");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myULdestinationsearch");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("label")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+function compoundsearch() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("compound-search");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myULcompoundsearch");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("label")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+
+function opencompoundsearch(){
+  if(document.getElementById("dMloctinButton2").classList.contains("noactive") ===true ){
+        document.getElementById("dMloctinButton2").classList.remove("noactive")
+  }else{
+    null
+  }
+}
     $('.owl-carousel').owlCarousel({
       loop: false,
       margin: 10,

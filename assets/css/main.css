@@ -7153,8 +7153,13 @@ header.header .headersearch .search .input_calendar input {
   text-align: center;
   font-weight: 500;
 }
+.result__header .result__top .result__filter span {
+  display: block;
+  margin: 0px auto;
+}
 .result__header .result__top .result__filter .dropdown {
   margin-top: 10px;
+  display: inline-block;
 }
 .result__header .result__top .result__filter .dropdown .btn {
   color: #6e6c5a;
@@ -7184,32 +7189,32 @@ header.header .headersearch .search .input_calendar input {
 .result__header .result__top .result__filter .dropdown .dropdown-toggle::after {
   display: none !important;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin {
+.result__header .result__top .result__filter .dropdown #dMloctin, .result__header .result__top .result__filter .dropdown #dMloctin2 {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 5px 26px #33333371;
-  width: 80%;
+  width: 300px;
   left: 10%;
   height: auto;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .top {
+.result__header .result__top .result__filter .dropdown #dMloctin .top, .result__header .result__top .result__filter .dropdown #dMloctin2 .top {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding: 0px 10px;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .top span {
+.result__header .result__top .result__filter .dropdown #dMloctin .top span, .result__header .result__top .result__filter .dropdown #dMloctin2 .top span {
   cursor: pointer;
   margin-right: 10px;
   width: 25px;
   height: 25px;
   display: inline-block;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .top span img {
+.result__header .result__top .result__filter .dropdown #dMloctin .top span img, .result__header .result__top .result__filter .dropdown #dMloctin2 .top span img {
   width: 25px;
   height: 25px;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .title {
+.result__header .result__top .result__filter .dropdown #dMloctin .content .title, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .title {
   margin-top: 10px;
   text-align: center;
   font-size: 14px;
@@ -7218,12 +7223,12 @@ header.header .headersearch .search .input_calendar input {
   color: #3b3b3b;
   text-transform: capitalize;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input-search {
+.result__header .result__top .result__filter .dropdown #dMloctin .content .input-search, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .input-search {
   width: 100%;
   text-align: center;
   margin: 5px auto;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input-search input {
+.result__header .result__top .result__filter .dropdown #dMloctin .content .input-search input, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .input-search input {
   width: 70%;
   height: 30px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -7233,41 +7238,32 @@ header.header .headersearch .search .input_calendar input {
   text-align: center;
   color: black;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists_contener .form-check {
+.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists_contener .form-check, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .input_lists_contener .form-check {
   font-size: 12px;
   margin-bottom: 10px;
   cursor: pointer;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .input_lists .left {
+  width: 100%;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left,
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .right {
-  width: 50%;
-}
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left li,
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .right li {
+.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left li, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .input_lists .left li {
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left li input,
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .right li input {
+.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left li input, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .input_lists .left li input {
   width: 15px;
   height: 15px;
   margin-right: 10px;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left li label,
-.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .right li label {
+.result__header .result__top .result__filter .dropdown #dMloctin .content .input_lists .left li label, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .input_lists .left li label {
   font-size: 12px;
   color: #3b3b3b;
   text-transform: capitalize;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .btn {
+.result__header .result__top .result__filter .dropdown #dMloctin .content .btn, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .btn {
   width: 120px;
   margin: 15px auto;
   display: block;
@@ -7278,15 +7274,18 @@ header.header .headersearch .search .input_calendar input {
   color: var(--white-color);
   border: none;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .btn:hover {
+.result__header .result__top .result__filter .dropdown #dMloctin .content .btn:hover, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .btn:hover {
   background-color: var(--yello-color);
   color: var(--white-color);
   border: none;
 }
-.result__header .result__top .result__filter .dropdown #dMloctin .content .btn.reset {
+.result__header .result__top .result__filter .dropdown #dMloctin .content .btn.reset, .result__header .result__top .result__filter .dropdown #dMloctin2 .content .btn.reset {
   color: var(--yello-color);
   background-color: transparent;
   margin: 15px;
+}
+.result__header .result__top .result__filter .dropdown #dMloctinButton2.noactive {
+  opacity: 0.7;
 }
 .result__header .result__sort {
   display: flex;
@@ -7721,6 +7720,9 @@ header.header .headersearch .search .input_calendar input {
   width: 15px;
   height: 15px;
 }
+.result__header .result__sort #result__item__sort .stars .activestar {
+  filter: invert(79%) sepia(26%) saturate(6596%) hue-rotate(339deg) brightness(100%) contrast(94%);
+}
 .result__header .result__sort #result__item__sort .stars .rate {
   height: 46px;
   padding: 0px;
@@ -7744,15 +7746,15 @@ header.header .headersearch .search .input_calendar input {
 .result__header .result__sort #result__item__sort .stars .rate > input:checked ~ label {
   color: var(--yello-color);
 }
-.result__header .result__sort #result__item__sort .stars .rate:not(:checked) > label:hover,
-.result__header .result__sort #result__item__sort .stars .rate:not(:checked) > label:hover ~ label {
+.result__header .result__sort #result__item__sort .rate:not(:checked) > label:hover,
+.result__header .result__sort #result__item__sort .rate:not(:checked) > label:hover ~ label {
   color: #de8f17;
 }
-.result__header .result__sort #result__item__sort .stars .rate > input:checked + label:hover,
-.result__header .result__sort #result__item__sort .stars .rate > input:checked + label:hover ~ label,
-.result__header .result__sort #result__item__sort .stars .rate > input:checked ~ label:hover,
-.result__header .result__sort #result__item__sort .stars .rate > input:checked ~ label:hover ~ label,
-.result__header .result__sort #result__item__sort .stars .rate > label:hover ~ input:checked ~ label {
+.result__header .result__sort #result__item__sort .rate > input:checked + label:hover,
+.result__header .result__sort #result__item__sort .rate > input:checked + label:hover ~ label,
+.result__header .result__sort #result__item__sort .rate > input:checked ~ label:hover,
+.result__header .result__sort #result__item__sort .rate > input:checked ~ label:hover ~ label,
+.result__header .result__sort #result__item__sort .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
 .result__header .result__sort #result__item__sort .checkboxarrival,
