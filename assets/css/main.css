@@ -3880,7 +3880,7 @@ button:hover {
       6- 1- Style Host Compunent To Media Queris Large.
 */
 header.header {
-  background-image: url("../image/bg/header.png");
+  background-image: url("../image/bg/header-two.png");
   background-size: cover;
   height: 90vh;
   position: relative;
@@ -4317,8 +4317,8 @@ header.header .headersearch .search .input_calendar input {
   margin-bottom: 30px;
 }
 .ourpartners__imags .img {
-  width: 20%;
-  height: 80px;
+  width: 17%;
+  height: 73px;
 }
 .ourpartners__imags .img img {
   width: 100%;
